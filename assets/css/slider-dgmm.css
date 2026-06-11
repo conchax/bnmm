@@ -114,7 +114,7 @@
 
 .seq .seq-next {
   right: 20px;
-  background: url("../img/next.svg");
+  background: url("../svg/next.svg");
 }
 
 .seq .seq-next:focus,
@@ -124,7 +124,7 @@
 
 .seq .seq-prev {
   left: 20px;
-  background: url("../img/prev.svg");
+  background: url("../svg/prev.svg");
 }
 
 .seq .seq-prev:focus,
@@ -184,7 +184,7 @@
 
 .seq .seq-title h2 {
   padding: 0 1%;
-  font-family: Patria, "noso Sans", Helvetica, Arial, sans-serif;
+  font-family: Patria, "Noto Sans", sans-serif;
   color: #A57F2C;
   float: left;
   font-size: 30px;
@@ -196,7 +196,7 @@
   line-height: 22px;
   color: #717171;
   font-weight: 300;
-  font-family: "noso Sans", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -300,14 +300,14 @@
   }
 
   .seq .seq-title h2 {
-    font-family: Patria, "noso Sans", Helvetica, Arial, sans-serif;
+    font-family: Patria, "Noto Sans", sans-serif;
     color: #A57F2C;
     transform: translate3d(-120px, 0, 0);
   }
 
   .seq .seq-title h3 {
     display: block;
-    font-family: "noso Sans", Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
     transform: translate3d(120px, 0, 0);
     color: #717171;
     font-size: 20px;
@@ -421,12 +421,12 @@
   }
 
   .seq .seq-next {
-    background: url("../img/next.svg");
+    background: url("../svg/next.svg");
     background-size: 46px 46px;
   }
 
   .seq .seq-prev {
-    background: url("../img/prev.svg");
+    background: url("../svg/prev.svg");
     background-size: 46px 46px;
   }
 }
