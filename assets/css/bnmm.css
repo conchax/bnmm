@@ -100,9 +100,12 @@ main.page{
     border-radius: 16px;
 }
 
-.btn-primary{
-    border-radius: 8px;
-    font-weight: 600;
+.btn-primary, .btn-secondary{
+    border-radius: 10px;
+    font-weight: 600!important;
+}
+.btn-secondary:hover svg{
+ fill: #fff;
 }
 .footer-bnmm a{
     color: var(--color-text);
@@ -177,6 +180,18 @@ hr.dropdown-divider{
 }
 .btn-tranparent:hover{
     color: #A1842B;
+}
+.btn-tranparent:focus, .btn-tranparent:focus-visible, .btn-tranparent:focus-within, .btn-tranparent:active{
+    border: 0px;
+    outline: 0px!important;
+}
+
+.btn{
+--bs-btn-box-shadow:transparent
+}
+
+.btn:focus{
+outline: 0px!important;
 }
 
  /* boton collapse */
