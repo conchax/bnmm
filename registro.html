@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachillerato Nacional Margarita Maza</title>
+
+
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
+    <link href="assets/css/bnmm.css" rel="stylesheet">
+    <style>
+        .l-vert {
+            border-left: 1px solid #d1d1d1;
+            border-right: 1px solid #d1d1d1;
+        }
+    
+        hr {
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+    
+        .titulo-line {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-color: #F5F5F5;
+            padding: 13px 20px;
+        }
+    
+        .line-c {
+            border: 1px solid #DCDCDC;
+            border-radius: 10px;
+        }
+    
+        .form-rec {
+            border: 1px solid #DCDCDC;
+            border-radius: 4px;
+            background-color: #F8FAF9;
+            font-size: 15px;
+            padding: 10px;
+        }
+    
+        .form-rec a {
+            color: var(--color-titulo);
+        }
+    
+        .form-rec a:hover {
+            color: var(--color-secondary);
+        }
+    
+        .captcha-box {
+            display: grid;
+            grid-template-columns: 264px minmax(0, 1fr);
+            gap: 0.8rem;
+            margin: 0.7rem auto 0.15rem;
+            max-width: 760px;
+        }
+    
+        .btn-tranparent {
+            display: block;
+        }
+    
+        .btn-tranparent:active,
+        .btn-tranparent:focus {
+            color: #A1842B;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navmm navbar navbar-expand-lg bg-light sub-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand sub-navbar" href="#"><img src="assets/img/logo-bnmm.svg"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#subNavBarDropdown"
+                aria-controls="subNavBarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="subNavBarDropdown">
+                <ul class=" des navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.75 0H0V2.0625H24.75V0Z" fill="#717171" />
+                                <path d="M24.75 18.5625H0V20.625H24.75V18.5625Z" fill="#717171" />
+                                <path d="M24.75 6.1875H0V8.25H24.75V6.1875Z" fill="#717171" />
+                                <path d="M24.75 12.375H0V14.4375H24.75V12.375Z" fill="#717171" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                            <li><a class="dropdown-item" href="#">Modelo educativo</a></li>
+                            <li><a class="dropdown-item" href="#">Plan de estudios</a></li>
+                            <li><a class="dropdown-item" href="#">Servicios integrados</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura y deporte</a></li>
+                            <li><a class="dropdown-item" href="#">Continuidad académica</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario</a></li>
+                            <li><a class="dropdown-item" href="#">Prensa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mov">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Modelo educativo</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Plan de estudios</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Servicios integrados</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Cultura y deporte</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Continuidad académica</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Prensa</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Contenido -->
+    <main class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-5"><b>¿Tienes entre 14 y 19 años y quieres terminar tu bachillerato?</b></p>
+                    <p>Estás en el lugar indicado. Nuestro modelo combina estudio en línea con asesorías presenciales. Tu formación va más allá de lo académico: actividades culturales, deportivas y acceso a la Beca Benito Juárez.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>¡Prepárate para tu registro!</h2>                    
+                </div>
+            </div>
+
+            <div class="row text-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <span class="badge mb-4 rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">1</span>
+                    <p><b>Llena el formulario en línea y carga tus documentos.</b></p>                    
+                </div>
+                <div class="col-lg-4 col-md-6 l-vert">
+                    <span class="badge mb-4 rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">2</span>
+                    <p><b>Presenta tus documentos en el plantel.</b></p>                    
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <span class="badge mb-4 rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">3</span>
+                    <p><b>Rescibe tu matrícula y tu correo institucional.</b></p>                    
+                </div>
+            </div>
+
+            <div class="row mb-5"> 
+                <div class="col-12 text-center">
+                    <div class="d-inline-flex align-items-end gap-4">
+                        <svg width="35" height="35">
+                        <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
+                        </svg>
+                        Descarga los recursos de la convocatoria vigente para conocer los requisitos y el proceso de registro.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 justify-content-center text-center ">
+                <div class="col-md-4">
+                    <div class="line">
+                        <a class="btn-tranparent" href="#">
+                            <svg width="30" height="30">
+                                <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"></use>
+                            </svg><span class="d-block"></span>                       
+                            <p><b>Bases de la convocatoria</b></p>
+                        </a>
+                        <hr>
+                        <p>Condiciones oficiales del<span class="d-block"></span>proceso.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="line">
+                        <a class="btn-tranparent" href="#">
+                            <svg width="30" height="30">
+                                <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"></use>
+                            </svg><span class="d-block"></span>
+                            <p><b>Guía de registro</b></p>
+                        </a>                        
+                        <hr>
+                        <p>Cómo completar tu registro, paso a paso.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="line">
+                        <a class="btn-tranparent" href="#">
+                            <svg width="30" height="30">
+                                <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"></use>
+                            </svg><span class="d-block"></span>
+                            <p><b>Infografía del proceso</b></p>
+                        </a>                        
+                        <hr>
+                        <p>Pasos y fechas de manera<span class="d-block"></span>visual.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>¿Ya tienes todo preparado? Regístrate ahora</h2>
+                    <p style="font-size: 40px; color:var(--color-secondary);font-weight: 700;">Generación 1</p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div style="background-color: var(--color-secondary); border-radius: 10px;color: #fff; padding: 20px 40px;">
+                        <p style="font-weight: 900;font-size: 30px;">Comencemos tu registro</p>
+                        <p>Captura la CURP del aspirante para iniciar, consultar o retomar tu registro. Con ella precargaremos sus datos y verificaremos que cumpla los requisitos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="line-c">
+                        <div class="titulo-line"><b><span class="badge rounded-circle p-2" style="width: 35px; height: 35px; font-size: 22px; font-weight:700; background-color: var(--color-secondary); color:#fff">1</span> captura la CURP</b></div>
+                        <p>
+                            <form role="form" class="p-4">
+                                <div class="form-group mb-5">
+                                    <label class="control-label" for="text-01"><b>CURP del aspirrante</b> <span style="color: red;">*</span></label>
+                                    <input class="form-control" id="text-01" placeholder="AAAA000000HDFRRR00" type="text">
+                                </div>
+                                
+                                <div class="checkbox form-rec mb-5">
+                                    <label>
+                                        <input  type="checkbox">
+                                    He leído y aceptado los <a href="#">Términos y Condiciones</a> y el <a href="#">Aviso de Privacidad</a>. *
+                                    </label>
+                                </div>       
+                                <div class="captcha-box mb-5">
+                                    <div class="captcha-art">
+                                        <img src="https://registro.prepaenlinea.sep.gob.mx/registro//images/captcha_image.php?cap=JRXNO" alt="Code">
+                                    </div>
+                                    <div>
+                                        <input type="text" id="inputCaptcha" class="form-control" placeholder="Ingresa los datos de la imagen" autocomplete="off">
+                                        <div class="field-error d-none" id="errorCaptcha"></div>
+                                    </div>
+                                </div>                     
+                                <button class="btn btn-primary w-100 mb-5" type="submit">Validar CURP y continuar</button>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="line-c mb-5">
+                        <div class="titulo-line"><b><span class="badge rounded-circle p-2" style="width: 35px; height: 35px; font-size: 22px; font-weight:700; background-color: var(--color-secondary); color:#fff">¡</span> Convocatoria vigente</b></div>
+                        <div class="p-4">
+                            <p>Convocatoria de prueva</p>
+                            <p><b>Apertura</b> 9 de mayo 2026</p>
+                            <p><b>Cierre</b> 30 de agosto 2026</p>
+                        </div>
+                    </div>
+                    <div class="line-c">
+                        <div class="titulo-line"><b>Ten a la mano</b></div>
+                        <div class="p-4">
+                            <div class="card-informativa mb-4 d-flex align-items-center p-3 form-rec border border-light-subtle rounded-3" >
+                                <div class="icono-dorado d-flex align-items-center justify-content-center text-white fw-bold rounded-2 flex-shrink-0 me-3" 
+                                    style="width: 55px; height: 55px; font-size: 18px; background-color: var(--color-secondary);">
+                                    ID
+                                </div>                                
+                                <div class="lh-sm">
+                                    <h4 class="fs-5 fw-bold mb-1" style="color: #132534;">CURP del aspirante</h4>
+                                    <p class=" m-0" style="font-size: 14px;">Si no la recuerdas, puedes consultarla en gob.mx.</p>
+                                </div>
+                            </div>
+                            <div class="card-informativa mb-4 d-flex align-items-center p-3 form-rec border border-light-subtle rounded-3" >
+                                <div class="icono-dorado d-flex align-items-center justify-content-center text-white fw-bold rounded-2 flex-shrink-0 me-3" 
+                                    style="width: 55px; height: 55px; font-size: 18px; background-color: var(--color-secondary);">
+                                    PDF
+                                </div>                                
+                                <div class="lh-sm">
+                                    <h4 class="fs-5 fw-bold mb-1" style="color: #132534;">Docimentos digitales</h4>
+                                    <p class=" m-0" style="font-size: 14px;">Acta de mnacimiento, comprobante de domicilio y certificado de secundaria (PDF, hasta 2MB cada uno).</p>
+                                </div>
+                            </div>
+                            <div class="card-informativa mb-4 d-flex align-items-center p-3 form-rec border border-light-subtle rounded-3" >
+                                <div class="icono-dorado d-flex align-items-center justify-content-center text-white fw-bold rounded-2 flex-shrink-0 me-3" 
+                                    style="width: 55px; height: 55px; font-size: 18px; background-color: var(--color-secondary);">
+                                    @
+                                </div>                                
+                                <div class="lh-sm">
+                                    <h4 class="fs-5 fw-bold mb-1" style="color: #132534;">Datos de contacto</h4>
+                                    <p class=" m-0" style="font-size: 14px;">Correo de aspirante y teléfono de los responsables (padre, madre o tutor)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h2>¿Tienes problemas con tu inscripción?</h2>
+                    <p class="mb-5">Envíanos un <em>ticket</em> con la descripción de tu duda o solicitud y te apoyaremos.</p>
+                    <p><a class="btn btn-primary" href="#">Mesa de servicio</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="footer-bnmm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
+                    <p class="d-inline-flex gap-4">
+                        <a href="#">Sigaprep</a> |
+                        <a href="#">Mesa de servicio</a> |
+                        <a href="#">Mapa de sitio</a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2 d-flex justify-content-center justify-content-md-end"">
+                    <p class=" d-inline-flex gap-4">
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-x"></use>
+                        </svg>
+                    </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="http://10.3.30.81/wp-content/themes/bnmm/assets/js/collpase.js"></script>
+    <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+
+</body>
+
+</html>

@@ -22,7 +22,8 @@ add_action('wp_enqueue_scripts', 'mi_tema_bnmm_scripts');
  */
 
 
-function mis_estilos_bnmm() {
+function mis_estilos_bnmm()
+{
     // 1. Cargar el estilo externo del framework CDN
     wp_enqueue_style(
         'framework-gob-mx', // Nombre único para identificar el archivo
@@ -45,7 +46,8 @@ add_action('wp_enqueue_scripts', 'mis_estilos_bnmm');
 
 function mi_tema_bnmm_footer()
 {
-  wp_enqueue_script("botstrap-js", "https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js");  
-  
+    wp_enqueue_script("botstrap-js", "https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js");
 }
 add_action('wp_footer', 'mi_tema_bnmm_footer');
+
+remove_filter('the_content', 'wpautop');

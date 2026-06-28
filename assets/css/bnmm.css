@@ -1,6 +1,7 @@
 :root{
     --color-text:#717171;
     --color-titulo:#9B2247;
+    --color-secondary:#A57F2C;
 }
 body{
     font-size: 20px;
@@ -25,6 +26,14 @@ h2{
     color: var(--color-titulo);
     margin-bottom: 60px;
 }
+h3{
+    font-family: "Noto Sans", sans-serif;
+    color: var(--color-secondary);
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
 li.nav-item {
     margin-left: 20px;
 }
@@ -80,7 +89,10 @@ nav.navmm {
     font-weight: 600;
 }
 main.page{
-    margin: 30px 0 20px 0;
+    margin: 40px 0 20px 0;
+}
+main.prensa{
+    margin: 40px 0 30px 0;
 }
 .carousel-indicators{
     bottom: -30px;
@@ -103,9 +115,20 @@ main.page{
 .btn-primary, .btn-secondary{
     border-radius: 10px;
     font-weight: 600!important;
+    text-decoration: none;
 }
 .btn-secondary:hover svg{
  fill: #fff;
+}
+
+.rectangulo-bg-box{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 11px #00000026;
+    padding: 2em;
+}
+.rectangulo-bg-box img{
+    border-radius: 10px;
 }
 .footer-bnmm a{
     color: var(--color-text);
@@ -155,14 +178,14 @@ hr.dropdown-divider{
     margin-bottom: 1em;
 }
 
-#v-agentes-edu-tab .nav-link.active{
+#v-agentes-edu-tab .nav-link.active, #v-faqs-tab .nav-link.active{
     background-color: #A1842B;
     font-size: 19px;
     font-weight: 400;
     color: #fff;
     text-align: end;
 }
-#v-agentes-edu-tab .nav-link{
+#v-agentes-edu-tab .nav-link, #v-faqs-tab .nav-link{
     color: #717171;
     font-size: 19px;
     font-weight: 600;
@@ -171,12 +194,19 @@ hr.dropdown-divider{
     padding: 10px;
     border-radius: 0px;
     width: 300px;
+    height: 58px;
 }
+
+ .nav-link:hover{
+    color: #717171;
+ }
 
 .btn-tranparent{
     color: var(--color-text);
     font-weight: 700;
     background-color: transparent;
+    text-decoration: none;
+    display: ruby;
 }
 .btn-tranparent:hover{
     color: #A1842B;
@@ -226,6 +256,33 @@ outline: 0px!important;
         z-index: -1;
         width: 50%;
         }
+
+    @media (min-width: 768px) {
+        .modal-dialog {
+            width: auto;
+            margin: 30px auto;
+        }
+    }
+    .modal-header {
+        background-color: #fff;
+        color: #9B2247;
+    }
+    .modal-title {
+        color: #9B2247;
+        font-weight: 700;
+        text-align: center;
+        font-size:20px;
+        margin: 0 auto;
+    }
+    .modal-header .btn-close {
+    margin:0px;
+    }
+    .modal-content {
+        border-radius: 10px;
+    }
+    .modal-body {
+    padding: 10px 40px 20px;
+}
 
 @media (min-width: 992px) { 
     .mov.navbar-nav{

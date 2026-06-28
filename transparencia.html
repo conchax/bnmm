@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachillerato Nacional Margarita Maza</title>
+
+
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
+    <link href="assets/css/bnmm.css" rel="stylesheet">
+    <style>
+        .card {
+            --bs-card-border-width: 0px !important;
+        }
+        .rotar {
+            transition: transform 0.3s ease;
+        }
+       
+        [aria-expanded="true"] .rotar {
+            transform: rotate(180deg);       
+        }
+        .btn-tranparent h2{
+            margin-bottom: 0px;
+        }
+.contenedor-pdf {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 130%; /* Proporción para documentos verticales (A4/Carta) */
+    overflow: hidden;
+}
+
+.contenedor-pdf iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.btn-secondary{
+    text-align: start;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navmm navbar navbar-expand-lg bg-light sub-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand sub-navbar" href="#"><img src="assets/img/logo-bnmm.svg"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#subNavBarDropdown"
+                aria-controls="subNavBarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="subNavBarDropdown">
+                <ul class=" des navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.75 0H0V2.0625H24.75V0Z" fill="#717171" />
+                                <path d="M24.75 18.5625H0V20.625H24.75V18.5625Z" fill="#717171" />
+                                <path d="M24.75 6.1875H0V8.25H24.75V6.1875Z" fill="#717171" />
+                                <path d="M24.75 12.375H0V14.4375H24.75V12.375Z" fill="#717171" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                            <li><a class="dropdown-item" href="#">Modelo educativo</a></li>
+                            <li><a class="dropdown-item" href="#">Plan de estudios</a></li>
+                            <li><a class="dropdown-item" href="#">Servicios integrados</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura y deporte</a></li>
+                            <li><a class="dropdown-item" href="#">Continuidad académica</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario</a></li>
+                            <li><a class="dropdown-item" href="#">Prensa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mov">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Modelo educativo</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Plan de estudios</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Servicios integrados</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Cultura y deporte</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Continuidad académica</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Prensa</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenido -->
+    <main class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-5">Consulta los documentos oficiales que regulan el funcionamiento y organización del Bachillerato Nacional Margarita Maza.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="line">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#doc-rector">
+                                    </use>
+                                </svg>
+                            </div>
+                            <div class="col-md-9 llin">
+                                <p class="text-start"><b>ACUERDO número XX por el que se crea el Bachillerato Nacional Margarita Maza</b></p>
+                                <p class="text-start">Documento que da origen al programa y establece las características de su servicio educativo.</p>
+                                <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="line">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <svg width="70" height="70">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#reglamento-esc">
+                                    </use>
+                                </svg>
+                            </div>
+                            <div class="col-md-9 llin" >
+                                <p><b>Reglamento escolar</b></p>
+                                <p class="text-start">Normas internas que regulan el ingreso, acreditación, egreso, convivencia, derechos y obligaciones de la comunidad educativa.</p>
+                                <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="line">
+                        <svg width="42" height="42">
+                            <use
+                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#aviso-priv"">
+                            </use>
+                        </svg>
+                        <p><b>Aviso de privacidad</b></p>
+                        <p>Tratamiento de datos personales de estudiantes, figuras educativas y padres de familia</p>
+                        <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-12">                    
+                    <a class="btn-tranparent" data-bs-toggle="collapse" href="#CollapseOne" role="button"
+                        aria-expanded="false" aria-controls="CollapseOne" style="font-size: 25px;font-weight: 900;text-align: center;color: var(--color-titulo);">
+                        Marco normativo que regula la operación                            
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#9B2247" />
+                            </svg>
+                    </a>                    
+                </div>                
+            </div>
+            <div class="collapse" id="CollapseOne">
+                <div class="card card-body">
+                    <div class="row justify-content-center align-items-center mb-5">
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t1" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>Ley General de Educación</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t2" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t3" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>ACUERDO número 21/08/25 por el que se establece y regula el Marco Curricular Común de la Educación Media Superior.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t4" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>ACUERDO número 22/08/25 por el que se establece y regula el Sistema Nacional de Bachillerato de la Nueva Escuela Mexicana (SINBANEM).</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div> 
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t5" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>ACUERDO número 445 por el que se conceptualizan y definen para la Educación Media Superior las opciones educativasen las diferentes modalidades.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>Convenios de coordinación y colaboración para la prestación del servicio educativo del Bachillerato Nacional Margarita Maza</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>Normas relativas a los procesos de control escolar para la educación media superior</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>Normas específicas para la implementación y uso de documentos académicos electrónicos</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-12">                    
+                    <a class="btn-tranparent" data-bs-toggle="collapse" href="#CollapseDos" role="button"
+                        aria-expanded="false" aria-controls="CollapseDos" style="font-size: 25px;font-weight: 900;text-align: center;color: var(--color-titulo);">
+                        Protocolos de convivencia
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#9B2247" />
+                            </svg>
+                    </a>                    
+                </div>                
+            </div>
+            <div class="collapse" id="CollapseDos">
+                <div class="card card-body">
+                    <div class="row justify-content-center align-items-center mb-5">
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t9" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>Protocolo para la protección y cuidado del estudiantado en la revisión de útiles escolares en los planteles federales de educación media superior.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t10" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>Protocolos de seguridad para los planteles federales de educación media superior.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t11" class=" btn-secondary d-flex justify-content-between align-items-center w-100">
+                              <span>Protocolo para la convivencia armónica del estudiantado en los planteles federales de educación media superior.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>  
+                        <div class="col-12 mb-3">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#modal-t12" class=" btn-secondary d-flex justify-content-between align-items-center w-100 text-break">
+                              <span>Lineamientos para la prevención y atención de la violencia sexual en los planteles de las unidades administrativas adscritas a la Subsecretaría de Educación Media Superior.</span>
+                                <svg width="30" height="30">
+                                    <use
+                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#ico-download"">
+                                    </use>
+                                </svg>
+                            </a>
+                        </div>                         
+                    </div>                    
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="footer-bnmm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
+                    <p class="d-inline-flex gap-4">
+                        <a href="#">Sigaprep</a> |
+                        <a href="#">Mesa de servicio</a> |
+                        <a href="#">Mapa de sitio</a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2 d-flex justify-content-center justify-content-md-end"">
+                    <p class=" d-inline-flex gap-4">
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-x"></use>
+                        </svg>
+                    </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="http://10.3.30.81/wp-content/themes/bnmm/assets/js/collpase.js"></script>
+    <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+
+<div class="modal fade" id="modal-t" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Vista previa del documento</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="#" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Ley general de educación</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/LGPDPPSO.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/LGPDPPSO.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">ACUERDO número 21/08/25 por el que se establece y regula el marco curricular común de la educación media superior</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a21-08-25.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a21-08-25.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">ACUERDO número 22/08/25 por el que se establece y regula el Sistema Nacional de Bachillerato de la Nueva Escuela Mexicana (SINBANEM)</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a22-08-25.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a22-08-25.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">ACUERDO número 445 por el que se conceptualizan y definen para la educación media superior las opciones educativas en las diferentes modalidades</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a445.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a445.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Protocolo para la protección y cuidado del estudiantado en la revisión de útiles escolares en los planteles federales de educación media superior.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Protocolos de seguridad para los planteles federales de educación media superior.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Protocolo para la convivencia armónica del estudiantado en los planteles federales de educación media superior.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-t12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Lineamientos para la prevención y atención de la violencia sexual en los planteles de las unidades administrativas adscritas a la Subsecretaría de Educación Media Superior.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

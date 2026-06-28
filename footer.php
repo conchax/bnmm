@@ -10,7 +10,7 @@ if (! defined('ABSPATH')) {
                 <p class="d-inline-flex gap-4">
                     <a href="#">Sigaprep</a> |
                     <a href="#">Mesa de servicio</a> |
-                    <a href="#">Mapa de sitio</a>
+                    <a href="<?php echo esc_url(home_url('/mapa-del-sitio')); ?>">Mapa de sitio</a>
                 </p>
                 <div class="collapse" id="collapseExample">
                     <div class="card card-body">

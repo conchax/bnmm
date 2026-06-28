@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachillerato Nacional Margarita Maza</title>
+
+
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
+    <link href="assets/css/bnmm.css" rel="stylesheet">
+    <style>
+        #v-preguntas-tabContent .oo{
+            border-bottom: 1px solid #d1d1d1;
+        }
+        .card {
+            --bs-card-border-width: 0px !important;
+        }
+        
+        #v-faqs-tab .nav-link svg {
+            fill: #A07C2C;
+            color: #A07C2C;
+        }
+
+        #v-faqs-tab .nav-link.active svg {
+            fill: #fff!important;
+            color: #fff!important;
+        }
+
+        #v-faqs-tab .nav-link:hover svg {
+            fill: #A07C2C;
+            color: #A07C2C;
+        }
+
+        .tab-content {
+            border-left: 1px solid #DCDCDC !important;
+            border: 0px;
+            padding: 0px 20px;
+        }
+        .rotar {
+            transition: transform 0.3s ease;
+        }
+       
+        [aria-expanded="true"] .rotar {
+            transform: rotate(180deg);       
+        }
+        .rec{
+            border-bottom: 1px solid #d1d1d1;
+            width: 100%;
+        }
+        .btn-tranparent{
+            padding: 14px 6px;
+
+        }
+        .btn-tranparent:hover, .btn-tranparent:focus{
+            text-decoration: none;
+            color: var(--color-secondary)!important;
+        }
+        .btn-tranparent:active{
+            color: var(--color-text)!important;
+            text-decoration: none!important;
+        }
+        b{
+            display: contents;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navmm navbar navbar-expand-lg bg-light sub-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand sub-navbar" href="#"><img src="assets/img/logo-bnmm.svg"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#subNavBarDropdown"
+                aria-controls="subNavBarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="subNavBarDropdown">
+                <ul class=" des navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg width="25" height="21" viewBox="0 0 25 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.75 0H0V2.0625H24.75V0Z" fill="#717171" />
+                                <path d="M24.75 18.5625H0V20.625H24.75V18.5625Z" fill="#717171" />
+                                <path d="M24.75 6.1875H0V8.25H24.75V6.1875Z" fill="#717171" />
+                                <path d="M24.75 12.375H0V14.4375H24.75V12.375Z" fill="#717171" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">¿Quiénes somos?</a></li>
+                            <li><a class="dropdown-item" href="#">Modelo educativo</a></li>
+                            <li><a class="dropdown-item" href="#">Plan de estudios</a></li>
+                            <li><a class="dropdown-item" href="#">Servicios integrados</a></li>
+                            <li><a class="dropdown-item" href="#">Cultura y deporte</a></li>
+                            <li><a class="dropdown-item" href="#">Continuidad académica</a></li>
+                            <li><a class="dropdown-item" href="#">Calendario</a></li>
+                            <li><a class="dropdown-item" href="#">Prensa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mov">
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link subnav-link" href="#">Transparencia</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">¿Quiénes somos?</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Modelo educativo</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Plan de estudios</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Servicios integrados</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Cultura y deporte</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Continuidad académica</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="#">Prensa</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenido -->
+    <main class="page">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-5"><b>¿Tienes dudas? Aquí encuentras la información que necesitas</b>: inscripciones,
+                        becas, planteles, cultura, deporte y más. Tu camino en el Bachillerato Margarita Maza empieza
+                        con respuestas claras y rápidas.</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="d-flex flex-column flex-lg-row align-items-start">
+
+                    <div class="nav nav-pills flex-row flex-lg-column mb-3 me-lg-3" id="v-faqs-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="nav-link active d-flex justify-content-between align-items-center"
+                            id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <svg width="38" height="32">
+                                <use
+                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-registro">
+                                </use>
+                            </svg>
+                            Registro e inscripción
+                        </button>
+                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-dos-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-dos" type="button" role="tab" aria-controls="v-pills-dos"
+                            aria-selected="false">
+                            <svg width="38" height="32">
+                                <use
+                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-plan-estudio">
+                                </use>
+                            </svg>
+                            Plan de estudios
+                        </button>
+                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-tres-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-tres" type="button" role="tab" aria-controls="v-pills-tres"
+                            aria-selected="false">
+                            <svg width="38" height="32">
+                                <use
+                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-actividades">
+                                </use>
+                            </svg>
+                            Actividades y apoyo
+                        </button>
+                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-cuatro-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-cuatro" type="button" role="tab" aria-controls="v-pills-cuatro"
+                            aria-selected="false">
+                            <svg width="38" height="32">
+                                <use
+                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-estudio">
+                                </use>
+                            </svg>
+                            Estudio
+                        </button>
+                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-cinco-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-cinco" type="button" role="tab" aria-controls="v-pills-cinco"
+                            aria-selected="false">
+                            <svg width="38" height="32">
+                                <use
+                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-soporte">
+                                </use>
+                            </svg>
+                            Soporte y seguimiento
+                        </button>
+                    </div>
+                    <div class="tab-content w-100" id="v-preguntas-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="row justify-content-center align-items-center">                                
+                                <div class="col-12">                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseUno" role="button" aria-expanded="false"
+                                        aria-controls="CollapseUno"><b>¿Cómo me registro?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseUno">
+                                            <div class="card card-body">
+                                                El registro se realiza en línea, en la sección “Registro” del portal oficial. Ahí deberás cargar tu información personal, documentos en formato digital y contestar el cuestionario Integra. Al finalizar, recibirás un folio y claves de acceso para ingresar a la plataforma educativa.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDos" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDos"><b>¿Qué documentos necesito para inscribirme?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDos">
+                                            <div class="card card-body">
+                                                Debes subir en PDF: CURP, acta de nacimiento, comprobante de domicilio, certificado de secundaria (o revalidación/equivalencia), fotografía tipo credencial, certificado médico reciente, solicitud de afiliación al IMSS (o carta de renuncia si ya cuentas con otro servicio médico).
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseTres" role="button" aria-expanded="false"
+                                        aria-controls="CollapseTres"><b>¿Hay examen de admisión?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseTres">
+                                            <div class="card card-body">
+                                                No. El proceso de ingreso se basa en el registro en línea, entrega de documentos y cuestionario Integra.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseCuatro" role="button" aria-expanded="false"
+                                        aria-controls="CollapseCuatro"><b>¿Tiene costo la inscripción?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseCuatro">
+                                            <div class="card card-body">
+                                                No. Todos los trámites de registro e inscripción son gratuitos.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseCinco" role="button" aria-expanded="false"
+                                        aria-controls="CollapseCinco"><b>¿Cuál es la edad máxima para inscribirme?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseCinco">
+                                            <div class="card card-body">
+                                                El perfil de ingreso establece que puedes participar si tienes entre 14 y 17 años.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseSeis" role="button" aria-expanded="false"
+                                        aria-controls="CollapseSeis"><b>¿Qué pasa si ya tengo estudios previos de bachillerato?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseSeis">
+                                            <div class="card card-body">
+                                                Puedes presentar certificado de revalidación, resolución de equivalencia o portabilidad de estudios. Si no lo tienes al momento del registro, deberás entregar una carta compromiso y presentar el documento en un plazo máximo de seis meses.
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-dos" role="tabpanel" aria-labelledby="v-pills-dos-tab"
+                            tabindex="0">
+                            <div class="row justify-content-center align-items-center ">
+                                <div class="col-12">                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseSiete" role="button" aria-expanded="false"
+                                        aria-controls="CollapseSiete"><b>¿Cuánto dura el bachillerato?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseSiete">
+                                            <div class="card card-body">
+                                                La duración total del plan de estudios es de 2 años y 4 días.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseOchouno" role="button" aria-expanded="false"
+                                        aria-controls="CollapseOchouno"><b>¿Cuántas horas de estudio se requieren por semana?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseOchouno">
+                                            <div class="card card-body">
+                                                Se sugiere una dedicación mínima de <b>30 horas semanales</b> distribuidas entre: el trabajo en línea, las asesorías presenciales y  la elaboración de actividades.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseOcho" role="button" aria-expanded="false"
+                                        aria-controls="CollapseOcho"><b>¿Qué es un submódulo?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseOcho">
+                                            <div class="card card-body">
+                                                Es el conjunto de aprendizajes que integran una unidad completa con valor curricular y articulan los componentes de formación fundamental y ampliada del plan de estudios del Bachillerato Nacional Margarita Maza. Cada submódulo incluye los propósitos formativos, los contenidos formativos, las actividades de aprendizaje y los métodos de evaluación obligatorios para cursar y concluir los programas de estudios.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseOchodos" role="button" aria-expanded="false"
+                                        aria-controls="CollapseOchodos"><b>¿Puedo adelantar submódulos? </b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseOchodos">
+                                            <div class="card card-body">
+                                                No. Los submódulos deben cursarse conforme a la secuencia establecida en el plan de estudios.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseNueve" role="button" aria-expanded="false"
+                                        aria-controls="CollapseNueve"><b>¿Cómo me evalúan? </b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseNueve">
+                                            <div class="card card-body">
+                                                <p>A través de tu participación en sesiones de asesoría virtual y presencial, tu navegación en el aula virtual para estudiar los recursos educativos digitales. Así como de la realización de actividades de aprendizaje, cuestionarios formativos y socioemocionales. Todo ello con el fin de acreditar el submódulo de forma ordinaria. Se valora tanto el proceso como tus resultados finales.</p>
+                                                <p>Cada actividad académica del submódulo será evaluada y retroalimentada por los asesores virtuales, quienes utilizan instrumentos específicos para ello.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDiez" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDiez"><b>¿Qué hago si repruebo una submódulo?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDiez">
+                                            <div class="card card-body">
+                                                <p>Tienes diferentes opciones de regularización, como son: recuperación, recursamiento y extraordinario, así como un programa de regularización ofertado de manera semestral. </p>
+                                                <p>Los periodos de regularización están establecidos en el calendario escolar.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseOnce" role="button" aria-expanded="false"
+                                        aria-controls="CollapseOnce"><b>¿Cómo obtengo mi certificado de finalización de estudios?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseOnce">
+                                            <div class="card card-body">
+                                                <p>Una vez que acredites todos los submódulos del plan de estudios, se genera tu certificado electrónico de terminación de estudios. </p>
+                                                <p>Recibirás un correo institucional con los pasos detallados para descargarlo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDoce" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDoce"><b>¿El certificado tiene validez oficial?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDoce">
+                                            <div class="card card-body">
+                                                Sí. El certificado tiene validez oficial ante la Secretaría de Educación Pública (SEP). Y con este podrás continuar tus estudios en educación superior.
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-tres" role="tabpanel" aria-labelledby="v-pills-tres-tab"
+                            tabindex="0">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-12">                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseTrece" role="button" aria-expanded="false"
+                                        aria-controls="CollapseTrece"><b>¿En qué consisten las actividades deportivas?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseTrece">
+                                            <div class="card card-body">
+                                                Pendiente...
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseCatorce" role="button" aria-expanded="false"
+                                        aria-controls="CollapseCatorce"><b>¿En qué consisten las actividades culturales?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseCatorce">
+                                            <div class="card card-body">
+                                                Se ofrecen actividades culturales como parte de la formación integral, orientadas a la identidad, creatividad y participación comunitaria. 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseQuince" role="button" aria-expanded="false"
+                                        aria-controls="CollapseQuince"><b>¿Las actividades culturales y deportivas son obligatorias?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseQuince">
+                                            <div class="card card-body">
+                                                Pendiente...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDieciseis" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDieciseis"><b>¿Las actividades culturales y deportivas se evalúan?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDieciseis">
+                                            <div class="card card-body">
+                                                Pendiente...
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDiecisiete" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDiecisiete"><b>¿Otorgan becas?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDiecisiete">
+                                            <div class="card card-body">
+                                                Sí. Los estudiantes pueden acceder a la Beca Benito Juárez, además de otros apoyos vinculados al modelo educativo.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDieciocho" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDieciocho"><b>¿Tengo acceso a seguro médico o social?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDieciocho">
+                                            <div class="card card-body">
+                                                Sí. Durante la inscripción se solicita la afiliación al seguro de salud para estudiantes del IMSS. En caso de contar con otro servicio médico, se debe presentar carta de renuncia al seguro facultativo.
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cuatro" role="tabpanel"
+                            aria-labelledby="v-pills-cuatro-tab" tabindex="0">
+                            <div class="row justify-content-center align-items-center">
+                                
+                                <div class="col-12">
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDiecinueve" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDiecinueve"><b>¿Cómo funciona el estudio en línea?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDiecinueve">
+                                            <div class="card card-body">
+                                                El estudio en línea permite que consultes los recursos en el momento que desees y conocer de manera previa la información que se aborda en clase.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeinte" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeinte"><b>¿Puedo estudiar desde mi celular o tableta?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapsVeinte">
+                                            <div class="card card-body">
+                                                Sí. Puedes acceder a la plataforma desde dispositivos móviles con Android 5.0 o iOS 11 o superiores. Sin embargo, algunas actividades requieren programas específicos de computadora, por lo que se recomienda usar una PC o laptop para facilitar la elaboración y entrega de productos académicos.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintiuno" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintiuno"><b>¿Tengo que asistir diario al plantel?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintiuno">
+                                            <div class="card card-body">
+                                                El modelo es mixto: combina actividades en línea con acompañamiento presencial. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintidos" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintidos"><b>¿Puedo elegir el horario de mis asesorías presenciales?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintidos">
+                                            <div class="card card-body">
+                                                Pendiente...
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#Collapseveintitres" role="button" aria-expanded="false"
+                                        aria-controls="Collapseveintitres"><b>¿Necesito experiencia previa con computadoras o internet? </b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="Collapseveintitres">
+                                            <div class="card card-body">
+                                                No. Solo se recomienda contar con un equipo con sistema operativo actualizado y conexión a internet. Además, tendrás acompañamiento presencial y virtual para apoyarte en el uso de la plataforma educativa.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cinco" role="tabpanel"
+                            aria-labelledby="v-pills-cinco-tab" tabindex="0">
+                            <div class="row justify-content-center align-items-center">
+                                
+                                <div class="col-12">
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDiecinueve" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDiecinueve"><b>¿Quién me apoya durante mi trayectoria escolar?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDiecinueve">
+                                            <div class="card card-body">
+                                                <ul>
+                                                    <li>Guía pedagógica: brinda asesoría presencial para apoyar la comprensión de los contenidos, resolver dudas y orientar la realización y entrega de actividades a través de la plataforma educativa.</li>
+                                                    <li>Guía de acompañamiento: Brindar asesoría en los ámbitos educativo, personal y vocacional, así como deriva, canaliza y da seguimiento al estudiantado.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeinte" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeinte"><b>¿Quién evaluará mis actividades?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapsVeinte">
+                                            <div class="card card-body">
+                                                Los asesores virtuales serán responsables de la retroalimentación y evaluación del aprendizaje.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintiuno" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintiuno"><b>¿Quién me acompañará en mis actividades culturales y deportivas?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintiuno">
+                                            <div class="card card-body">
+                                                Estas actividades estarán coordinadas por personal del plantel y promotores especializados.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintidos" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintidos"><b>¿A quién acudo si tengo un problema con la plataforma?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintidos">
+                                            <div class="card card-body">
+                                                Puedes acudir a tu guía pedagógica en el plantel, además de contar con supervisores de virtualidad que monitorean la calidad del servicio educativo.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#Collapseveintitres" role="button" aria-expanded="false"
+                                        aria-controls="Collapseveintitres"><b>¿Qué hago si olvido mi contraseña o no puedo entrar a mi aula virtual? </b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="Collapseveintitres">
+                                            <div class="card card-body">
+                                                Pendiente...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2>Contáctanos si alguna de las respuestas no resuelve tu inquietud.</h2>
+                    <p><a class="btn btn-primary" href="#">Mesa de servicio</a></p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <section class="footer-bnmm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
+                    <p class="d-inline-flex gap-4">
+                        <a href="#">Sigaprep</a> |
+                        <a href="#">Mesa de servicio</a> |
+                        <a href="#">Mapa de sitio</a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5"></div>
+                <div class="col-md-2 d-flex justify-content-center justify-content-md-end"">
+                    <p class=" d-inline-flex gap-4">
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24">
+                            <use href="./assets/img/sprite-social.svg#ico-x"></use>
+                        </svg>
+                    </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="http://10.3.30.81/wp-content/themes/bnmm/assets/js/collpase.js"></script>
+    <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+
+</body>
+
+</html>
