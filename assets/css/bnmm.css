@@ -91,8 +91,8 @@ nav.navmm {
 main.page{
     margin: 40px 0 20px 0;
 }
-main.prensa{
-    margin: 40px 0 30px 0;
+main.prensa, main.pages{
+    margin: 60px 0 40px 0;
 }
 .carousel-indicators{
     bottom: -30px;

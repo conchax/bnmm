@@ -35,7 +35,9 @@
         .border-line{
             border-bottom: 1px solid #d1d1d1;
         }
-        
+        .btn-tranparent{
+            display: contents;
+        }
     </style>
    </head>
    <body>
@@ -120,23 +122,28 @@
             <div class="col-12 text-center">
                 <p>El plan de estudios del Bachillerato Nacional Margarita Maza tiene como estrategia pedagógica la transversalidad, promoviendo la adquisición de conocimientos que puedan aplicarse en el entorno inmediato para formar ciudadanos críticos y comprometidos.</p>
                 <p>Se organiza en 3 módulos que se articulan con la formación socioemocional.</p>
-                <div class="d-inline-flex align-items-end gap-2">
-                     <svg width="35" height="35">
-                      <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
-                     </svg><br>
-                     Explora la información de cada componente.
-                </div>
+                <div class="d-inline-flex align-items-center gap-4">
+                    <div class="flex-shrink-0" style="width: 35px; height: 35px;">
+                        <svg width="35" height="35" viewBox="0 0 35 35">
+                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
+                        </svg>
+                    </div>
+                    <span class="d-block"></span>                    
+                        <span>Explora la información de cada componente.</span>
+                </div>                
             </div>
         </div>
     
-        <div class="row mb-5">
+        <div class="row mb-5 lico">
             <div class="col-lg-4 col-md-6">
                 <div class="line">
-                    <svg width="80" height="80">
-                        <use
-                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-com-cultural">
-                        </use>
-                    </svg>
+                    <div class="text-center">
+                        <svg width="80" height="80">
+                            <use
+                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-com-cultural">
+                            </use>
+                        </svg>
+                    </div>                                        
                     <p class="mt-5">
                         <a class="btn btn-tranparent" data-bs-toggle="collapse" href="#CollapseOne" role="button"
                             aria-expanded="false" aria-controls="CollapseOne"><b>Comunicación y cultura</b>
@@ -148,18 +155,20 @@
     
                     <div class="collapse multi-collapse" id="CollapseOne">
                         <div class="card card-body">
-                            Integra el español, el inglés y la cultura digital para desarrollar <b>habilidades comunicativas</b> que te preparan para la vida académica, social y digital.
+                            Integra el español, el inglés y la cultura digital para desarrollar <b>habilidades comunicativas</b> que te preparen para la vida académica, social y digital.
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="line">
-                    <svg width="80" height="80">
-                        <use
-                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-ciencia-tecnologia">
-                        </use>
-                    </svg>
+                    <div class="text-center">
+                        <svg width="80" height="80">
+                            <use
+                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-ciencia-tecnologia">
+                            </use>
+                        </svg>
+                    </div>                    
                     <p>
                         <a class="btn btn-tranparent" data-bs-toggle="collapse" href="#CollapseTwo" role="button"
                             aria-expanded="false" aria-controls="CollapseTwo"><b>Ciencia, tecnología y pensamiento matemático</b>
@@ -178,14 +187,16 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="line">
-                    <svg width="80" height="80">
-                        <use
-                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-filosofia">
-                        </use>
-                    </svg>
+                    <div class="text-center">
+                        <svg width="80" height="80">
+                            <use
+                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-plan-estudios.svg#ico-filosofia">
+                            </use>
+                        </svg>
+                    </div>                    
                     <p class="mt-5">
                         <a class="btn btn-tranparent" data-bs-toggle="collapse" href="#CollapseThree" role="button"
-                            aria-expanded="false" aria-controls="CollapseThree"><b>Filosofía, historia<span class="sl">y sociedad</span></b>
+                            aria-expanded="false" aria-controls="CollapseThree"><b>Filosofía, historia y sociedad</b>
                             <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC" />
                             </svg>
@@ -213,7 +224,7 @@
                         <span class="border-line"><b>Formación socioemocional</b></span>
                     </p>
                     <p>
-                        Desarrollarás competencias socioemocionales que te permitirán conocerte mejor, <b>cuidar tu bienestar, construir relaciones respetuosas</b>, fortaleciendo tu desarrollo como una persona plena, ética y comprometida con su entorno.
+                        Desarrolla competencias socioemocionales que te permitan conocerte mejor, <b>cuidar tu bienestar, construir relaciones respetuosas</b>, fortaleciendo tu desarrollo como una persona plena, ética y comprometida con su entorno.
                     </p>
                 </div>
             </div>
@@ -224,7 +235,7 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h2> Mapa curricular</h2>
-                <p class="mb-5">El mapa curricular se compone de <b>16 submódulos</b> orientados a la formación integral del estudiante, que le permite continuar con estudios superiores o incorporarse al mercado laboral de manera exitosa.</p>
+                <p class="mb-5">El mapa curricular se compone de <b>16 submódulos</b> orientados tu formación integral, que te permitirá continuar con tus estudios superiores o incorporarte al mercado laboral de manera exitosa.</p>
                 <p><a href="#" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#imagenModal">Ver mapa curricular</a></p>                    
 
                 <!-- Ventana Modal (Lightbox) -->
@@ -233,7 +244,7 @@
                         <div class="modal-content border-0">
                         <div class="modal-body p-4">
                             <img src="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" class="img-fluid" alt="Imagen ampliada">
-                            <p><a class="btn btn-primary my-4 w-50" href="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" download>descargar</a></p>
+                            <p><a class="btn btn-primary my-4 w-25" href="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" download>Descargar</a></p>
                         </div>
                         </div>
                     </div>
@@ -249,12 +260,12 @@
             </div>            
         </div>
         <div class="row justify-content-center mb-5">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="line-bg text-center">                    
                     <p><b>Diagnóstica</b>   <span class="d-block"></span>Valora tus conocimientos y habilidades previos.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="line-bg text-center">
                     <p><b>Formativa</b> <span class="d-block"></span>Retroalimenta tu desempeño para tu mejora continua.</p>
                 </div>
@@ -265,17 +276,17 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                En cada módulo encontrarás:
+                En cada submódulo encontrarás:
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="line-bg text-center">
                     <p><b>Recursos educativos digitales</b> <span class="d-block"></span>Disponibles en tu aula virtual para favorecer tu aprendizaje autónomo.</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="line-bg text-center">
                     <p><b>Actividades de aprendizaje</b> <span class="d-block"></span>Individuales y colaborativas para fortalecer tus conocimientos y habilidades.</p>
                 </div>
@@ -286,7 +297,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                Este plan de estudios trasciende lo académico para fortalecer el pensamiento crítico y reflexivo de la comunidad estudiantil, permitiéndole comprender su realidad y construir nuevas oportunidades para su futuro.
+                El plan de estudios trasciende lo académico para fortalecer tu pensamiento crítico y reflexivo, permitiéndote comprender tu realidad y construir nuevas oportunidades para tu futuro.
             </div>
         </div>
         <hr>
@@ -302,7 +313,7 @@
             <div class="col-12 text-center">
                 <div class=" d-inline-flex gap-4">
                     <a class="btn btn-collapse" data-bs-toggle="collapse" href="#collapseUno" role="button"
-                        aria-expanded="false" aria-controls="collapseUno">
+                        aria-expanded="true" aria-controls="collapseUno">
                         Equivalencia
                     </a>
                     <a class="btn btn-collapse" data-bs-toggle="collapse" href="#collapseDos" role="button"
@@ -312,7 +323,7 @@
                     
                 </div>
                 <hr class="coll">
-                <div class="collapse" id="collapseUno">
+                <div class="collapse show" id="collapseUno">
                     <div class="card card-body">
                         <p>Si deseas obtener la equivalencia de estudios cursados en otro servicio o plan de  estudios dentro del Sistema Educativo Nacional, considera lo siguiente:</p>
                         <ul>
@@ -333,17 +344,12 @@
                         <p>Si cursaste tu bachillerato en otro país y deseas revalidar tus estudios en México, revisa los requisitos para este trámite.</p>
                         <p><a class="btn btn-primary w-25" href="https://dgb.sep.gob.mx/tramite/revalidacion-de-estudios-realizados-en-el-extranjero" target="_blank">Requisitos</a></p>
                         <p>Puedes iniciar el trámite directamente haciendo clic aquí:</p>
-                        <p><a class="btn btn-primary w-25" href="https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=SEP-25-004" target="_blank">Solicitud de revalidación</a></p>
-                        
+                        <p><a class="btn btn-primary w-25" href="https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=SEP-25-004" target="_blank">Solicitud de revalidación</a></p>                        
                     </div>
-                </div>
-                
-                
+                </div>                
             </div>
         </div>
-
-    </div>
-
+    </div>    
 </main> 
 
      <section class="footer-bnmm">

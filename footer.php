@@ -7,8 +7,7 @@ if (! defined('ABSPATH')) {
     <div class="container">
         <div class="row">
             <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
-                <p class="d-inline-flex gap-4">
-                    <a href="#">Sigaprep</a> |
+                <p class="d-inline-flex gap-4">                    
                     <a href="#">Mesa de servicio</a> |
                     <a href="<?php echo esc_url(home_url('/mapa-del-sitio')); ?>">Mapa de sitio</a>
                 </p>
