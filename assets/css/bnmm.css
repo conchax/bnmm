@@ -78,7 +78,7 @@ nav.navmm {
 }
 
 .dropdown-menu .dropdown-item{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: var(--color-text)!important;
     border-bottom: 1px solid var(--color-text);
@@ -86,7 +86,7 @@ nav.navmm {
 }
 .dropdown-menu .dropdown-item:hover{
     color:#A1842B!important;
-    font-weight: 600;
+    font-weight: 500;
 }
 main.page{
     margin: 40px 0 20px 0;

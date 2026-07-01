@@ -40,9 +40,9 @@ get_header(); ?>
 
                                 <div class="seq-title text-center">
                                     <h2 data-seq>¿Y si terminas tu bachillerato? <br><hr></h2>            
-                                    <h3 data-seq>Si tienes entre <b>15 y 19 años 11 meses y 29 días</b> puedes estudiar en el Bachillerato Nacional Margarita Maza.</h3>
+                                    <h3 data-seq>Si tienes entre <b>15 y 19 años</b> puedes estudiar en el Bachillerato Nacional Margarita Maza.</h3>
                                     <div class="boton">
-                                    <p><a href="<?php echo esc_url(home_url('/registro')); ?>" class="btn btn-primary w-100">Convocatoria </a></p>                            
+                                    <p><a href="<?php echo esc_url(home_url('/inscripcion')); ?>" class="btn btn-primary w-100">Inscripción </a></p>                            
                                     </div>
                                 </div>
                             </li>
@@ -54,7 +54,7 @@ get_header(); ?>
 
                                 <div class="seq-title">
                                     <h2 data-seq>¿Buscas un bachillerato diferente?<br><hr></h2>
-                                    <h3 data-seq>Nuestro modelo combina el <b>estudio en línea con asesorías presenciales</b>, y horarios que se adecúan a tu ritmo de vida.</h3>
+                                    <h3 data-seq>Nuestro modelo combina el <b>estudio en línea con acompañamiento presencial</b>, y horarios que se adecúan a tu ritmo de vida.</h3>
                                     <div class="boton">
                                     <p><a href="<?php echo esc_url(home_url('/modelo-educativo')); ?>" class="btn btn-primary w-100">Modelo educativo </a></p>                            
                                     </div>
@@ -84,7 +84,7 @@ get_header(); ?>
                                     <h2 data-seq>¡Descubre tu talento!<br><hr></h2>
                                     <h3 data-seq>Participa en <b>talleres artísticos, actividades culturales</b> y espacios de expresión que enriquecen tu formación.</h3>
                                     <div class="boton">
-                                    <p><a href="<?php echo esc_url(home_url('/cultura-y-deporte')); ?>" class="btn btn-primary w-100">Cultura </a></p>                            
+                                    <p><a href="<?php echo esc_url(home_url('/cultura')); ?>" class="btn btn-primary w-100">Cultura </a></p>                            
                                     </div>
                                 </div>
                             </li>
@@ -109,10 +109,10 @@ get_header(); ?>
                                 </div>
 
                                 <div class="seq-title">
-                                    <h2 data-seq>¡Vive la emocióndel deporte!<br><hr></h2>
+                                    <h2 data-seq>¡Vive la emoción del deporte!<br><hr></h2>
                                     <h3 data-seq>Participa en diversas actividades físicas, juega, compite y <b>comparte momentos</b> que te conectan con otros e impulsan tu disciplina.</h3>
                                     <div class="boton">
-                                    <p><a href="<?php echo esc_url(home_url('/cultura-y-deporte')); ?>" class="btn btn-primary w-100">Deporte </a></p>                            
+                                    <p><a href="<?php echo esc_url(home_url('/actividad-fisica-y-deportiva')); ?>" class="btn btn-primary w-100">Actividad física y deportiva </a></p>                            
                                     </div>
                                 </div>
                             </li>
@@ -122,7 +122,7 @@ get_header(); ?>
                                     <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider7.webp" alt="slider 7" />
                                 </div>
 
-                                <div class="seq-title">
+                                <div class="seq-title text-center">
                                     <h2 data-seq>Haz la diferencia<br><hr></h2>
                                     <h3 data-seq>Accede a <b>cursos, pláticas y talleres virtuales</b> que impulsan tu formación, desarrollan tu liderazgo y fortalecen tu compromiso con la comunidad.</h3>
                                     <div class="boton">

@@ -8,7 +8,8 @@ if (! defined('ABSPATH')) {
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="<?php echo get_template_directory_uri(); ?>/assets/svg/bnmm-ico.svg">
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+    <!-- <link rel="icon" type="image/svg+xml" href="<?php /* echo get_template_directory_uri();  */?>/assets/svg/bnmm-ico.svg"> -->
 
     <?php wp_head(); ?>
 </head>
@@ -54,32 +55,30 @@ if (! defined('ABSPATH')) {
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/modelo-educativo')); ?>">Modelo educativo</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/plan-de-estudios')); ?>">Plan de estudios</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/servicios-integrados')); ?>">Servicios integrados</a></li>
-                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/cultura-y-deporte')); ?>">Cultura y deporte</a></li>
+                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/cultura')); ?>">Cultura</a></li>
+                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/actividad-fisica-y-deportiva')); ?>">Actividad física y deportiva</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/continuidad-academica')); ?>">Continuidad académica</a></li>
-                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendario</a></li>
+                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>
+                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/estudia-tu-secundaria')); ?>">Estudia tu secundaria</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/prensa')); ?>">Prensa</a></li>                        
                 </ul>
                 </li>
             </ul>
             <ul class="navbar-nav mov">
-                <li class="nav-item">
-                <a class="nav-link subnav-link" aria-current="page" href="#">Mi aula virtual</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link subnav-link" href="#">Preguntas frecuentes</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link subnav-link" href="#">Transparencia</a>
-                </li>
+                <li class="nav-item"><a class="nav-link subnav-link" aria-current="page" href="<?php echo esc_url(home_url('/mi-aula-virtual')); ?>">Mi aula virtual</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/transparencia')); ?>">Transparencia</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">¿Quiénes somos?</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Modelo educativo</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Plan de estudios</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Servicios integrados</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Cultura y deporte</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Continuidad académica</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Calendario</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="#">Prensa</a></li>         
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/quienes-somos')); ?>">¿Quiénes somos?</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/modelo-educativo')); ?>">Modelo educativo</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/plan-de-estudios')); ?>">Plan de estudios</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/servicios-integrados')); ?>">Servicios integrados</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/cultura')); ?>">Cultura </a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/actividad-fisica-y-deportiva')); ?>">Actividad física y deportiva</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/continuidad-academica')); ?>">Continuidad académica</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/estudia-tu-secundaria')); ?>">Estudia tu secundaria</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/prensa')); ?>">Prensa</a></li>         
             </ul>
             
         </div>

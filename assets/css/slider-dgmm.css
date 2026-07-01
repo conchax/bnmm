@@ -225,7 +225,7 @@
 
 @media only screen and (min-width: 640px) {
     .seq .seq-title h2{
-        font-size: 40px;
+        font-size: 35px;
     }
     
   .seq {
@@ -291,10 +291,10 @@
   .seq .seq-title h2,
   .seq .seq-title h3 {
     display: inline-block;
-    width: auto;
+    width: 100%;
     margin: 0;
     opacity: 0;
-    text-align: center;
+    text-align: center!important;
     transition-duration: .3s;
     transition-properties: transform, opacity;
   }
@@ -310,7 +310,7 @@
     font-family: "Noto Sans", sans-serif;
     transform: translate3d(120px, 0, 0);
     color: #717171;
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 20px;
     font-weight: 300;
   }
