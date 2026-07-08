@@ -12,25 +12,37 @@
      <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
      <link href="assets/css/bnmm.css" rel="stylesheet">
 <style>
-    .linea-al-final {
-    /* Alinea el texto y la línea en el mismo renglón */
+.linea-al-final {
+    
     display: flex;
     align-items:end;
-    gap: 15px; /* Espacio entre la última palabra y la línea */
-}x
+    gap: 15px; 
+}
 
 .linea-al-final::after {
     content: "";
-    /* Hace que la línea ocupe todo el espacio disponible restante */
     flex-grow: 1; 
-    
-    /* Grosor y color de la línea */
     border-bottom: 3px solid #d1d1d1; 
 }
-.especificos .rectangulo-bg-box {
- height: 195px;
+
+.obj img{
+    border-radius:10px;}
+
+.card{
+    --bs-card-border-width:0px!important;
+}
+.card-body{
+    text-align: center;
+    padding: 0px;
 }
 
+.rotar {
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .rotar {
+    transform: rotate(180deg);       
+}
 </style>
    </head>
    <body>
@@ -112,8 +124,8 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <p class="mb-5">Somos una red nacional de bachilleratos públicos impulsados por la Dirección General del Bachillerato (DGB), la Subsecretaría de Educación Media Superior (SEMS) y la Secretaría de Educación Pública (SEP), creada en 2026 en honor a <b>Margarita Maza de Juárez</b>, reconocida por su papel histórico en la defensa de la educación, la igualdad y el compromiso social.</p>
-                    <p>Nuestro compromiso es <b>ampliar el acceso al bachillerato</b> con un <b>modelo integral</b>, ofreciendo oportunidades a jóvenes que buscan concluir sus estudios y desarrollarse plenamente en actividades deportivas y culturales.</p>                    
+                    <p class="mb-5">Somos una red nacional de bachilleratos públicos impulsados por la Dirección General del Bachillerato (DGB), la Subsecretaría de Educación Media Superior (SEMS) y la Secretaría de Educación Pública (SEP). Fue creada en 2026 en honor a <b>Margarita Maza de Juárez</b>, reconocida por su compromiso con la educación, la igualdad y el bienestar social.</p>
+                    <p>Nuestro compromiso es <b>ampliar el acceso al bachillerato</b> con un <b>modelo integral</b>, ofreciendo oportunidades a jóvenes que buscan concluir sus estudios y desarrollarse plenamente mediante actividades académicas, deportivas y culturales.</p>                    
                 </div>
             </div>
 
@@ -122,7 +134,7 @@
                     <p class="linea-al-final"><b>Misión</b><span style="border-bottom: 1px solid #d1d1d1;width: 100%;"></span></p>
                 </div>
                 <div class="col-lg-7 col-md-6">
-                    <p class="text-start">Brindar <b>educación media superior integral y de excelencia</b>, formando bachilleres con alto compromiso y responsabilidad social; críticos, humanistas, con sólida cultura científica y habilidades socioemocionales, así como un profundo sentido ético, identidad nacional y cultura de paz, que los <b>prepare para la educación superior, la vida laboral, la participación activa en la transformación de la sociedad y el cuidado del medio ambiente.</b></p>
+                    <p class="text-start">Brindar <b>una educación media superior integral y de excelencia</b>, formando bachilleres con alto compromiso y responsabilidad social; críticos, humanistas, con sólida cultura científica y habilidades socioemocionales, así como un fuerte sentido ético, nacionalista y de cultura de paz que les permita continuar sus estudios, incorporarse a la vida laboral y para participar activamente en la transformación de la sociedad y el cuidado del medio ambiente.</b></p>
                 </div>
                 <div class="col-lg-5 col-md-5">
                     <img src="http://10.3.30.81/wp-content/uploads/2026/06/mision.webp" alt="mision" class="img-fluid">
@@ -134,7 +146,7 @@
                     <p class="linea-al-final"><b>Visión</b><span style="border-bottom: 1px solid #d1d1d1;width: 100%;"></span></p>
                 </div>
                 <div class="col-lg-7 col-md-6">
-                    <p class="text-start">Ser institución líder en la formación de bachilleres en México, con un proyecto educativo reconocido, basado en un modelo educativo flexible, que permite a sus egresadas y egresados integrarse satisfactoriamente en la continuación de estudios superiores y efectivamente en el mercado laboral; además de <b>ser reconocida por su impacto social, excelencia académica e innovación</b>, contribuyendo al desarrollo de personas críticas, activas y comprometidas con la mejora de su comunidad y país.</p>
+                    <p class="text-start">Ser institución líder en la formación de bachilleres en México, con un proyecto educativo reconocido, basado en un modelo educativo flexible, que permite a sus egresadas y egresados integrarse satisfactoriamente a estudios superiores y al mercado laboral; además de <b>ser reconocida por su impacto social, excelencia académica e innovación</b>, contribuyendo al desarrollo de personas críticas, activas y comprometidas con la mejora de su comunidad y país.</p>
                 </div>
                 <div class="col-lg-5 col-md-5">
                     <img src="http://10.3.30.81/wp-content/uploads/2026/06/vision.webp" alt="vision" class="img-fluid">
@@ -144,53 +156,106 @@
 
             <div class="row">
                 <div class="col-12 text-center">
-                   <h2>Objetivo</h2>
-                   <p>Brindar una formación integral y de carácter propedéutico de los bachilleres, preparandoles con conocimientos sólidos que les permita desarrollar satisfactoriamente estudios superiores o integrarse efectivamente en el trabajo e incidir y transformar sus entornos con un enfoque humanista y comunitario, fomentando la responsabilidad ciudadana, la identidad nacional y la cultura de paz.</p>                   
+                   <h2>Objetivo</h2>                   
                 </div>
+<div class="row justify-content-center align-items-center obj mb-5">
+<div class="col-md-5"><img class="img-fluid" src="http://10.3.30.81/wp-content/uploads/2026/06/08C.05_quienes-somos-Extra.webp" ></div>
+<div class="col-md-4 text-start"><p>Garantizar a jóvenes de entre 15  y 19 años el acceso a una <b>educación media superior integral y de excelencia</b>, favoreciendo su desarrollo académico, personal y comunitario en entornos seguros.</p>                   </div>
+</div>
                 <div class="col-12">
                     <h2>Objetivos específicos</h2>
                 </div>
             </div>
 
-            <div class="row justify-content-center text-center especificos align-items-center">
+            <div class="row justify-content-center text-center especificos">
                 <div class="col-md-4">
                     <div class="rectangulo-bg-box mb-5">
-                        Ofrecer <b>espacios de estudio accesibles</b> sin importar el contexto social o económico.
+                        Establecer una red de  <b>272 planteles educativos</b> distribuidos en las 31
+                        <div class="collapse" id="collpaseOne">
+                            <div class="card card-body">
+                                entidades de la República mexicana, destinada a jóvenes que no pueden cumplir con un horario escolar tradicional.
+                            </div>
+                        </div>
+                        <span class="d-block"></span>
+                        <a class="btn btn-transparent" data-bs-toggle="collapse" href="#collpaseOne" role="button" aria-expanded="false" aria-controls="collpaseOne">
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="rectangulo-bg-box mb-5">
-                        <b>Generar oportunidades</b> para acceder y concluir la educación media superior.
+                        Ofrecer una <b>modalidad educativa flexible</b> que responda a las necesidades,
+                        <div class="collapse" id="collpaseTwo">
+                            <div class="card card-body">
+                                condiciones y contextos del estudiantado.
+                            </div>
+                        </div>
+                        <span class="d-block"></span>
+                        <a class="btn btn-transparent" data-bs-toggle="collapse" href="#collpaseTwo" role="button" aria-expanded="false" aria-controls="collpaseTwo">
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                            </svg>
+                        </a>                        
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="rectangulo-bg-box mb-5">
-                        Fomentar <b>valores</b> de liderazgo, ética y participación activa en beneficio de la sociedad.
+                        Promover el desarrollo integral  de las y los jóvenes mediante la <b>convergencia</b>
+                        <div class="collapse" id="collpaseTree">
+                            <div class="card card-body">
+                                <b>equilibrada de la academia, la cultura y el deporte</b> dentro de un mismo espacio, fortaleciendo su bienestar y participación comunitaria.
+                            </div>
+                        </div>
+                        <span class="d-block"></span>
+                        <a class="btn btn-transparent" data-bs-toggle="collapse" href="#collpaseTree" role="button" aria-expanded="false" aria-controls="collpaseTree">
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                            </svg>
+                        </a>
                     </div>                    
                 </div>
 
                 <div class="col-md-4">
                     <div class="rectangulo-bg-box mb-5">
-                        Fortalecer el aprendizaje a través de <b>plataformas digitales y asesorías presenciales</b>.
+                        Implementar un <b>sistema sólido de acompañamiento presencial impartido</b> por 
+                        <div class="collapse" id="collpaseFour">
+                            <div class="card card-body">
+                                egresados universitarios y beneficiarios del programa Jóvenes construyendo el futuro, con el fin de acompañar los procesos de aprendizaje y facilitar el uso de las plataformas educativas.
+                            </div>
+                        </div>
+                        <span class="d-block"></span>
+                        <a class="btn btn-transparent" data-bs-toggle="collapse" href="#collpaseFour" role="button" aria-expanded="false" aria-controls="collpaseFour">
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="rectangulo-bg-box mb-5">
-                        Promover <b>actividades culturales y deportivas</b> que enriquecen la formación integral.
+                        Consolidar la <b>perspectiva de género y los derechos humanos</b> como principios
+                        <div class="collapse" id="collpaseFive">
+                            <div class="card card-body">
+                                institucionales permanentes en los planteles para eliminar cualquier tipo de discriminación o violencia, propiciando entornos escolares seguros que promuevan una cultura de paz e inclusión.
+                            </div>
+                        </div>
+                        <span class="d-block"></span>
+                        <a class="btn btn-transparent" data-bs-toggle="collapse" href="#collpaseFive" role="button" aria-expanded="false" aria-controls="collpaseFive">
+                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                            </svg>
+                        </a>
                     </div>        
-                </div>
-                <div class="col-md-4">
-                    <div class="rectangulo-bg-box mb-5">
-                        Impulsar el compromiso personal y la <b>participación activa en la comunidad</b>.
-                    </div>                    
-                </div>
+                </div>                
             </div>
             <hr>
 
             <div class="row">
                 <div class="col-12 text-center mb-5">
                     <h2>Valores</h2>
-                    <p>Nuestros valores se fundamentan en los principios de la <b>Nueva Escuela Mexicana</b>, que coloca a las personas y su desarrollo humano en el centro de la educación. Desde esta visión, guiamos nuestra práctica educativa con principios que promueven la convivencia, la justiciay el compromiso con México.</p>
+                    <p>Nuestros valores se fundamentan en los principios de la <b>Nueva Escuela Mexicana</b>, que coloca a las personas y su desarrollo humano en el centro de la educación. Desde esta visión, guiamos nuestra práctica educativa con principios que promueven la convivencia, la justicia y el compromiso con México.</p>
                 </div>
             </div>
 

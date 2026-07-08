@@ -12,64 +12,80 @@
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
     <link href="assets/css/bnmm.css" rel="stylesheet">
-    <style>
-        #v-preguntas-tabContent{
-            text-align: start;
-        }
-        #v-preguntas-tabContent .oo{
-            border-bottom: 1px solid #d1d1d1;
-        }
-        .card {
-            --bs-card-border-width: 0px !important;
-        }
-        
-        #v-faqs-tab .nav-link svg {
-            fill: #A07C2C;
-            color: #A07C2C;
-        }
+<style>
 
-        #v-faqs-tab .nav-link.active svg {
-            fill: #fff!important;
-            color: #fff!important;
-        }
 
-        #v-faqs-tab .nav-link:hover svg {
-            fill: #A07C2C;
-            color: #A07C2C;
-        }
+#v-preguntas-tabContent{
+    text-align: start;
+}
+#v-preguntas-tabContent .oo{
+    border-bottom: 1px solid #d1d1d1;
+}
+.card {
+    --bs-card-border-width: 0px !important;
+}
 
-        .tab-content {
-            border-left: 1px solid #DCDCDC !important;
-            border: 0px;
-            padding: 0px 20px;
-        }
-        .rotar {
-            transition: transform 0.3s ease;
-        }
-       
-        [aria-expanded="true"] .rotar {
-            transform: rotate(180deg);       
-        }
-        .rec{
-            border-bottom: 1px solid #d1d1d1;
-            width: 100%;
-        }
-        .btn-tranparent{
-            padding: 14px 6px;
+#v-faqs-tab .nav-link svg {
+    fill: #A07C2C;
+    color: #A07C2C;
+    margin-right: 10px;
 
-        }
-        .btn-tranparent:hover, .btn-tranparent:focus{
-            text-decoration: none;
-            color: var(--color-secondary)!important;
-        }
-        .btn-tranparent:active{
-            color: var(--color-text)!important;
-            text-decoration: none!important;
-        }
-        b{
-            display: contents;
-        }
-    </style>
+}
+
+#v-faqs-tab .nav-link.active svg {
+    fill: #fff!important;
+    color: #fff!important;
+    margin-right: 10px;
+
+}
+
+#v-faqs-tab .nav-link:hover svg {
+    fill: #A07C2C;
+    color: #A07C2C;
+    margin-right: 10px;
+
+}
+
+
+.tab-content {
+    
+    border: 0px;
+    padding: 0px 20px;
+}
+.rotar {
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .rotar {
+    transform: rotate(180deg);       
+}
+.rec{
+    border-bottom: 1px solid #d1d1d1;
+    width: 100%;
+}
+.btn-tranparent{
+    padding: 14px 6px;
+
+}
+.btn-tranparent:hover, .btn-tranparent:focus{
+    text-decoration: none;
+    color: var(--color-secondary)!important;
+}
+.btn-tranparent:active{
+    color: var(--color-text)!important;
+    text-decoration: none!important;
+}
+ol{
+
+}
+@media (min-width: 992px) { 
+    #v-faqs-tab {
+        width: 420px;
+        border-right: 1px solid #DCDCDC !important;
+        padding-right: 10px;
+    }
+ }
+</style>
 </head>
 
 <body>
@@ -155,56 +171,56 @@
             <hr>
 
             <div class="row justify-content-center align-items-center">
-                <div class="d-flex flex-column flex-lg-row align-items-start">
+                <div class="d-flex flex-column flex-lg-row align-items-start ">
 
                     <div class="nav nav-pills flex-row flex-lg-column mb-3 me-lg-3" id="v-faqs-tab" role="tablist"
                         aria-orientation="vertical">
-                        <button class="nav-link active d-flex justify-content-between align-items-center"
+                        <button class="nav-link active d-flex justify-content-center justify-content-lg-between align-items-center w-100"
                             id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
                             role="tab" aria-controls="v-pills-home" aria-selected="true">
                             <svg width="38" height="32">
                                 <use
-                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-registro">
+                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-registro">
                                 </use>
                             </svg>
                             Registro e inscripción
                         </button>
-                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-dos-tab" data-bs-toggle="pill"
+                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-dos-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-dos" type="button" role="tab" aria-controls="v-pills-dos"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-plan-estudio">
+                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-plan-estudio">
                                 </use>
                             </svg>
                             Plan de estudios
                         </button>
-                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-tres-tab" data-bs-toggle="pill"
+                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-tres-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-tres" type="button" role="tab" aria-controls="v-pills-tres"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-actividades">
+                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-actividades">
                                 </use>
                             </svg>
                             Actividades y apoyo
                         </button>
-                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-cuatro-tab" data-bs-toggle="pill"
+                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-cuatro-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-cuatro" type="button" role="tab" aria-controls="v-pills-cuatro"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-estudio">
+                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-estudio">
                                 </use>
                             </svg>
                             Estudio
                         </button>
-                        <button class="nav-link d-flex justify-content-between align-items-center" id="v-pills-cinco-tab" data-bs-toggle="pill"
+                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-cinco-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-cinco" type="button" role="tab" aria-controls="v-pills-cinco"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-soporte">
+                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-soporte">
                                 </use>
                             </svg>
                             Soporte y seguimiento
@@ -227,8 +243,9 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseUno">
                                             <div class="card card-body">
-                                                <p>Ingresa a la sección <b>Inscripción</b> del portal oficial del Bachillerato Nacional Margarita Maza. Responde el formulario de registro, captura tus datos personales, sube la documentación en formato PDF y la fotografía tipo credencial en formato JPG (todos con un peso menor a 1MB). Después, responde el cuestionario de  <b>Integra</b>. Al concluir, recibirás un folio y tus claves de acceso (usuario y contraseña) para el ingreso a tu aula virtual. </p>
-                                                <p>Posteriormente, deberás entregar la documentación solicitada en el plantel seleccionado,  para tu <b>inscripción</b> definitiva.</p>
+                                                <p>Ingresa a la sección <b>Inscripción</b> del portal oficial del Bachillerato Nacional Margarita Maza. Responde el formulario de registro, captura tus datos personales, sube la documentación en formato PDF y la fotografía tipo credencial en formato JPG (todos con un peso máximo de 1MB). Después, responde el cuestionario de  <b>Integra</b>. Al concluir, recibirás un folio y tus claves de acceso (usuario y contraseña) para el ingreso a tu aula virtual. </p>
+                                                <p>Posteriormente, deberás entregar la documentación solicitada en el plantel seleccionado,  para tu <b>inscripción definitiva</b>.</p>
+                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <a href="https://148.207.218.147/inscripcion/" target="_blank">Inscripción</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -263,7 +280,7 @@
                                                     <li>Al completar tu registro, el sistema te indicará qué documentos debes descargar, firmar y presentar en tu plantel.</li>
                                                 </ul>
                                                 <p><sup>1</sup>En caso de no contar con dicho documento, podrás presentarlo en un plazo no mayor a  seis meses, contando a partir de la fecha de tu primera asignación al submódulo que corresponda, de conformidad con lo establecido en el Acuerdo No. 1/SPC y la normatividad aplicable. Y en su lugar, deberás cargar una carta compromiso debidamente firmada, mediante la cual te comprometes a entregarlo dentro del periodo establecido.</p>
-                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <b>Inscripción</b>.</p>
+                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <b><a href="https://148.207.218.147/inscripcion/" target="_blank">Inscripción</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -280,7 +297,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseTres">
                                             <div class="card card-body">
-                                                No. En el Bachillerato Nacional Margarita Maza <b>no se aplica examen de admisión</b>. El acceso se garantiza mediante la inscripción en línea, llenado del cuestionario de Integra y la entrega de los documentos en el plantel.
+                                                <p>No. En el Bachillerato Nacional Margarita Maza <b>no se aplica examen de admisión</b>. El acceso se garantiza mediante la inscripción en línea, llenado del cuestionario de Integra y la entrega de los documentos en el plantel.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -297,7 +314,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseCuatro">
                                             <div class="card card-body">
-                                                No. Estudiar en el Bachillerato Nacional Margarita Maza es completamente gratuito, desde su inscripción hasta su egreso.
+                                                <p>No. Estudiar en el Bachillerato Nacional Margarita Maza es completamente gratuito, desde la inscripción hasta el egreso.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -314,7 +331,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseCinco">
                                             <div class="card card-body">
-                                                El bachillerato está dirigido a jóvenes de entre <b>15 a 19 años</b> que hayan concluido la secundaria.
+                                                <p>El bachillerato está dirigido a jóvenes de entre <b>15 a 19 años</b> que hayan concluido la secundaria.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -355,7 +372,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseSiete">
                                             <div class="card card-body">
-                                                La duración del plan de estudios es de 2 años y 4 días.
+                                                <p>La duración del plan de estudios es de 2 años y 4 días.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -372,7 +389,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseOcho">
                                             <div class="card card-body">
-                                                Se sugiere una dedicación mínima de <b>30 horas semanales</b> distribuidas entre: el estudio en línea, el acompañamiento presencial y la elaboración de actividades de aprendizaje.
+                                                <p>Se sugiere una dedicación mínima de <b>30 horas semanales</b> distribuidas entre: el estudio en línea, el acompañamiento presencial y la elaboración de actividades de aprendizaje.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -390,14 +407,14 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseOchouno">
                                             <div class="card card-body">
-                                                <p>El plan de estudios se encuentra estructurado en tres módulos o componentes de conocimiento:</p>
-                                                <ul>
-                                                    <ol>Comunicación y cultura</ol>
-                                                    <ol>Ciencia, tecnología y pensamiento matemático</ol>
-                                                    <ol>Filosofía, historia y sociedad</ol>
-                                                </ul>
+                                                <p>El plan de estudios se encuentra estructurado en <b>3 módulos</b> o componentes de conocimiento:</p>
+                                                <ol>
+                                                    <li>Comunicación y cultura</li>
+                                                    <li>Ciencia, tecnología y pensamiento matemático</li>
+                                                    <li>Filosofía, historia y sociedad</li>
+                                                </ol>
                                                 <p>Estos componentes se estructuran en <b>16 submódulos</b>, cada uno con una duración de 5 o 6 semanas y se cursan en 2 años y 4 días.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -415,13 +432,13 @@
                                             <div class="card card-body">
                                                 <p>Es un componente de conocimiento. Organiza el proceso de enseñanza y aprendizaje integrando conocimientos, destrezas, actitudes y valores de manera <b>interdisciplinaria</b>, a través de situaciones de aprendizaje.</p>
                                                 <p>El plan de estudios del BNMM tiene 3 módulos:</p>
-                                                <ul>
-                                                    <ol>Comunicación y cultura</ol>
-                                                    <ol>Ciencia, tecnología y pensamiento matemático</ol>
-                                                    <ol>Filosofía, historia y sociedad</ol>
-                                                </ul>
+                                                <ol>
+                                                    <li>Comunicación y cultura</li>
+                                                    <li>Ciencia, tecnología y pensamiento matemático</li>
+                                                    <li>Filosofía, historia y sociedad</li>
+                                                </ol>
                                                 <p>Cada módulo se desarrolla en 4 o 6 submódulos, dando un total de 16 submódulos.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -440,7 +457,7 @@
                                                 <p>Es el conjunto de aprendizajes que integran una unidad completa con valor curricular y articula los componentes de formación fundamental y ampliada del plan de estudios del Bachillerato Nacional Margarita Maza. </p>
                                                 <p>Cada submódulo incluye los propósitos formativos, los contenidos formativos, las actividades de aprendizaje y los métodos de evaluación obligatorios para cursar y concluir los programas de estudio. En la modalidad presencial se le conoce como materia o asignatura.</p>
                                                 <p>Un submódulo tiene una duración de 5 o 6 semanas, y se cursan todos en 2 años y 4 días.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -456,7 +473,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseOchocuatro">
                                             <div class="card card-body">
-                                                No. Los submódulos deben cursarse conforme a la secuencia establecida en el plan de estudios.
+                                                <p>No. Los submódulos deben cursarse conforme a la secuencia establecida en el plan de estudios.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -493,7 +510,7 @@
                                             <div class="card card-body">
                                                 <p>Tienes diferentes opciones de regularización, como son: recuperación, recursamiento y extraordinario, así como un programa de regularización ofertado de manera semestral.</p>
                                                 <p>Los periodos de regularización están establecidos en el calendario escolar.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/continuidad-academica" target="_blank">Continuidad académica</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/continuidad-academica" target="_blank">Continuidad académica</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -528,7 +545,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseDoce">
                                             <div class="card card-body">
-                                                Sí. El certificado tiene validez oficial ya que es emitido por la Secretaría de Educación Pública (SEP), y con este podrás continuar tus estudios en educación superior.
+                                                <p>Sí. El certificado tiene validez oficial ya que es emitido por la Secretaría de Educación Pública (SEP), y con este podrás continuar tus estudios en educación superior.</p>
                                             </div>
                                         </div>
                                     </div>                        
@@ -559,9 +576,9 @@
                                                     <li><b>Sistema para la detección y atención temprana (SiDAT)</b>. Detecta a tiempo los factores que pueden influir en tus logros académicos para atenderlos a tiempo.</li>
                                                     <li><b>Red de extensión académica y desarrollo integral (Readi)</b>. Conferencias, pláticas y cursos virtuales orientados a tu desarrollo personal y profesional.</li>
                                                     <li><b>Proyecta 360</b>. Detecta tus habilidades académicas e identifica cuál es tu vocación. Te proporciona recursos de repaso, además de un catálogo de universidades.</li>
-                                                    <li><b>Bolsa de trabajo</b>. Accede a vacantes y postúlate al trabajo que se alinee con tus intereses y habilidades.Estudia mientras trabajas.</li>
+                                                    <li><b>Bolsa de trabajo</b>. Accede a vacantes y postúlate al trabajo que se adecúe con tus intereses y habilidades. Estudia mientras trabajas.</li>
                                                 </ul>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/servicios-integrados" target="_blank">Servicios integrados</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/servicios-integrados" target="_blank">Servicios integrados</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -581,7 +598,7 @@
                                                 <p>Son actividades formativas impulsadas por el promotor deportivo, que buscan fortalecer tu salud física, emocional y social.</p>
                                                 <p>Entre ellas están entrenamientos, talleres deportivos, activaciones físicas, torneos internos, encuentros interescolares, actividades recreativas, senderismo.</p>
                                                 <p>Además, permiten fortalecer valores como la disciplina, el respeto, la responsabilidad, el trabajo en equipo, sentido de pertenencia, la inclusión y la cultura de paz.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/actividad-fisica-y-deportiva/" target="_blank">Actividad física y deportiva</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/actividad-fisica-y-deportiva/" target="_blank">Actividad física y deportiva</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -600,7 +617,7 @@
                                             <div class="card card-body">
                                                 <p>Son actividades impulsadas por el promotor cultural, orientadas al desarrollo de la identidad cultural y la participación social, al fomento de la escritura, la lectura y las expresiones artísticas y audiovisuales.</p>
                                                 <p>Todo ello mediante talleres, exposiciones, conciertos, recitales, obras teatrales, proyecciones audiovisuales, encuentros, muestras, entre otras actividades que promueven el reconocimiento, la valoración y la promoción de la riqueza cultural presentes en cada comunidad y territorio.</p>
-                                                <p>Conoce más en la sección <a href="http://10.3.30.81/cultura/" target="_blank">Cultura</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://148.207.218.147/cultura/" target="_blank">Cultura</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -657,7 +674,7 @@
                                             <div class="card card-body">
                                                 <p>No. Son actividades voluntarias y por ello no forman parte de la evaluación académica ni generan una calificación.</p>
                                                 <p>Sin embargo, participar en actividades culturales y deportivas es importante para tu <b>formación integral</b>, ya que favorece el desarrollo de capacidades creativas, sociales, éticas y comunitarias. Además de mejorar tu bienestar físico y emocional, fortalecer la convivencia con otras personas y promover hábitos de vida saludables.</p>
-                                                <p>Para participar, acércate con promotor cultural o deportivo.</p>
+                                                <p>Para participar, acércate con tu promotor cultural o deportivo.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -711,7 +728,7 @@
                                             <div class="card card-body">
                                                 <p>Si no cuentas con afiliación a algún servicio de salud, puedes solicitar tu incorporación al <b>seguro de salud para estudiantes</b> que otorga el Instituto Mexicano del Seguro Social (IMSS). </p>
                                                 <p>Al momento de la entrega de documentos de tu plantel para tu inscripción definitiva deberás presentar el comprobante de asignación de Número de Seguridad Social del Instituto Mexicano del Seguro Social (IMSS), <a href="https://www.imss.gob.mx/imssdigital" target="_blank">descárgalo o tramítalo aquí</a>. Posteriormente la institución realizará el trámite de afiliación.</p>
-                                                <p>Consulta más información en la Mesa de servicio.</p>
+                                                <p>Consulta más información en la <a href="#">Mesa de servicio</a>.</p>
                                             </div>
                                         </div>
                                     </div>                        
@@ -772,7 +789,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseVeintiuno">
                                             <div class="card card-body">
-                                                <p>Para las actividades en línea, no. Nuestro modelo no escolarizado, combina actividades en línea con acompañamiento presencial en horarios definidos.</p>
+                                                <p>Para las actividades en línea, no. Nuestro modelo no escolarizado combina actividades en línea con acompañamiento presencial en horarios definidos.</p>
                                                 <p>Asistirás al plantel de acuerdo con el turno elegido (matutino o vespertino), o en el horario de las actividades culturales y deportivas en las que decidas participar. </p>
                                             </div>
                                         </div>
@@ -847,7 +864,7 @@
                                                     <li><b>Guía de acompañamiento</b>. Orienta en los ámbitos académico y personal.</li>
                                                     <li><b>Promotor cultural y deportivo</b>. Impulsa la participación en actividades artísticas, culturales y deportivas.</li>
                                                 </ul>
-                                                <p>Conoce más información en la sección <a href="http://10.3.30.81/modelo-educativo" target="_blank">Modelo educativo</a>.</p>
+                                                <p>Conoce más información en la sección <a href="https://148.207.218.147/modelo-educativo" target="_blank">Modelo educativo</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -883,7 +900,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseVeintidosone">
                                             <div class="card card-body">
-                                                <p>Contacta al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel para recibir orientación y seguimiento o bien a través de la <b>Mesa de servicio</b>.</p>
+                                                <p>Contacta al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel para recibir orientación y seguimiento o bien a través de la <b><a href="#">Mesa de servicio</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -900,7 +917,7 @@
                                         </a>
                                         <div class="multi-collapse collapse" id="Collapseveintitresone">
                                             <div class="card card-body">
-                                                <p>Para recuperar el acceso al aula virtual puedes solicitar apoyo al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel o bien a través de la <b>Mesa de servicio</b>.</p>
+                                                <p>Para recuperar el acceso al aula virtual puedes solicitar apoyo al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel o bien a través de la <b><a href="#">Mesa de servicio</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -915,7 +932,7 @@
 
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2>Contáctanos si alguna de las respuestas no resuelve tu inquietud.</h2>
+                    <p style="font-size:20px;color:#9B2247;"><b>Contáctanos si alguna de las respuestas no resuelve tu inquietud.</b></p>
                     <p><a class="btn btn-primary" href="#">Mesa de servicio</a></p>
                 </div>
             </div>

@@ -14,16 +14,123 @@
      <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
      <link href="assets/css/bnmm.css" rel="stylesheet">
     <style>
-        .l-vert{
-            border-left: 1px solid #d1d1d1;
-            border-right: 1px solid #d1d1d1;;
-        }
-        .recursos-apoyo img{
-            border-radius:10px;
-        }
-        .card, .card-body{
-            border:0px
-        }
+.l-vert{
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+}
+.recursos-apoyo img{
+    border-radius:10px;
+}
+.card, .card-body{
+    border:0px
+}
+.btn-google {
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+.btn-google img {
+    width: 20px;
+    height: 20px;
+}
+.btn-google:hover {
+    color: #555;
+    background: #f9f9f9;
+    border-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+.input-wrapper {
+position: relative;
+}
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 12px 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.login-header p {
+    color: #666;
+    font-size: 14px;
+}
+.login-form-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: clamp(20px, 4vw, 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+input{
+    background-color: #e8f0fe;
+}
+
+.responsive{
+    font-size:18px;
+}
+   
+.line{
+    height: 415px;
+}
+.slick-prev, .slick-next{
+    top:53%
+}
+.slick-prev:before, 
+.slick-next:before {
+  color: #9B2247 !important;
+  font-size: 30px;
+
+}
+.slick-slide{
+    margin: 20px;
+}
+.slick-slide img{
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.borde-gris {
+    border: 1px solid #ddd;
+    border-radius: 26px;
+    padding: 20px 0;
+}
+@media (max-width: 575.98px) { 
+    .line{
+        height: auto;
+    }
+    .l-vert{
+        border-left: 0px;
+        border-right: 0px;
+    }
+    .slick-next {
+    right: 15px;
+    }
+    .slick-prev {
+    left: 15px;
+    }   
+    .slick-slide{
+        margin: 0px;
+    }
+}
     </style>
    </head>
    <body>
@@ -105,21 +212,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <p class="mb-5">Tu espacio de aprendizaje en línea, donde encontrarás los recursos, actividades y herramientas para comunicarte con tus figuras educativas y compañeros, todo en un solo lugar. Accede con tu correo institucional para continuar tu aprendizaje.</p>
+                    <p class="mb-5">Tu espacio de aprendizaje en línea, donde encontrarás recursos, actividades y herramientas de comunicación, todo en un solo lugar. Accede con tu <b>usuario y contraseña</b> para continuar tu aprendizaje.</p>
+                    <h2>Mi bachillerato</h2>
                     <a class="btn btn-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAula" aria-expanded="false" aria-controls="collapsAulat">Ingresa</a>
-                   
                 </div>
-            </div>   
+            </div> 
+
             <div class="collapse" id="collapseAula">
                 <div class="card card-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-11 col-md-7 p-3">
-                                <div class="login-form-container line text-center" >
-                                    <!--<div class="login-header mb-4">
-                                        <h1>Accede a tu cuenta para continuar</h1>
-                                    </div>-->
-
+                            <div class="col-11 col-sm-10 col-md-7 borde-gris col-lg-6 col-xl-5 p-3">
+                                <div class="login-form-container text-center" >
+                                    
                                     <div class="login-header">
                                         <p>Accede con tu correo institucional de Prepa en Línea-SEP</p>
                                     </div>
@@ -159,7 +264,7 @@
                                             institucional.</p>
                                     </div>
 
-                                    <form id="loginForm" data-login-url="https://prepaenlinea.sep.gob.mx/mi-comunidad/index.php/auth/login">
+                                    <form class="text-start" id="loginForm" data-login-url="https://prepaenlinea.sep.gob.mx/mi-comunidad/index.php/auth/login">
                                         <input type="hidden" name="csrf_test_name" value="f3e918fdad1098b67aad6f033689dc79">
                                         <div class="form-group">
                                             <label for="usuario">Usuario</label>
@@ -187,7 +292,7 @@
 
                                         <div id="mensaje"></div>
 
-                                        <button type="submit" id="btnLogin" class="btn btn-primary">
+                                        <button type="submit" id="btnLogin" class="btn btn-primary w-100 mb-5">
                                             Acceder
                                         </button>
                                     </form>
@@ -196,7 +301,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  
 
             <hr>
 
@@ -207,7 +312,7 @@
             </div>
 
             <div class="row text-center mb-5">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mb-4">
                     <div class="line">
                         <svg width="80" height="80">
                             <use
@@ -219,7 +324,7 @@
                         <p>Lecturas, videos, infografías y más materiales para tu aprendizaje.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mb-4">
                     <div class="line">
                         <svg width="80" height="80">
                             <use
@@ -228,10 +333,10 @@
                         </svg>
                         <p><b>Actividades de aprendizaje y cuestionarios</b></p>
                         <hr>
-                        <p>Revisa y entrega cada actividad dentro del plazo establecido.</p>
+                        <p>Actividades integradoras, cuestionarios formativos y socioemocionales.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mb-4">
                     <div class="line">
                         <svg width="80" height="80">
                             <use
@@ -240,10 +345,10 @@
                         </svg>
                         <p><b>Foros<br>y mensajero</b></p>
                         <hr>
-                        <p>Comunícate con tu asesor virtual, tutor escolar y compañeros.</p>
+                        <p>Espacios virtuales para comunicarte con tu asesor virtual, tutor escolar y comunidad estudiantil.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6 mb-4">
                     <div class="line">
                         <svg width="80" height="80">
                             <use
@@ -252,7 +357,7 @@
                         </svg>
                         <p><b>Portafolio de evidencias</b></p>
                         <hr>
-                        <p>Consulta tu avance, retroalimentaciones y calificaciones.</p>
+                        <p>Avance, retroalimentaciones y calificaciones.</p>
                     </div>
                 </div>
             </div>
@@ -266,38 +371,45 @@
             </div>
         
             <div class="row text-center mb-5">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4 px-5">
                     <span class="badge rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">1</span>
-                    <p><b>Activa tu correo institucional</b></p>
-                    <p>La necesitarás para acceder a todos los servicios digitales del Bachillerato Nacional Margarita Maza.</p>
+                    <p><b>Ingresa a Mi bachillerato</b></p>
+                    <p>Usa tu usuario y contraseña que recibiste al completar tu registro. Asegúrate de escribirlos correctamente y sin espacios.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 l-vert">
+                <div class="col-lg-4 col-md-6 mb-4 px-5 l-vert">
                     <span class="badge rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">2</span>
-                    <p><b>Ingresa a tu aula virtual</b></p>
-                    <p>Usa tu correo institucional como usuario para iniciar sesión. Sin él no podrás acceder a la plataforma.</p>
+                    <p><b>Selecciona tu submódulo</b></p>
+                    <p>Elige el que deseas estudiar para entrar al aula virtual correspondiente.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4 px-5">
                     <span class="badge rounded-circle p-2" style="width: 55px; height: 55px; font-size: 40px; font-weight: 900; border:1px solid #d1d1d1;background-color: transparent; color:var(--color-text);">3</span>
-                    <p><b>Ingresa a tu asignatura</b></p>
-                    <p>Selecciona la asignatura que deseas estudiar, revisa los recursos de la semana y entrega tus actividades en los plazos indicados.</p>
+                    <p><b>¡Manos a la obra!</b></p>
+                    <p>Estudia los recursos de la semana y entrega tus actividades en los plazos indicados.</p>
                 </div>
             </div>
+
             <hr>
-            <div class="row">
-                <div class="col-12 text-center">
+
+            <div class="row recursos-apoyo mb-5">
+                <div class="col-12 text-center mb-3">
                     <h2>Recursos de apoyo</h2>
-                    <p class="">
-                        <svg width="35" height="35">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo">
-                            </use>
-                        </svg>
-                         Descarga las infografías que te apoyarán en tus primeros pasos.</p>                   
+                    <div class="d-inline-flex align-items-center gap-4">
+                        <div class="flex-shrink-0" style="width: 35px; height: 35px;">
+                            <svg width="35" height="35" viewBox="0 0 35 35">
+                                <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
+                            </svg>
+                        </div>
+                        <span class="d-block"></span>                    
+                            <span>Descarga las infografías que te apoyarán en tus primeros pasos.</span>
+                    </div>                                      
                 </div>
             </div>
+
             <div class="row text-center">
                 <section class="responsive slider">
                     <div>
                         <div class="text-center">
+                            <img src="http://10.3.30.81/wp-content/uploads/2026/06/recurso-apoyo.webp" class="img-fluid" alt="recurso">
                             <p><b>Cómo obtengo mi correo institucional</b></p>
                             <p>Indicaciones para obtener tu correo institucional.</p>
                             <p><a class="btn btn-primary" href="#">Descarga</a></p>
@@ -305,6 +417,7 @@
                     </div>
                     <div>
                         <div class="text-center">
+                            <img src="http://10.3.30.81/wp-content/uploads/2026/06/recurso-apoyo.webp" class="img-fluid" alt="recurso">
                             <p><b>Cómo navegar en mi aula virtual</b></p>
                             <p>Guía visual para navegar dentro del aula sin perderte.</p>
                             <p><a class="btn btn-primary" href="#">Descarga</a></p>
@@ -312,6 +425,7 @@
                     </div>
                     <div>
                         <div class="text-center">
+                            <img src="http://10.3.30.81/wp-content/uploads/2026/06/recurso-apoyo.webp" class="img-fluid" alt="recurso">
                             <p><b>Organiza tu semana</b></p>
                             <p>Tips para planificar tus actividades académicas.</p>
                             <p><a class="btn btn-primary" href="#">Descarga</a></p>
@@ -319,6 +433,7 @@
                     </div>
                     <div>
                         <div class="text-center">
+                            <img src="http://10.3.30.81/wp-content/uploads/2026/06/recurso-apoyo.webp" class="img-fluid" alt="recurso">
                             <p><b>Revisa tus calificaciones</b></p>
                             <p>Procedimiento para revisar tus retroalimentaciones y calificaciones.</p>
                             <p><a class="btn btn-primary" href="#">Descarga</a></p>
@@ -327,12 +442,13 @@
                 </section>
                 
             </div>
+
             <hr>
+            
             <div class="row">
                 <div class="col-12 text-center mb-5">
                     <h2>¿No puedes ingresar?</h2>
-                    <p class="mb-5">Si tienes problemas para tu ingreso por primera vez al aula, envíanos un ticket con la descripción
-                        de tu problema y nosotros te apoyaremos.</p>
+                    <p class="mb-5">Si tienes problemas para ingresar al aula por primera vez, solicita apoyo en tu plantel, envía un correo a tu asesor tecnológico o crea un <em>ticket</em> con la descripción de tu problema y nosotros te apoyaremos.</p>
                     <p><a class="btn btn-primary" href="#">Mesa de servicio</a></p>
                 </div>
             </div>
@@ -396,7 +512,7 @@
         speed: 300,
         lazyLoad: 'ondemand',
         autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         responsive: [{
           breakpoint: 1024,
@@ -410,7 +526,7 @@
         {
           breakpoint: 992,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         },

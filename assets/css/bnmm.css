@@ -183,13 +183,11 @@ hr.dropdown-divider{
     font-size: 19px;
     font-weight: 400;
     color: #fff;
-    text-align: end;
 }
 #v-agentes-edu-tab .nav-link, #v-faqs-tab .nav-link{
     color: #717171;
     font-size: 19px;
     font-weight: 600;
-    text-align: end;
     border: 1px solid #DCDCDC;
     padding: 10px;
     border-radius: 0px;
@@ -229,7 +227,7 @@ outline: 0px!important;
         .btn-collapse[aria-expanded="true"] {
         position: relative;
         color: #fff;
-        padding: 10px 35px;
+        padding: 10px 25px;
         border-radius: 1px;
         font-weight: 400;
         font-size: 20px;
@@ -239,7 +237,7 @@ outline: 0px!important;
         
         .btn-collapse[aria-expanded="false"] {
         border: 1px solid #d1d1d1;
-        padding: 10px 35px;
+        padding: 10px 15px;
         border-radius: 1px;
         font-weight: 700;
         font-size: 20px;

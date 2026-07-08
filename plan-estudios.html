@@ -38,6 +38,9 @@
         .btn-tranparent{
             display: contents;
         }
+        .modal-header{
+            padding: 0;
+        }
     </style>
    </head>
    <body>
@@ -134,8 +137,8 @@
             </div>
         </div>
     
-        <div class="row mb-5 lico">
-            <div class="col-lg-4 col-md-6">
+        <div class="row mb-5">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="line">
                     <div class="text-center">
                         <svg width="80" height="80">
@@ -160,7 +163,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="line">
                     <div class="text-center">
                         <svg width="80" height="80">
@@ -185,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="line">
                     <div class="text-center">
                         <svg width="80" height="80">
@@ -236,15 +239,19 @@
             <div class="col-12 text-center">
                 <h2> Mapa curricular</h2>
                 <p class="mb-5">El mapa curricular se compone de <b>16 submódulos</b> orientados tu formación integral, que te permitirá continuar con tus estudios superiores o incorporarte al mercado laboral de manera exitosa.</p>
-                <p><a href="#" class="btn btn-primary w-25" data-bs-toggle="modal" data-bs-target="#imagenModal">Ver mapa curricular</a></p>                    
+                <p><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imagenModal">Ver mapa curricular</a></p>                    
 
                 <!-- Ventana Modal (Lightbox) -->
                 <div class="modal fade" id="imagenModal" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0">
+                            <div class="modal-header">
+                                <h5 class="modal-title"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
                         <div class="modal-body p-4">
                             <img src="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" class="img-fluid" alt="Imagen ampliada">
-                            <p><a class="btn btn-primary my-4 w-25" href="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" download>Descargar</a></p>
+                            <p><a class="btn btn-primary my-4 w-50" href="http://10.3.30.81/wp-content/uploads/2026/06/Estructura-curricular_BNMM_Plan-2026_MM3-scaled.webp" download>Descargar</a></p>
                         </div>
                         </div>
                     </div>
@@ -305,7 +312,7 @@
         <div class="row justify-content-center ">
             <div class="col-12 text-center mb-5">
                 <h2>¿Cuentas con estudios previos de bachillerato?</h2>
-                <p>Conoce las opciones de revalidación y equivalencia disponibles para reconocer y validar el avance de tu trayectoria formativa.</p>                
+                <p>Conoce las opciones de equivalencia y revalidación disponibles para reconocer y validar el avance de tu trayectoria formativa.</p>                
             </div>            
         </div>
 
@@ -327,24 +334,24 @@
                     <div class="card card-body">
                         <p>Si deseas obtener la equivalencia de estudios cursados en otro servicio o plan de  estudios dentro del Sistema Educativo Nacional, considera lo siguiente:</p>
                         <ul>
-                            <li>Este trámite es externo al Bachillerato Nacional Margarita Maza y se realiza ante la Secretaría de Educación Pública de tu entidad federativa.</li>
+                            <li>Este trámite es externo al Bachillerato Nacional Margarita Maza y se realiza ante la Secretaría de Educación de tu entidad federativa.</li>
                             <li>Si vives en la Ciudad de México, acude a la Dirección General del Bachillerato.</li>
                             <li>Si vives en algún estado de la República mexicana, acude con la autoridad educativa de tu estado, lo anterior con fundamento en los artículos 114, fracción VI, y 115, fracción V, de la Ley General de Educación.</li>
-                            <li>La equivalencia debe solicitarse para el plan de estudios de (colocar información)</li>
+                            <li>La equivalencia debe solicitarse para el plan de estudios del bachillerato general del Bachillerato Nacional Margarita Maza.</li>
                             <li>Debes registrarte en la convocatoria vigente, independientemente del proceso de equivalencia.</li>
                             <li>Una vez concluido el trámite, deberás enviar tu dictamen a la Mesa de servicio del Bachillerato Nacional Margarita Maza.</li>
                         </ul>
-                        <p class="text-center" ><a class="btn btn-primary w-25" href="#">Ir a Mesa de servicio</a></p>
+                        <p class="text-center mb-5" ><a class="btn btn-primary " href="#">Ir a Mesa de servicio</a></p>
                         <p class="text-center">Para más información, te invitamos a consultar la página oficial de la Dirección General del Bachillerato.</p>
-                        <p class="text-center"><a class="btn btn-primary w-25" href="https://dgb.sep.gob.mx/tramite/equivalencia-de-estudios-realizados-en-mexico" target="_blank">Equivalencia de estudios</a></p>
+                        <p class="text-center"><a class="btn btn-primary " href="https://dgb.sep.gob.mx/tramite/equivalencia-de-estudios-realizados-en-mexico" target="_blank">Equivalencia de estudios</a></p>
                     </div>
                 </div>
                 <div class="collapse" id="collapseDos">
                     <div class="card card-body text-center">
                         <p>Si cursaste tu bachillerato en otro país y deseas revalidar tus estudios en México, revisa los requisitos para este trámite.</p>
-                        <p><a class="btn btn-primary w-25" href="https://dgb.sep.gob.mx/tramite/revalidacion-de-estudios-realizados-en-el-extranjero" target="_blank">Requisitos</a></p>
+                        <p><a class="btn btn-primary mb-4" href="https://dgb.sep.gob.mx/tramite/revalidacion-de-estudios-realizados-en-el-extranjero" target="_blank">Requisitos</a></p>
                         <p>Puedes iniciar el trámite directamente haciendo clic aquí:</p>
-                        <p><a class="btn btn-primary w-25" href="https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=SEP-25-004" target="_blank">Solicitud de revalidación</a></p>                        
+                        <p><a class="btn btn-primary " href="https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=SEP-25-004" target="_blank">Solicitud de revalidación</a></p>                        
                     </div>
                 </div>                
             </div>
