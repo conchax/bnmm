@@ -221,6 +221,11 @@ hr.dropdown-divider{
 .btn:focus{
 outline: 0px!important;
 }
+.pro {
+    position: absolute;
+    height: 80px;
+    top: -2px;
+}
 
  /* boton collapse */
 

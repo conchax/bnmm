@@ -33,7 +33,7 @@ if (! defined('ABSPATH')) {
         <div class="collapse navbar-collapse" id="subNavBarDropdown">
             <ul class=" des navbar-nav"> 
                 <li class="nav-item">
-                <a class="nav-link subnav-link" aria-current="page" href="<?php echo esc_url(home_url('/mi-aula-virtual')); ?>">Mi aula virtual</a>
+                <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>">Mi Bachillerato</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a>
@@ -58,14 +58,13 @@ if (! defined('ABSPATH')) {
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/cultura')); ?>">Cultura</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/actividad-fisica-y-deportiva')); ?>">Actividad física y deportiva</a></li>
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/continuidad-academica')); ?>">Continuidad académica</a></li>
-                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>
-                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/estudia-tu-secundaria')); ?>">Estudia tu secundaria</a></li>
+                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>                    
                     <li><a class="dropdown-item" href="<?php echo esc_url(home_url('/prensa')); ?>">Prensa</a></li>                        
                 </ul>
                 </li>
             </ul>
             <ul class="navbar-nav mov">
-                <li class="nav-item"><a class="nav-link subnav-link" aria-current="page" href="<?php echo esc_url(home_url('/mi-aula-virtual')); ?>">Mi aula virtual</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>">Mi Bachillerato</a></li>
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a></li>
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/transparencia')); ?>">Transparencia</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -76,8 +75,7 @@ if (! defined('ABSPATH')) {
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/cultura')); ?>">Cultura </a></li>
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/actividad-fisica-y-deportiva')); ?>">Actividad física y deportiva</a></li>
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/continuidad-academica')); ?>">Continuidad académica</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>
-                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/estudia-tu-secundaria')); ?>">Estudia tu secundaria</a></li>
+                <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/calendarios')); ?>">Calendarios</a></li>                
                 <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/prensa')); ?>">Prensa</a></li>         
             </ul>
             

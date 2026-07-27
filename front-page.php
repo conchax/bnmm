@@ -7,7 +7,7 @@ get_header(); ?>
 
 <main class="page">
     <div class="container">  
-        <div id="carousel-banner-home" class="carousel slide" data-bs-ride="true" data-bs-ride="carousel">
+        <div id="carousel-banner-home" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -15,13 +15,13 @@ get_header(); ?>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Banner1.webp" class="d-block w-100" alt="...">
+                    <a href="https://bnmm.edu.mx/inscripcion/"><img src="https://bnmm.edu.mx/wp-content/uploads/2026/07/08C.05_Banners_1.webp" class="d-block w-100" alt="inscripción"></a>
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Banner1.webp" class="d-block w-100" alt="...">
+                    <img src="https://bnmm.edu.mx/wp-content/uploads/2026/07/08C.05_Banners_2.webp" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Banner1.webp" class="d-block w-100" alt="...">
+                    <a href="https://bnmm.edu.mx/servicios-integrados/"><img src="https://bnmm.edu.mx/wp-content/uploads/2026/07/08C.05_Banners_3.webp" class="d-block w-100" alt="servicios integrados"></a>
                 </div>
             </div>            
         </div>
@@ -147,6 +147,6 @@ get_header(); ?>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/hammer.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/154/sequence.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slider.js"></script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/carrusel.js"></script>
 
 <?php get_footer(); ?>
