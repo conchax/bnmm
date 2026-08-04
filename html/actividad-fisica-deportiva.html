@@ -10,7 +10,8 @@
      <!-- CSS -->
      <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
      <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-     <link href="assets/css/bnmm.css" rel="stylesheet">
+     <link rel="stylesheet" id="bnmm-estilos-locales-css"
+        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/css/bnmm.css?ver=1.0" media="all">
 <style>
 .card{
         --bs-card-border-width:0px!important;
@@ -31,6 +32,11 @@
 }
 .beneficio .line{
     height: 195px;
+}
+@media (max-width: 575.98px) { 
+ .ll {
+  border-left: 0px;
+ }
 }
 </style>
    </head>
@@ -120,16 +126,16 @@
             <hr>           
 
             <div class="row align-items-center mb-5">
-                <div class="col-12">
-                    <h2>¿Qué es?</h2>
+                <div class="col-12 text-center">
+<p style="font-size:20px;color:#9B2247;"><b>¿Qué es?</b></p>
                 </div>
                 <div class="col-md-6 p-5">
-                    <p class="text-end ">
+                    <p class="text-center text-md-end">
                         Es un programa que integra entrenamientos, talleres, activaciones físicas y recreativas, senderismo, torneos internos y encuentros interescolares. Si buscas competir, te orientamos hacia competencias oficiales de la <b>CONADE</b> y la <b>CONADEMS</b>.
                     </p>
                 </div>
                 <div class="col-md-6 ll mb-5 p-5">
-                    <img class="img-fluid rr" src="http://10.3.30.81/wp-content/uploads/2026/06/deporte-img.webp" alt="deporte">
+                    <img class="img-fluid rr" src="https://bnmm.edu.mx/wp-content/uploads/2026/06/deporte-img.webp" alt="deporte">
                 </div>
                 <div class="col-12 text-center">
                     <p>Nuestro programa abarca los siguientes ámbitos:</p>
@@ -138,37 +144,37 @@
 
             <div class="row justify-content-center ">
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="line d-flex justify-content-between align-items-center">
+                    <div class="line d-flex justify-content-center align-items-center">
                         <span>Actividades físicas</span>
                         <svg width="45" height="28">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-actividadesf"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-actividadesf"></use>
                         </svg>
                     </div>
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="line d-flex justify-content-between align-items-center">
+                    <div class="line d-flex justify-content-center align-items-center">
                         <span>Actividades deportivas</span>
                         <svg width="45" height="28">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-actividadesd"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-actividadesd"></use>
                         </svg>
                     </div>
                     
                 </div>                
                 <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="line d-flex justify-content-between align-items-center">
+                    <div class="line d-flex justify-content-center align-items-center">
                         <span>Estrategias nacionales</span>
                         <svg width="45" height="28">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-est-nacionales"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-est-nacionales"></use>
                         </svg>
                     </div>
                     
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5">
-                    <div class="line d-flex justify-content-between align-items-center">
+                    <div class="line d-flex justify-content-center align-items-center">
                         <span>Salud</span>
                         <svg width="45" height="28">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-salud"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-salud"></use>
                         </svg>
                     </div>
                     
@@ -180,7 +186,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>¿Deseas participar?</h2>
-                    <p>Habla con tu promotor deportivo e infórmate sobre los programas, horarios, sedes y requisitos para integrarte a nuestras actividades deportivas y recreativas.</p>                    
+                    <p>Habla con tu <b>promotor deportivo</b> e infórmate sobre los programas, horarios, sedes y requisitos para integrarte a nuestras actividades deportivas y recreativas.</p>                    
                 </div>
             </div>
             <hr>
@@ -195,7 +201,7 @@
                 <div class="col-md-3 mb-4">
                     <div class="line">
                         <svg width="104" height="74">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-msfm"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-msfm"></use>
                         </svg>
                         <p><b>Mejora tu salud física y mental.</b></p>
                     </div>
@@ -203,7 +209,7 @@
                 <div class="col-md-3 mb-4">
                     <div class="line">
                         <svg width="104" height="74">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-fortalece"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-fortalece"></use>
                         </svg>
                         <p><b>Fortalece la convivencia y el trabajo en equipo.</b></p>
                     </div>
@@ -211,7 +217,7 @@
                 <div class="col-md-3 mb-4">
                     <div class="line">
                         <svg width="104" height="74">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-desarrolla"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-desarrolla"></use>
                         </svg>
                         <p><b>Desarrolla disciplina, responsabilidad y autoestima.</b></p>
                     </div>
@@ -219,7 +225,7 @@
                 <div class="col-md-3 mb-5">
                     <div class="line">
                         <svg width="104" height="74">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-adquiere"></use>
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-actividadfd.svg#ico-adquiere"></use>
                         </svg>
                         <p><b>Adquiere hábitos saludables para tu presente y futuro.</b></p>
                     </div>
@@ -232,7 +238,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <p>Esta iniciativa está dirigida a toda la comunidad, sin distinción de género, condición física o experiencia deportiva.</p>
-                    <h2>¡Explora, participa y vive una experiencia que transforma!</h2>
+                    <p style="font-size: 20px;font-weight: 900;color: var(--color-titulo);">¡Explora, participa y vive una experiencia que transforma!</p>
                 </div>
             </div>
         </div>
@@ -284,7 +290,7 @@
      </section>
 
      <!-- JS -->
-      <script src="http://10.3.30.81/wp-content/themes/bnmm/assets/js/collpase.js"></script>
+    <!--   <script src="http://10.3.30.81/wp-content/themes/bnmm/assets/js/collpase.js"></script> -->
      <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
      
    </body>

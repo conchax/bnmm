@@ -8,14 +8,9 @@ if (! defined('ABSPATH')) {
         <div class="row">
             <div class="col-md-5 d-flex justify-content-center justify-content-md-start">
                 <p class="d-inline-flex gap-4">                    
-                    <a href="#">Mesa de servicio</a> |
+                    <a href="https://bnmm.edu.mx/mesadeservicio/" target="_blank">Mesa de servicio</a> |
                     <a href="<?php echo esc_url(home_url('/mapa-del-sitio')); ?>">Mapa de sitio</a>
-                </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                </div>
+                </p>                
             </div>
             <div class="col-md-5"></div>
             <div class="col-md-2 d-flex justify-content-center justify-content-md-end"">

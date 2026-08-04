@@ -11,8 +11,9 @@
     <!-- CSS -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-    <link href="assets/css/bnmm.css" rel="stylesheet">
-    <style>
+    <link rel="stylesheet" id="bnmm-estilos-locales-css"
+        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/css/bnmm.css?ver=1.0" media="all">
+     <style>
         .card {
             --bs-card-border-width: 0px !important;
         }
@@ -23,7 +24,11 @@
         [aria-expanded="true"] .rotar {
             transform: rotate(180deg);       
         }
-
+.btn-tranparent{
+ font-size:18px;
+    display: contents !important;
+    line-height: 22px !important;
+}
         .btn-tranparent[aria-expanded="true"] {
             color: #A57F2C;
         }
@@ -115,14 +120,18 @@
     <!-- Contenido -->
     <main class="page">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12 text-center">
-                    <div class="d-inline-flex align-items-end gap-4">
-                     <svg width="35" height="35">
-                      <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
-                     </svg>
-                     Encuentra la información que necesitas según tu perfil.
-                    </div>                    
+<div class="d-inline-flex align-items-center gap-4">
+    <div class="flex-shrink-0" style="width: 35px; height: 35px;">
+        <svg width="35" height="35" viewBox="0 0 35 35">
+            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mi-aula.svg#ico-recursos-apoyo"></use>
+        </svg>
+    </div>
+    <span class="d-block"></span>                    
+        <span>Encuentra la información que necesitas según tu perfil.</span>
+</div>
+                                       
                 </div>
             </div>
 
@@ -131,10 +140,10 @@
                     <div class="line">
                         <svg width="73" height="73">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-inicio">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-inicio">
                             </use>
                         </svg>
-                        <p><a class="btn btn-tranparent" href="http://10.3.30.81/"><b>Inicio</b></a></p>
+                        <p><a class="btn btn-tranparent" href="https://bnmm.edu.mx/"><b>Inicio</b></a></p>
                     </div>
                 </div>
             </div>
@@ -143,7 +152,7 @@
                     <div class="line">
                         <svg width="73" height="73">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-aspirantes">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-aspirantes">
                             </use>
                         </svg>
                         <p class="mt-5">
@@ -158,12 +167,12 @@
         
                         <div class="collapse multi-collapse" id="CollapseOne">
                             <div class="card card-body">
-                                <a class="btn btn-secondary mb-4" href="http://10.3.30.81/quienes-somos/">¿Quiénes somos?</a>
-                                <a class="btn btn-secondary mb-4" href="http://10.3.30.81/modelo-educativo/">Modelo educativo</a>
-                                <a class="btn btn-secondary mb-4" href="http://10.3.30.81/plan-de-estudios/">Plan de estudios</a>
-                                <a class="btn btn-secondary mb-4" href="http://10.3.30.81/Convocatorias/">Convocatorias</a>
-                                <a class=" btn-secondary mb-4" href="http://10.3.30.81/estudia-tu-secundaria/">Estudia tu secundaria</a>
-                                <a class=" btn-secondary mb-4" href="http://10.3.30.81/preguntas-frecuentes/">Preguntas frecuentes</a>
+                                <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/quienes-somos/">¿Quiénes somos?</a>
+                                <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/modelo-educativo/">Modelo educativo</a>
+                                <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/plan-de-estudios/">Plan de estudios</a>
+                                <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/inscripcion/">Inscripción
+</a>                                
+                                <a class=" btn-secondary mb-4" href="https://bnmm.edu.mx/preguntas-frecuentes/">Preguntas frecuentes</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +181,7 @@
                     <div class="line">
                         <svg width="73" height="73">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-estudiantes">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-estudiantes">
                             </use>
                         </svg>
                     <p class="mt-5">
@@ -186,10 +195,10 @@
                     </p>
     
                     <div class="collapse multi-collapse" id="CollapseTwo">
-                        <div class="card card-body">
-                            <a class="btn btn-secondary mb-4" href="http://10.3.30.81/mi-aula-virtual/">Mi aula virtual</a>
-                            <a class="btn btn-secondary mb-4" href="http://10.3.30.81/calendarios/">Calendarios</a>
-                            <a class=" btn-secondary mb-4" href="http://10.3.30.81/continuidad-academica/">Continuidad académica</a>
+                        <div class="card card-body">       
+<a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/mi-bachillerato/">Mi Bachillerato</a>                     
+                            <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/calendarios/">Calendarios</a>
+                            <a class=" btn-secondary mb-4" href="https://bnmm.edu.mx/continuidad-academica/">Continuidad académica</a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +207,7 @@
                     <div class="line">
                         <svg width="73" height="73">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-servicios">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-servicios">
                             </use>
                         </svg>
                     <p class="mt-5">
@@ -213,10 +222,10 @@
     
                     <div class="collapse multi-collapse" id="CollapseThree">
                         <div class="card card-body">
-                            <a class="btn btn-secondary mb-4" href="#">Mesa de servicio</a>
-                            <a class="btn btn-secondary mb-4" href="#">Sigaprep</a>
-                            <a class="btn btn-secondary mb-4" href="http://10.3.30.81/servicios-integrados/">Servicios integrados</a>
-                            <a class="btn btn-secondary mb-4" href="http://10.3.30.81/cultura-y-deporte/">Cultura y deporte</a>
+                            <a class="btn btn-secondary mb-4" href="#">Mesa de servicio</a>                            
+                            <a class="btn-secondary mb-4" href="https://bnmm.edu.mx/servicios-integrados/">Servicios integrados</a>
+                            <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/cultura/">Cultura</a>
+                            <a class=" btn-secondary mb-4" href="https://bnmm.edu.mx/actividad-fisica-y-deportiva/">Actividad física y deportiva</a>
                         </div>
                     </div>
                 </div>
@@ -225,7 +234,7 @@
                     <div class="line">
                         <svg width="73" height="73">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-comunicacion">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-mapa-sitio.svg#ico-comunicacion">
                             </use>
                         </svg>
                     <p >
@@ -240,14 +249,13 @@
     
                     <div class="collapse multi-collapse" id="CollapseFour">
                         <div class="card card-body">
-                            <a class="btn btn-secondary mb-4" href="#">Prensa</a>
-                            <a class="btn btn-secondary mb-4" href="http://10.3.30.81/transparencia/">Transparencia</a>
+                            <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/prensa">Prensa</a>
+                            <a class="btn btn-secondary mb-4" href="https://bnmm.edu.mx/transparencia/">Transparencia</a>
                         </div>
                     </div>
                 </div>
                 </div>
             </div>
-
         </div>
     </main>
 

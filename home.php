@@ -36,7 +36,7 @@ if (! defined('ABSPATH')) {
             <div class="row justify-content-center align-items- mb-5">
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-6.webp" class="img-fluid" alt="Bolatin 5">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-6.webp" class="img-fluid" alt="Bolatin 5">
                         <p class="fecha">29 de abril de 2026</p>
                         <hr>
                         <p class="text-start">Boletín 154. Gobierno de México fortalece el bachillerato como derecho con formación integral, científica y humanista: Mario Delgado</p>
@@ -45,7 +45,7 @@ if (! defined('ABSPATH')) {
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-5.webp" class="img-fluid" alt="Bolatin 5">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-5.webp" class="img-fluid" alt="Bolatin 5">
                         <p class="fecha">28 de abril de 2026</p>
                         <hr>
                         <p class="text-start">Boletín 153. Con 367 mil nuevos espacios en Educación Media y Superior, se abren oportunidades para jóvenes en todo el país: Mario Delgado</p>
@@ -54,7 +54,7 @@ if (! defined('ABSPATH')) {
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-4.webp" class="img-fluid" alt="Bolatin 4">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-4.webp" class="img-fluid" alt="Bolatin 4">
                         <p class="fecha">8 de marzo de 2026</p>
                         <hr>
                         <p class="text-start">Boletín 94. Con la apertura reciente de nuevos bachilleratos, se avanza en la creación de 200 mil espacios en 2026: Mario Delgado</p>
@@ -63,7 +63,7 @@ if (! defined('ABSPATH')) {
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-3.webp" class="img-fluid" alt="Bolatin 3">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-3.webp" class="img-fluid" alt="Bolatin 3">
                         <p class="fecha">6 de marzo de 2026</p>
                         <hr>
                         <p class="text-start">Presidenta Claudia Sheinbaum inaugura nuevo Bachillerato Nacional plantel El Salto en Jalisco</p>
@@ -72,7 +72,7 @@ if (! defined('ABSPATH')) {
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-2.webp" class="img-fluid" alt="Bolatin 2">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-2.webp" class="img-fluid" alt="Bolatin 2">
                         <p class="fecha">24 de febrero de 2026</p>
                         <hr>
                         <p class="text-start">Boletín 78. Anuncia SEP construcción de 100 Bachilleratos Nacionales “Margarita Maza”</p>
@@ -81,7 +81,7 @@ if (! defined('ABSPATH')) {
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="line">
-                        <img src="http://10.3.30.81/wp-content/uploads/2026/06/IMG-boletin-1.webp" class="img-fluid" alt="Bolatin 1">
+                        <img src="https://bnmm.edu.mx/wp-content/uploads/2026/06/IMG-boletin-1.webp" class="img-fluid" alt="Bolatin 1">
                         <p class="fecha">24 de febrero de 2026</p>
                         <hr>
                         <p class="text-start">Presidenta Claudia Sheinbaum presenta estrategia integral “Jóvenes transformando México”</p>

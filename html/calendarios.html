@@ -11,19 +11,21 @@
     <!-- CSS -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-    <link href="assets/css/bnmm.css" rel="stylesheet">
-    <style>
-        .card {
-            --bs-card-border-width: 0px !important;
+    <link rel="stylesheet" id="bnmm-estilos-locales-css"
+        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/css/bnmm.css?ver=1.0" media="all">
+<style>
+     .card {
+         --bs-card-border-width: 0px !important;
         }
     .rectangulo-bg-box .btn-secondary{
         font-size: 14px;
         font-weight: 300!important;
+        
     }
     .rectangulo-bg-box .btn{
-        padding: 5px 10px;
+        padding: 5px 7px;
         border-radius: 8px;
-        width: 200px;
+        width: 100%;
     }
     .rectangulo-bg-box .dropdown-menu{
     padding: 0em;
@@ -42,7 +44,40 @@
     .rectangulo-bg-box .dropdown-menu .dropdown-item:hover{
         font-weight: 300!important;
     }
-    </style>
+.rectangulo-bg-box .line{
+ padding: 0.5em;
+}
+.rectangulo-bg-box .btn-secondary svg{
+fill:#A07C2C;
+color:#A07C2C;
+}
+.rectangulo-bg-box .btn-secondary:hover svg{
+fill:#fff;
+color:#fff;
+}
+.contenedor-pdf {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 130%; /* Proporción para documentos verticales (A4/Carta) */
+    overflow: hidden;
+}
+
+.contenedor-pdf iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 575.98px) { 
+  .rectangulo-bg-box{
+    padding: 2em 0px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -121,7 +156,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-5">Consulta el calendario de tu generación y manténte al tanto de las fechas importantes de tu
+                    <p class="mb-5">Consulta el calendario de tu generación y mantente al tanto de las fechas importantes de tu
                         trayectoria formativa.</p>
                 </div>
             </div>
@@ -129,7 +164,7 @@
             <hr>
         
             <div class="row">
-                <div class="col-12 text-center mb-5">
+                <div class="col-12 text-center">
                     <h2>Peridos de descanso 2026</h2>
                 </div>
             </div>
@@ -137,11 +172,11 @@
         
         
             <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 d-none">
                     <div class="line">
                         <svg width="70" height="70">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-primavera">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-primavera">
                             </use>
                         </svg>
                         <p><b>Primavera</b></p>
@@ -149,10 +184,10 @@
                         <p>Lunes 30 de marzo - Domingo 5 de abril</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 d-none">
                     <div class="line">
                         <svg width="70" height="70">
-                            <use href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-verano">
+                            <use href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-verano">
                             </use>
                         </svg>
                         <p><b>Verano</b></p>
@@ -164,17 +199,17 @@
                     <div class="line">
                         <svg width="70" height="70">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-invierno">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-invierno">
                             </use>
                         </svg>
                         <p><b>Invierno</b></p>
                         <hr>
-                        <p>Lunes 21 de diciembre - Domingo 3 de enero de 2027</p>
+                        <p>Del 21 de diciembre de 2026 al 3 de enero de 2027</p>
                     </div>
                 </div>
             </div>
             <hr>
-            <div class="row mb-5">
+            <div class="row">
                 <div class="col-12 text-center">
                     <h2>Calendarios por generación</h2>
         
@@ -182,13 +217,13 @@
             </div>
         
             <div class="row mb-5 rectangulo-bg-box justify-content-center">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center d-none">
                     <p>
                         <svg width="30" height="30">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-calendarios">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-calendarios">
                             </use>
-                        </svg> <b>2026 - 2027</b>
+                        </svg> <b>2026 - 2028</b>
                     </p>
                 </div>
                 <div class="row text-center justify-content-center">
@@ -196,10 +231,10 @@
                         <div class="line">
                             <h3>Generación 1</h3>
                             <p>
-                                <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
+                                <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-g1">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -210,7 +245,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -254,14 +289,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 d-none">
                         <div class="line">
                             <h3>Generación 2</h3>
                             <p>
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -272,7 +307,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario  
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -317,14 +352,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 d-none">
                         <div class="line">
                             <h3>Generación 3</h3>
                             <p>
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -335,7 +370,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -380,14 +415,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-4">
+                    <div class="col-md-3 mb-4 d-none">
                         <div class="line">
                             <h3>Generación 4</h3>
                             <p>
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -398,7 +433,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -446,12 +481,12 @@
                 </div>
             </div>
         
-            <div class="row mb-5 rectangulo-bg-box justify-content-center">
+            <div class="row mb-5 rectangulo-bg-box justify-content-center d-none">
                 <div class="col-12 text-center">
                     <p>
                         <svg width="30" height="30">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-calendarios">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-calendarios">
                             </use>
                         </svg> <b>2028 - 2029</b>
                     </p>
@@ -464,7 +499,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -475,7 +510,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -526,7 +561,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -537,7 +572,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -589,7 +624,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -600,7 +635,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -652,7 +687,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -663,7 +698,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -718,7 +753,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -729,7 +764,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -780,7 +815,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -791,7 +826,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -843,7 +878,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -854,7 +889,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -906,7 +941,7 @@
                                 <a class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#modal-c">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-visualiza">
                                         </use>
                                     </svg> Visualizar calendario
                                 </a>
@@ -917,7 +952,7 @@
                                     aria-expanded="false">
                                     <svg width="23" height="23">
                                         <use
-                                            href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
+                                            href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-calendarios.svg.#ico-suscribete">
                                         </use>
                                     </svg> Suscribete al calendario 
                                     <svg class="rotar" width="10" height="6" viewBox="0 0 20 10" fill="none"
@@ -1017,7 +1052,7 @@
     
     <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
 
-  <div class="modal fade" id="modal-c" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-c" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
     <div class="modal-content">
       <div class="modal-header">
@@ -1031,6 +1066,22 @@
     </div>
   </div>
 </div>  
+<div class="modal fade" id="modal-g1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Generación 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="contenedor-pdf">
+            <iframe src="https://bnmm.edu.mx/calendario/Calendario_G1.pdf" frameborder="0"></iframe>
+        </div>
+      </div>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/calendario/Calendario_G1.pdf" download>Descargar</a></p>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>

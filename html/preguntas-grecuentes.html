@@ -11,9 +11,13 @@
     <!-- CSS -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-    <link href="assets/css/bnmm.css" rel="stylesheet">
+    <link rel="stylesheet" id="bnmm-estilos-locales-css"
+        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/css/bnmm.css?ver=1.0" media="all">
 <style>
-
+.btn-tranparent svg {
+    flex-shrink: 0;
+    margin-left: 0.5rem; 
+}
 
 #v-preguntas-tabContent{
     text-align: start;
@@ -180,7 +184,7 @@ ol{
                             role="tab" aria-controls="v-pills-home" aria-selected="true">
                             <svg width="38" height="32">
                                 <use
-                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-registro">
+                                    href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-registro">
                                 </use>
                             </svg>
                             Registro e inscripción
@@ -190,37 +194,38 @@ ol{
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-plan-estudio">
+                                    href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-plan-estudio">
                                 </use>
                             </svg>
                             Plan de estudios
-                        </button>
-                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-tres-tab" data-bs-toggle="pill"
-                            data-bs-target="#v-pills-tres" type="button" role="tab" aria-controls="v-pills-tres"
-                            aria-selected="false">
-                            <svg width="38" height="32">
-                                <use
-                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-actividades">
-                                </use>
-                            </svg>
-                            Actividades y apoyo
                         </button>
                         <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-cuatro-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-cuatro" type="button" role="tab" aria-controls="v-pills-cuatro"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-estudio">
+                                    href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-estudio">
                                 </use>
                             </svg>
                             Estudio
                         </button>
+                        <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-tres-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-tres" type="button" role="tab" aria-controls="v-pills-tres"
+                            aria-selected="false">
+                            <svg width="38" height="32">
+                                <use
+                                    href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-actividades">
+                                </use>
+                            </svg>
+                            Actividades y apoyo
+                        </button>
+                        
                         <button class="nav-link d-flex justify-content-center justify-content-lg-between align-items-center w-100" id="v-pills-cinco-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-cinco" type="button" role="tab" aria-controls="v-pills-cinco"
                             aria-selected="false">
                             <svg width="38" height="32">
                                 <use
-                                    href="https://148.207.218.147/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-soporte">
+                                    href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-faqs.svg.#ico-soporte">
                                 </use>
                             </svg>
                             Soporte y seguimiento
@@ -243,9 +248,9 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseUno">
                                             <div class="card card-body">
-                                                <p>Ingresa a la sección <b>Inscripción</b> del portal oficial del Bachillerato Nacional Margarita Maza. Responde el formulario de registro, captura tus datos personales, sube la documentación en formato PDF y la fotografía tipo credencial en formato JPG (todos con un peso máximo de 1MB). Después, responde el cuestionario de  <b>Integra</b>. Al concluir, recibirás un folio y tus claves de acceso (usuario y contraseña) para el ingreso a tu aula virtual. </p>
+                                                <p>Ingresa a la sección <b>Inscripción</b> del portal oficial del Bachillerato Nacional Margarita Maza. Responde el formulario de registro, captura tus datos personales, carga la documentación en formato PDF y la fotografía tipo credencial en formato JPG (todos con un peso máximo de 1MB). Después, responde el <b>Cuestionario Integra</b>. Al concluir, recibirás un folio y tus datos de acceso (usuario y contraseña) para el ingreso a <b>Mi aula virtual</b>. </p>
                                                 <p>Posteriormente, deberás entregar la documentación solicitada en el plantel seleccionado,  para tu <b>inscripción definitiva</b>.</p>
-                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <a href="https://148.207.218.147/inscripcion/" target="_blank">Inscripción</a>.</p>
+                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <a href="https://bnmm.edu.mx/inscripcion/" target="_blank">Inscripción</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -269,18 +274,17 @@ ol{
                                                     <li>Cualquiera de los siguientes documentos según corresponda:
                                                         <ul>
                                                             <li>Certificado de terminación de estudios de secundaria<sup>1</sup> (anverso y reverso; en caso de no contar con reverso, subir el anverso duplicado) </li>
-                                                            <li>Resolución de revalidación de estudios</li>
-                                                            <li>Resolución de equivalencia o portabilidad de estudios</li>
+                                                            <li>Resolución de revalidación de estudios</li>                                                            
                                                         </ul>
                                                     </li>
                                                     <li>Comprobante de domicilio con máximo tres meses de antigüedad (recibo de agua, luz, predial, etc.) </li>
                                                     <li>Fotografía tipo credencial en formato JPG: reciente, de frente, cara y orejas descubiertas, sin ningún tipo de alteración al rostro, a color y con fondo blanco. La fotografía puede ser tomada con celular (no <em>selfie</em>).</li>
                                                     <li>Comprobante de asignación de Número de Seguridad Social del Instituto Mexicano del Seguro Social (IMSS), <a href="https://www.imss.gob.mx/imssdigital" target="_blank">descárgalo o tramítalo aquí</a>, y la manifestación bajo protesta de decir verdad de no contar con misma o similar protección por parte de cualquier institución de seguridad social.</li>
                                                     <li>Certificado médico emitido por una institución pública, con fecha de emisión no mayor a 1 mes.</li>
-                                                    <li>Al completar tu registro, el sistema te indicará qué documentos debes descargar, firmar y presentar en tu plantel.</li>
+                                                    <li>Al completar tu inscripción, el sistema te indicará qué documentos debes descargar, firmar y presentar en tu plantel.</li>
                                                 </ul>
-                                                <p><sup>1</sup>En caso de no contar con dicho documento, podrás presentarlo en un plazo no mayor a  seis meses, contando a partir de la fecha de tu primera asignación al submódulo que corresponda, de conformidad con lo establecido en el Acuerdo No. 1/SPC y la normatividad aplicable. Y en su lugar, deberás cargar una carta compromiso debidamente firmada, mediante la cual te comprometes a entregarlo dentro del periodo establecido.</p>
-                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <b><a href="https://148.207.218.147/inscripcion/" target="_blank">Inscripción</a></b>.</p>
+                                                <p><sup>1</sup>En caso de no contar con dicho documento, podrás presentarlo en un plazo no mayor a  12 meses, contando a partir de la fecha de tu primera asignación al submódulo que corresponda, de conformidad con lo establecido en el Acuerdo No. 1/SPC y la normatividad aplicable. Y en su lugar, deberás cargar una carta compromiso debidamente firmada, mediante la cual te comprometes a entregarlo dentro del periodo establecido.</p>
+                                                <p>Para conocer más información, revisa las bases de la convocatoria vigente en la sección <b><a href="https://bnmm.edu.mx/inscripcion/" target="_blank">Inscripción</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -297,7 +301,7 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseTres">
                                             <div class="card card-body">
-                                                <p>No. En el Bachillerato Nacional Margarita Maza <b>no se aplica examen de admisión</b>. El acceso se garantiza mediante la inscripción en línea, llenado del cuestionario de Integra y la entrega de los documentos en el plantel.</p>
+                                                <p>No. En el Bachillerato Nacional Margarita Maza <b>no se aplica examen de admisión</b>. El acceso se garantiza mediante la inscripción en línea, llenado del <b>Cuestionario Integra</b> y la entrega de los documentos en el plantel.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -349,7 +353,8 @@ ol{
                                         <div class="multi-collapse collapse" id="CollapseSeis">
                                             <div class="card card-body">
                                                 <p>Puedes solicitar la equivalencia, revalidación o portabilidad de tus estudios ante la autoridad educativa de tu estado.</p>
-                                                <p>Mientras se emite la resolución, puedes inscribirte y presentar el dictamen oficial posteriormente.</p>
+                                                <p>Mientras se emite la resolución, puedes inscribirte.</p>
+                                                <p>Posteriormente deberás presentar el documento oficial.</p>
                                             </div>
                                         </div>
                                     </div>                        
@@ -372,7 +377,7 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseSiete">
                                             <div class="card card-body">
-                                                <p>La duración del plan de estudios es de 2 años y 4 días.</p>
+                                                <p>La duración del plan de estudios es de 2 años.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -409,12 +414,12 @@ ol{
                                             <div class="card card-body">
                                                 <p>El plan de estudios se encuentra estructurado en <b>3 módulos</b> o componentes de conocimiento:</p>
                                                 <ol>
-                                                    <li>Comunicación y cultura</li>
-                                                    <li>Ciencia, tecnología y pensamiento matemático</li>
-                                                    <li>Filosofía, historia y sociedad</li>
+                                                    <li>Comunicación y Cultura</li>
+                                                    <li>Ciencia, Tecnología y Pensamiento Matemático</li>
+                                                    <li>Filosofía, Historia y Sociedad</li>
                                                 </ol>
-                                                <p>Estos componentes se estructuran en <b>16 submódulos</b>, cada uno con una duración de 5 o 6 semanas y se cursan en 2 años y 4 días.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Estos componentes se estructuran en <b>16 submódulos</b>, cada uno con una duración de 5 o 6 semanas y se cursan en 2 años</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -433,12 +438,12 @@ ol{
                                                 <p>Es un componente de conocimiento. Organiza el proceso de enseñanza y aprendizaje integrando conocimientos, destrezas, actitudes y valores de manera <b>interdisciplinaria</b>, a través de situaciones de aprendizaje.</p>
                                                 <p>El plan de estudios del BNMM tiene 3 módulos:</p>
                                                 <ol>
-                                                    <li>Comunicación y cultura</li>
-                                                    <li>Ciencia, tecnología y pensamiento matemático</li>
-                                                    <li>Filosofía, historia y sociedad</li>
+                                                    <li>Comunicación y Cultura</li>
+                                                    <li>Ciencia, Tecnología y Pensamiento Matemático</li>
+                                                    <li>Filosofía, Historia y Sociedad</li>
                                                 </ol>
                                                 <p>Cada módulo se desarrolla en 4 o 6 submódulos, dando un total de 16 submódulos.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -456,8 +461,8 @@ ol{
                                             <div class="card card-body">
                                                 <p>Es el conjunto de aprendizajes que integran una unidad completa con valor curricular y articula los componentes de formación fundamental y ampliada del plan de estudios del Bachillerato Nacional Margarita Maza. </p>
                                                 <p>Cada submódulo incluye los propósitos formativos, los contenidos formativos, las actividades de aprendizaje y los métodos de evaluación obligatorios para cursar y concluir los programas de estudio. En la modalidad presencial se le conoce como materia o asignatura.</p>
-                                                <p>Un submódulo tiene una duración de 5 o 6 semanas, y se cursan todos en 2 años y 4 días.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
+                                                <p>Un submódulo tiene una duración de 5 o 6 semanas, y se cursan todos en 2 años</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/plan-de-estudios/" target="_blank">Plan de estudios</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -510,7 +515,7 @@ ol{
                                             <div class="card card-body">
                                                 <p>Tienes diferentes opciones de regularización, como son: recuperación, recursamiento y extraordinario, así como un programa de regularización ofertado de manera semestral.</p>
                                                 <p>Los periodos de regularización están establecidos en el calendario escolar.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/continuidad-academica" target="_blank">Continuidad académica</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/continuidad-academica" target="_blank">Continuidad académica</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -552,6 +557,105 @@ ol{
                                 </div>                                
                             </div>
                         </div>
+                        <div class="tab-pane fade" id="v-pills-cuatro" role="tabpanel"
+                            aria-labelledby="v-pills-cuatro-tab" tabindex="0">
+                            <div class="row justify-content-center align-items-center">
+                                
+                                <div class="col-12">
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseDiecinueve" role="button" aria-expanded="false"
+                                        aria-controls="CollapseDiecinueve"><b>¿Cómo realizaré mis estudios?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseDiecinueve">
+                                            <div class="card card-body">
+                                                <p>En el Bachillerato Nacional Margarita Maza tu espacio principal de estudio se llama <b>Mi aula virtual</b>, donde encontrarás los recursos digitales y las actividades que debes realizar para comenzar tu aprendizaje y acreditar cada submódulo. </p>
+                                                <p>En el plantel cuentas con acompañamiento presencial que te permitirá avanzar en tus actividades y reforzar tus conocimientos. Además, tienes a tu disposición los equipos de cómputo de tu plantel.</p>
+                                                <p>La clave es la disciplina y constancia.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeinte" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeinte"><b>¿Puedo estudiar desde mi celular o tableta?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeinte">
+                                            <div class="card card-body">
+                                                <p>Sí. Puedes acceder al aula virtual desde dispositivos móviles con Android 5.0, iOS 11 o superiores.</p>
+                                                <p>Sin embargo, te recomendamos usar una PC o laptop para facilitar la elaboración y entrega de tus actividades. Recuerda que también tienes a tu disposición los equipos de cómputo de tu plantel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintiuno" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintiuno"><b>¿Tengo que asistir diario al plantel?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintiuno">
+                                            <div class="card card-body">
+                                                <p>Para las actividades en línea, no. Nuestro modelo no escolarizado combina actividades en línea con acompañamiento presencial en horarios definidos.</p>
+                                                <p>Asistirás al plantel de acuerdo con el turno elegido (matutino o vespertino), o en el horario de las actividades culturales y deportivas en las que decidas participar. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#CollapseVeintidos" role="button" aria-expanded="false"
+                                        aria-controls="CollapseVeintidos"><b>¿Puedo elegir el horario de mi acompañamiento presencial?</b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="CollapseVeintidos">
+                                            <div class="card card-body">
+                                                <p>Sí, podrás elegir el horario que mejor se adapte a tus necesidades dentro de los turnos disponibles en el plantel.</p>
+                                                <p>El acompañamiento presencial es impartido por agentes de apoyo educativo de tu plantel.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid rec">
+
+                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                                        href="#Collapseveintitres" role="button" aria-expanded="false"
+                                        aria-controls="Collapseveintitres"><b>¿Necesito experiencia en el uso de computadoras o para la navegación en internet? </b>
+                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
+                                            </svg>
+                                        </a>
+                                        <div class="multi-collapse collapse" id="Collapseveintitres">
+                                            <div class="card card-body">
+                                                <p>Es recomendable que al inicio de tus estudios cuentes con habilidades digitales básicas.</p>
+                                                <p>Para ayudarte en este proceso, tendrás acceso al <b>aula de habilidades digitales básicas</b> la cual tiene recursos y materiales de apoyo para que aprendas a utilizar las herramientas tecnológicas, y así puedas reforzar tu confianza en el uso de la computadora o dispositivo móvil.</p>
+                                                <p>De igual manera, los agentes de apoyo educativo de tu plantel estarán disponibles para orientarte sobre el manejo del aula virtual.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="tab-pane fade" id="v-pills-tres" role="tabpanel" aria-labelledby="v-pills-tres-tab"
                             tabindex="0">
                             <div class="row justify-content-center align-items-center">
@@ -576,9 +680,9 @@ ol{
                                                     <li><b>Sistema para la detección y atención temprana (SiDAT)</b>. Detecta a tiempo los factores que pueden influir en tus logros académicos para atenderlos a tiempo.</li>
                                                     <li><b>Red de extensión académica y desarrollo integral (Readi)</b>. Conferencias, pláticas y cursos virtuales orientados a tu desarrollo personal y profesional.</li>
                                                     <li><b>Proyecta 360</b>. Detecta tus habilidades académicas e identifica cuál es tu vocación. Te proporciona recursos de repaso, además de un catálogo de universidades.</li>
-                                                    <li><b>Bolsa de trabajo</b>. Accede a vacantes y postúlate al trabajo que se adecúe con tus intereses y habilidades. Estudia mientras trabajas.</li>
+                                                    <li><b>Bolsa de trabajo</b>. Accede a vacantes y postúlate al trabajo que se adecúe a tus intereses y habilidades. Disponible solo para egresadas y egresados.</li>
                                                 </ul>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/servicios-integrados" target="_blank">Servicios integrados</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/servicios-integrados" target="_blank">Servicios integrados</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -598,7 +702,7 @@ ol{
                                                 <p>Son actividades formativas impulsadas por el promotor deportivo, que buscan fortalecer tu salud física, emocional y social.</p>
                                                 <p>Entre ellas están entrenamientos, talleres deportivos, activaciones físicas, torneos internos, encuentros interescolares, actividades recreativas, senderismo.</p>
                                                 <p>Además, permiten fortalecer valores como la disciplina, el respeto, la responsabilidad, el trabajo en equipo, sentido de pertenencia, la inclusión y la cultura de paz.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/actividad-fisica-y-deportiva/" target="_blank">Actividad física y deportiva</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/actividad-fisica-y-deportiva/" target="_blank">Actividad física y deportiva</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -617,7 +721,7 @@ ol{
                                             <div class="card card-body">
                                                 <p>Son actividades impulsadas por el promotor cultural, orientadas al desarrollo de la identidad cultural y la participación social, al fomento de la escritura, la lectura y las expresiones artísticas y audiovisuales.</p>
                                                 <p>Todo ello mediante talleres, exposiciones, conciertos, recitales, obras teatrales, proyecciones audiovisuales, encuentros, muestras, entre otras actividades que promueven el reconocimiento, la valoración y la promoción de la riqueza cultural presentes en cada comunidad y territorio.</p>
-                                                <p>Conoce más en la sección <a href="https://148.207.218.147/cultura/" target="_blank">Cultura</a>.</p>
+                                                <p>Conoce más en la sección <a href="https://bnmm.edu.mx/cultura/" target="_blank">Cultura</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -727,113 +831,14 @@ ol{
                                         <div class="multi-collapse collapse" id="CollapseDieciocho">
                                             <div class="card card-body">
                                                 <p>Si no cuentas con afiliación a algún servicio de salud, puedes solicitar tu incorporación al <b>seguro de salud para estudiantes</b> que otorga el Instituto Mexicano del Seguro Social (IMSS). </p>
-                                                <p>Al momento de la entrega de documentos de tu plantel para tu inscripción definitiva deberás presentar el comprobante de asignación de Número de Seguridad Social del Instituto Mexicano del Seguro Social (IMSS), <a href="https://www.imss.gob.mx/imssdigital" target="_blank">descárgalo o tramítalo aquí</a>. Posteriormente la institución realizará el trámite de afiliación.</p>
-                                                <p>Consulta más información en la <a href="#">Mesa de servicio</a>.</p>
+                                                <p>Al momento de la entrega de documentos de tu plantel para tu inscripción definitiva deberás presentar el comprobante de asignación de Número de Seguridad Social (IMSS), <a href="https://www.imss.gob.mx/imssdigital" target="_blank">descárgalo o tramítalo aquí</a>. Posteriormente la institución realizará el trámite de afiliación.</p>
+                                                <p>Consulta más información en la <a href="https://bnmm.edu.mx/mesadeservicio/" target="_blank">Mesa de servicio</a>.</p>
                                             </div>
                                         </div>
                                     </div>                        
                                 </div>                               
                             </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-cuatro" role="tabpanel"
-                            aria-labelledby="v-pills-cuatro-tab" tabindex="0">
-                            <div class="row justify-content-center align-items-center">
-                                
-                                <div class="col-12">
-                                    <div class="d-grid rec">
-
-                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                                        href="#CollapseDiecinueve" role="button" aria-expanded="false"
-                                        aria-controls="CollapseDiecinueve"><b>¿Cómo realizaré mis estudios?</b>
-                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
-                                            </svg>
-                                        </a>
-                                        <div class="multi-collapse collapse" id="CollapseDiecinueve">
-                                            <div class="card card-body">
-                                                <p>En el BNMM tu espacio principal de estudio es el <b>aula virtual</b> donde encontrarás todas las actividades y recursos digitales que debes realizar para comenzar tu aprendizaje y acreditar cada submódulo.</p>
-                                                <p>En el plantel cuentas con acompañamiento presencial que te permitirá avanzar en tus actividades y reforzar tus conocimientos. Además, tienes a tu disposición los equipos de cómputo de tu plantel.</p>
-                                                <p>La clave es la disciplina y constancia.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-grid rec">
-
-                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                                        href="#CollapseVeinte" role="button" aria-expanded="false"
-                                        aria-controls="CollapseVeinte"><b>¿Puedo estudiar desde mi celular o tableta?</b>
-                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
-                                            </svg>
-                                        </a>
-                                        <div class="multi-collapse collapse" id="CollapseVeinte">
-                                            <div class="card card-body">
-                                                <p>Sí. Puedes acceder al aula virtual desde dispositivos móviles con Android 5.0, iOS 11 o superiores.</p>
-                                                <p>Sin embargo, te recomendamos usar una PC o laptop para facilitar la elaboración y entrega de tus actividades. Recuerda que también tienes a tu disposición los equipos de cómputo de tu plantel.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                     <div class="d-grid rec">
-
-                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                                        href="#CollapseVeintiuno" role="button" aria-expanded="false"
-                                        aria-controls="CollapseVeintiuno"><b>¿Tengo que asistir diario al plantel?</b>
-                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
-                                            </svg>
-                                        </a>
-                                        <div class="multi-collapse collapse" id="CollapseVeintiuno">
-                                            <div class="card card-body">
-                                                <p>Para las actividades en línea, no. Nuestro modelo no escolarizado combina actividades en línea con acompañamiento presencial en horarios definidos.</p>
-                                                <p>Asistirás al plantel de acuerdo con el turno elegido (matutino o vespertino), o en el horario de las actividades culturales y deportivas en las que decidas participar. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="d-grid rec">
-
-                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                                        href="#CollapseVeintidos" role="button" aria-expanded="false"
-                                        aria-controls="CollapseVeintidos"><b>¿Puedo elegir el horario de mi acompañamiento presencial?</b>
-                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
-                                            </svg>
-                                        </a>
-                                        <div class="multi-collapse collapse" id="CollapseVeintidos">
-                                            <div class="card card-body">
-                                                <p>Sí, podrás elegir el horario que mejor se adapte a tus necesidades dentro del turno que seleccionaste (matutino o vespertino) para reforzar tu aprendizaje.</p>
-                                                <p>El acompañamiento presencial es impartido por agentes de apoyo educativo de tu plantel.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-grid rec">
-
-                                        <a class=" btn-tranparent w-100 d-block collapsed d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
-                                        href="#Collapseveintitres" role="button" aria-expanded="false"
-                                        aria-controls="Collapseveintitres"><b>¿Necesito experiencia en el uso de computadoras o para la navegación en internet? </b>
-                                            <svg class="rotar" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M20 0L10.0016 10L0 0H20Z" fill="#DCDCDC"></path>
-                                            </svg>
-                                        </a>
-                                        <div class="multi-collapse collapse" id="Collapseveintitres">
-                                            <div class="card card-body">
-                                                <p>Es recomendable que al inicio de tus estudios cuentes con habilidades digitales básicas.</p>
-                                                <p>Para ayudarte en este proceso, tendrás acceso al <b>aula de habilidades digitales básicas</b> la cual tiene recursos y materiales de apoyo para que aprendas a utilizar las herramientas tecnológicas, y así puedas reforzar tu confianza en el uso de la computadora o dispositivo móvil.</p>
-                                                <p>De igual manera, los agentes de apoyo educativo de tu plantel estarán disponibles para orientarte sobre el manejo del aula virtual.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </div>                        
                         <div class="tab-pane fade" id="v-pills-cinco" role="tabpanel"
                             aria-labelledby="v-pills-cinco-tab" tabindex="0">
                             <div class="row justify-content-center align-items-center">
@@ -851,20 +856,22 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseDiecinuevedos">
                                             <div class="card card-body">
-                                                <p>Los agentes educativos y los agentes de apoyo educativo te apoyarán durante toda tu trayectoria formativa para lograr tus metas. De manera virtual y presencial, estos son:</p>
-                                                <p>Agentes educativos (virtual)</p>
-                                                <ul>
-                                                    <li><b>Asesor virtual</b>. Guía y facilita el aprendizaje de los contenidos del submódulo, evalúan y retroalimentan tu aprendizaje .</li>
-                                                    <li><b>Tutor escolar</b>. Acompaña de forma reflexiva y contextualizada el trayecto educativo, promoviendo el desarrollo académico, socioemocional y el proyecto de vida.</li>
-                                                    <li><b>Supervisor de las figuras de virtualidad</b>. Monitorean la calidad del servicio educativo.</li>
-                                                </ul>
+                                                <p>Los agentes educativos y los agentes de apoyo educativo te apoyarán durante toda tu trayectoria formativa para lograr tus metas. De manera presencial y virtual, estos son:</p>
                                                 <p>Agentes de apoyo educativo (presencial)</p>
                                                 <ul>
                                                     <li><b>Guía pedagógica</b>. Brinda acompañamiento para facilitar la comprensión de los contenidos y resolver dudas.</li>
                                                     <li><b>Guía de acompañamiento</b>. Orienta en los ámbitos académico y personal.</li>
-                                                    <li><b>Promotor cultural y deportivo</b>. Impulsa la participación en actividades artísticas, culturales y deportivas.</li>
+                                                    <li><b>Promotor cultural </b>. Impulsa la participación en actividades artísticas y culturales.</li>
+                                                    <li><b>Promotor deportivo </b>. Promueve la participación en actividades deportivas.</li>
                                                 </ul>
-                                                <p>Conoce más información en la sección <a href="https://148.207.218.147/modelo-educativo" target="_blank">Modelo educativo</a>.</p>
+                                                <p>Agentes educativos (virtual)</p>
+                                                <ul>
+                                                    <li><b>Asesor virtual</b>. Guía y facilita el aprendizaje de los contenidos del submódulo, evalúan y retroalimentan tu aprendizaje .</li>
+                                                    <li><b>Tutor escolar</b>. Acompaña de forma reflexiva y contextualizada el trayecto educativo, promoviendo el desarrollo académico, socioemocional y el proyecto de vida.</li>
+                                                    
+                                                </ul>
+                                                
+                                                <p>Conoce más información en la sección <a href="https://bnmm.edu.mx/modelo-educativo" target="_blank">Modelo educativo</a>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -900,7 +907,7 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="CollapseVeintidosone">
                                             <div class="card card-body">
-                                                <p>Contacta al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel para recibir orientación y seguimiento o bien a través de la <b><a href="#">Mesa de servicio</a></b>.</p>
+                                                <p>Contacta al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel para recibir orientación y seguimiento o bien a través de la <b><a href="https://bnmm.edu.mx/mesadeservicio/" target="_blank">Mesa de servicio</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -917,7 +924,7 @@ ol{
                                         </a>
                                         <div class="multi-collapse collapse" id="Collapseveintitresone">
                                             <div class="card card-body">
-                                                <p>Para recuperar el acceso al aula virtual puedes solicitar apoyo al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel o bien a través de la <b><a href="#">Mesa de servicio</a></b>.</p>
+                                                <p>Para recuperar el acceso al aula virtual puedes solicitar apoyo al asesor tecnológico de tu submódulo, a los agentes de apoyo educativo de tu plantel o bien a través de la <b><a href="https://bnmm.edu.mx/mesadeservicio/" target="_blank">Mesa de servicio</a></b>.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -932,13 +939,11 @@ ol{
 
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <p style="font-size:20px;color:#9B2247;"><b>Contáctanos si alguna de las respuestas no resuelve tu inquietud.</b></p>
-                    <p><a class="btn btn-primary" href="#">Mesa de servicio</a></p>
+                    <p>Si alguna de las respuestas no resuelve tu inquietud, contáctanos mediante la Mesa de servicio o solicita apoyo en tu plantel. Estamos disponibles para ayudarte.</p>
+                    <p class="d-none" style="font-size:20px;color:#9B2247;"><b>Contáctanos si alguna de las respuestas no resuelve tu inquietud.</b></p>
+                    <p><a class="btn btn-primary" href="https://bnmm.edu.mx/mesadeservicio/" target="_blank">Mesa de servicio</a></p>
                 </div>
             </div>
-
-
-
         </div>
     </main>
 

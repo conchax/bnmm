@@ -51,3 +51,13 @@ function mi_tema_bnmm_footer()
 add_action('wp_footer', 'mi_tema_bnmm_footer');
 
 remove_filter('the_content', 'wpautop');
+
+
+add_filter('xmlrpc_enabled', '__return_false');
+
+// Bloqueo total con respuesta 403 inmediata
+if (defined('XMLRPC_REQUEST') && XMLRPC_REQUEST) {
+    status_header(403);
+    header('Content-Type: text/plain');
+    die('Acceso denegado.');
+}

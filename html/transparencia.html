@@ -11,8 +11,13 @@
     <!-- CSS -->
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
-    <link href="assets/css/bnmm.css" rel="stylesheet">
+    <link rel="stylesheet" id="bnmm-estilos-locales-css"
+        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/css/bnmm.css?ver=1.0" media="all">
     <style>
+
+#CollapseOne a svg{
+
+}
         .card {
             --bs-card-border-width: 0px !important;
         }
@@ -25,6 +30,9 @@
         }
         .btn-tranparent h2{
             margin-bottom: 0px;
+        }
+       .llin{
+        border-left: 1px solid #d1d1d1;
         }
 .contenedor-pdf {
     position: relative;
@@ -45,6 +53,16 @@
 .btn-secondary{
     text-align: start;
 }
+@media (max-width: 575.98px) { 
+.llin{
+        border-left: 0px;
+        }
+#CollapseOne a span{
+width:310px;
+margin-right:20px;
+text-align: start;
+  }
+ }
     </style>
 </head>
 
@@ -135,13 +153,13 @@
                             <div class="col-md-3 text-center mb-4">
                                 <svg width="70" height="70">
                                     <use
-                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#doc-rector">
+                                        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#doc-rector">
                                     </use>
                                 </svg>
                             </div>
-                            <div class="col-md-9 llin">
-                                <p class="text-start"><b>ACUERDO número XX por el que se crea el Bachillerato Nacional Margarita Maza</b></p>
-                                <p class="text-start">Documento que da origen al programa y establece las características de su servicio educativo.</p>
+                            <div class="col-md-9 llin text-md-start text-center">
+                                <p><b>ACUERDO número XX por el que se crea el Bachillerato Nacional Margarita Maza</b></p>
+                                <p>Documento que da origen al programa y establece las características de su servicio educativo.</p>
                                 <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
                             </div>
                         </div>
@@ -153,13 +171,13 @@
                             <div class="col-md-3 text-center mb-4">
                                 <svg width="70" height="70">
                                     <use
-                                        href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#reglamento-esc">
+                                        href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#reglamento-esc">
                                     </use>
                                 </svg>
                             </div>
-                            <div class="col-md-9 llin" >
+                            <div class="col-md-9 llin text-md-start text-center" >
                                 <p><b>Reglamento escolar del Bachillerato Nacional Margarita Maza</b></p>
-                                <p class="text-start">Normas internas que regulan el ingreso, acreditación, egreso, convivencia, derechos y obligaciones de la comunidad educativa.</p>
+                                <p>Normas internas que regulan el ingreso, acreditación, egreso, convivencia, derechos y obligaciones de la comunidad educativa.</p>
                                 <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
                             </div>
                         </div>
@@ -169,11 +187,10 @@
                     <div class="line">
                         <svg width="42" height="42">
                             <use
-                                href="http://10.3.30.81/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#aviso-priv"">
+                                href="https://bnmm.edu.mx/wp-content/themes/bnmm/assets/svg/sprite-transparencia.svg#aviso-priv"">
                             </use>
                         </svg>
-                        <p class="mt-4"><b>Aviso de privacidad</b></p>
-                        <p>Tratamiento de datos personales de estudiantes, figuras educativas y padres de familia</p>
+                        <p class="mt-4"><b>Aviso de privacidad</b></p>                        
                         <p><a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modal-t">Vista previa</a></p>
                     </div>
                 </div>
@@ -281,6 +298,7 @@
             </div>
             
         </div>
+
     </main>
 
     <section class="footer-bnmm">
@@ -357,10 +375,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/LEY-GENERAL-DE-EDUCACION.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -374,10 +392,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/LGPDPPSO.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/LGPDPPSO.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/LGPDPPSO.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/LGPDPPSO.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -391,10 +409,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a21-08-25.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/a21-08-25.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a21-08-25.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/a21-08-25.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -408,10 +426,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a22-08-25.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/a22-08-25.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a22-08-25.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/a22-08-25.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -425,10 +443,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/a445.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/a445.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/a445.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/a445.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -442,10 +460,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_PROTECCION_Y_CUIDADO_DEL_ESTUDIANTADO_EN_LA_REVISION_DE_UTILES_ESCOLARES_250823.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -459,10 +477,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLOS_DE_SEGURIDAD_PARA_LOS_PLANTELES_FEDERALES_250823.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -476,10 +494,10 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/PROTOCOLO_PARA_LA_CONVIVENCIA_ARMONICA_DEL_ESTUDIANTADO_EN_LOS_PLANTELES_FEDERALES_DE_EMS_250823.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
@@ -493,13 +511,14 @@
       </div>
       <div class="modal-body">
         <div class="contenedor-pdf">
-            <iframe src="http://10.3.30.81/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" frameborder="0"></iframe>
+            <iframe src="https://bnmm.edu.mx/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" frameborder="0"></iframe>
         </div>
       </div>
-      <p class="text-center mt-5"><a class="btn btn-primary" href="http://10.3.30.81/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" download>Descargar</a></p>
+      <p class="text-center mt-5"><a class="btn btn-primary" href="https://bnmm.edu.mx/wp-content/uploads/2026/06/Limeamientos_para_la_prevencion_y_atencion_de_la_violencia_sexual.pdf" download>Descargar</a></p>
     </div>
   </div>
 </div>
+
 
 </body>
 
