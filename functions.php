@@ -61,3 +61,11 @@ if (defined('XMLRPC_REQUEST') && XMLRPC_REQUEST) {
     header('Content-Type: text/plain');
     die('Acceso denegado.');
 }
+//boquear WordPress REST API User Enumeration
+add_filter( 'rest_endpoints', function( $endpoints ) {
+    if ( ! is_user_logged_in() ) {
+        unset( $endpoints['/wp/v2/users'] );
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+} );

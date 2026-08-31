@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bachillerato Nacional Margarita Maza</title>
+
+
+    <!-- CSS -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/images/favicon.ico" rel="shortcut icon">
+    <!-- Icono Garfica Base gob.mx  V3 -->
+    <link href="https://framework-gb.cdn.gob.mx/gm/v3/assets/styles/main.css" rel="stylesheet">
+    <!-- estilos Garfica Base gob.mx  V3 -->
+    <link href="https://bnmm.sep.gob.mx/assets/menu-bnmm.css" rel="stylesheet"><!-- Estilos para el menu BNMM -->
+    <link href="https://bnmm.sep.gob.mx/wp-content/themes/bnmm/assets/css/bnmm.css" rel="stylesheet">
+
+    <style>
+        .txt-des {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .txt-pasos-t {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .txt-pasos {
+            font-size: 18px;
+        }
+        .btn-dorado{
+            background-color: #A1842B;
+            color: white;
+            border-radius: 6px;
+        }
+        .btn-dorado:hover{
+            background-color: transparent;
+            border:1px solid#A1842B;
+            color:#717171;
+        }
+@media (min-width: 768px) {
+  .posicion-vino {
+    position: absolute;
+    right: 15px; /* Lo alinea justo al borde derecho del contenedor */
+    top: 0;      /* Lo alinea con la parte superior */
+    z-index: 10; /* Se asegura de que se pueda hacer clic sin problemas */
+    width: auto;
+  }
+}
+.d-flex>.btn{
+    width: auto;
+}
+.col-con-divisor {
+  position: relative;
+}
+
+/* --- 1. MÓVIL (Por defecto) --- */
+.col-con-divisor::after {
+  content: "";
+  position: absolute;
+  
+  bottom: -15px;      /* Espacio abajo antes de la siguiente columna */
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg); /* Centra y rota 90° hacia abajo */
+  
+  width: 18px;        
+  height: 18px;       
+  
+  background-image: url('/assets/svg/arrow-pasos.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* --- 2. COMPUTADORAS Y TABLETS (Pantallas medianas en adelante) --- */
+@media (min-width: 768px) {
+  .col-con-divisor::after {
+    bottom: auto;
+    left: auto;
+    
+    right: 4px;        /* Centrado en el gutter de Bootstrap */
+    top: 4px;          /* Empieza 20px hacia abajo desde el tope del texto */
+    transform: none;    /* Quita la rotación de móvil */
+    
+    width: 20px;        /* Ancho de tu SVG */
+    height: 20px;      /* ALTURA FIJA: Define el largo de la línea recta/flecha */
+    
+    /* Nota: Si tu SVG es solo una punta de flecha corta, cambia 
+       el height a un valor menor (ej. 30px) para que no se estire */
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Etoqueta para el munu dinamico BNMM -->
+    <div id="headerMM"></div>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 text-center">
+                    <p>Conoce las convocatorias abiertas para estudiantes y quienes deseen unirse a nuestro equipo
+                        educativo. Descarga las bases y da seguimiento a tu proceso de inscripción o selección.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2>Estudiantes</h2>
+                    <p class="txt-des">¿Tienes hasta 19 años y quieres terminar tu bachillerato?</p>
+                    <p class="txt-pasos-t">¡Inscríbete!</p>
+                </div>
+            </div>
+            <div class="row text-center align-items-start">
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">1. Llena el formulario y carga tus documentos.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">2. Descarga, imprime y firma el kit de documentación.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">3. Responde el Cuestionario Integra y recibe tus datos de acceso a la
+                        plataforma educativa.</p>
+                </div>
+                <div class="col-md-3 ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">4. Al iniciar tu submódulo 1, carga el kit firmado en la sección Mi
+                        bachillerato.</p>
+                </div>
+            </div>
+
+            <div class="row position-relative mb-5">
+                <div class="col-12 d-flex gap-3 justify-content-center">
+                <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/08/08C.05_Convocatoria-de-ingreso-BNMM.pdf" class="btn btn-dorado" download>
+                    <i class="bi bi-download me-1"></i> Bases
+                </a>
+                <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/08/08C.05_Proceso-de-registro_INFOGRAFIA.png" class="btn btn-dorado" download>
+                    <i class="bi bi-download me-1"></i> Infografía
+                </a>
+                </div>
+                <div class="col-12 col-md-auto posicion-vino text-center mt-4">
+                <a href="https://bnmm.sep.gob.mx/inscripcion/" class="btn btn-primary btn-sm">
+                    Más información
+                </a>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2>Guías y promotorías en plantel</h2>
+                    <p class="txt-des">¿Tienes entre 22 y 29 años y quieres integrarte como guía o promotoría?</p>
+                    <p class="txt-pasos-t">¡Participa en el proceso de selección!</p>
+                </div>
+            </div>
+            <div class="row text-center align-items-start">
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">1. Realiza tu prerregistro en línea.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">2. Completa tu registro en línea.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">3. Consulta los resultados.</p>
+                </div>
+                <div class="col-md-3 ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">4. Participa en la capacitación.</p>
+                </div>
+            </div>
+            <div class="row position-relative mb-5">                
+
+                <div class="col-12 d-flex gap-3 justify-content-center">
+                <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/08/Convocatoria_guias_promotorias_BNMM.pdf" class="btn btn-dorado" download>
+                    <i class="bi bi-download me-1"></i> Bases
+                </a>
+                <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/08/09C.05_Infografia_Convo_Agentes.png" class="btn btn-dorado" download>
+                    <i class="bi bi-download me-1"></i> Infografía
+                </a>
+                </div>
+                <div class="col-12 col-md-auto posicion-vino text-center mt-4">
+                <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" class="btn btn-primary btn-sm">
+                    Más información
+                </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2>Coordinador de plantel y personal de apoyo y operación</h2>
+                    <p class="txt-des">¿Tienes entre 22 y 29 años y quieres integrarte como guía o promotoría?</p>
+                    <p class="txt-pasos-t">¡Participa en el proceso de selección!</p>
+                </div>
+            </div>
+            <div class="row text-center align-items-start">
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">1. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">2. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-3 col-con-divisor ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">3. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-md-3 ps-0 pe-5 mb-5">
+                    <p class="txt-pasos">4. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row position-relative mb-5">
+                
+                <div class="col-12 d-flex gap-3 justify-content-center">
+                <a href="#" class="btn btn-dorado">
+                    <i class="bi bi-download me-1"></i> Bases
+                </a>
+                <a href="#" class="btn btn-dorado">
+                    <i class="bi bi-download me-1"></i> Infografía
+                </a>
+                </div>
+                <div class="col-12 col-md-auto posicion-vino text-center mt-4">
+                <a href="#" class="btn btn-primary btn-sm">
+                    Más información
+                </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Etiqueta para el pie de página dinámico BNMM -->
+    <div id="footerMM"></div>
+
+
+    <script src="https://bnmm.sep.gob.mx/assets/menu-bnmm.js"></script>
+    <!-- archivo JS que crea el menu dinámico BNMM -->
+    <script src="https://framework-gb.cdn.gob.mx/gm/v3/assets/js/gobmx.js"></script>
+    <!-- Archivo JS de la Grafica Base gob.mx  V3 -->
+</body>
+
+</html>

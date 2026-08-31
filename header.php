@@ -13,13 +13,22 @@ if (! defined('ABSPATH')) {
     <!-- <link rel="icon" type="image/svg+xml" href="<?php /* echo get_template_directory_uri();  */ ?>/assets/svg/bnmm-ico.svg"> -->
 
     <?php wp_head(); ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K703D8P91N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K703D8P91N');
+</script>    
 </head>
 
 <body <?php body_class(); ?>>
 
     <nav class="navmm navbar navbar-expand-lg bg-light sub-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand sub-navbar" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-bnmm-v2.svg" alt="BNMM"></a>
+            <a class="navbar-brand sub-navbar" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo-bnmm-vf.svg" alt="BNMM"></a>
             <button
                 type="button"
                 class="navbar-toggler"
@@ -34,7 +43,7 @@ if (! defined('ABSPATH')) {
             <div class="collapse navbar-collapse" id="subNavBarDropdown">
                 <ul class=" des navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>">Mi Bachillerato</a>
+                        <a class="nav-link subnav-link d-none" href="<?php/*  echo esc_url(home_url('/mi-bachillerato'));  */?>">Mi Bachillerato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a>
@@ -65,7 +74,7 @@ if (! defined('ABSPATH')) {
                     </li>
                 </ul>
                 <ul class="navbar-nav mov">
-                    <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>">Mi Bachillerato</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link d-none" href="<?php /* echo esc_url(home_url('/mi-bachillerato'));  */?>">Mi Bachillerato</a></li>
                     <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/transparencia')); ?>">Transparencia</a></li>
                     <li>
