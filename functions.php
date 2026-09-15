@@ -50,6 +50,7 @@ function mi_tema_bnmm_footer()
 }
 add_action('wp_footer', 'mi_tema_bnmm_footer');
 
+// remuebe etiquetas no desadas p y br de los contenidos de WordPress
 remove_filter('the_content', 'wpautop');
 
 
@@ -69,3 +70,28 @@ add_filter( 'rest_endpoints', function( $endpoints ) {
     }
     return $endpoints;
 } );
+
+
+function forzar_jquery_global_gobmx() {
+    // Si jQuery está registrado, lo obligamos a liberar el signo $
+    if (wp_script_is('jquery', 'registered')) {
+        wp_add_inline_script('jquery-core', 'window.$ = jQuery;', 'after');
+    }
+}
+add_action('wp_enqueue_scripts', 'forzar_jquery_global_gobmx', 1);
+add_action('admin_enqueue_scripts', 'forzar_jquery_global_gobmx', 1);
+
+
+function encolar_scripts_gob_mx() {
+    // 1. Registramos el script oficial de gob.mx v3
+    wp_enqueue_script('gobmx-cdn', 'https://cdn.gob.mx', array(), null, true);
+
+    // 2. Registramos tu script personalizado indicando que DEPENDE de 'gobmx-cdn'
+    // Esto obliga a WordPress a cargar tu código SIEMPRE después del framework
+    wp_add_inline_script('gobmx-cdn', '
+        $gmx(document).ready(function(){
+            $gmx("#aviso").modal(\'show\');
+        });
+    ');
+}
+add_action('wp_enqueue_scripts', 'encolar_scripts_gob_mx');

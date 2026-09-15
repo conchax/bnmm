@@ -28,7 +28,9 @@ get_header(); ?>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <a href="#"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno"></a>
+                    <a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
+                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
+                    </a>
                 </div>
                 <div class="carousel-item active">
                     <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
@@ -44,7 +46,7 @@ get_header(); ?>
                     <a href="<?php echo esc_url(site_url()); ?>/servicios-integrados/"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_3.webp')); ?>" class="d-block w-100" alt="servicios integrados"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="<?php echo esc_url(site_url()); ?>/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_2da_Ampliacion_convo_GyP_Banner.webp')); ?>" class="d-block w-100" alt="Convocatorias de agentes de apoyo educativo"></a>
+                    <a href="<?php echo esc_url(site_url()); ?>/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_3ra_Ampliacion_convos_Banner.webp')); ?>" class="d-block w-100" alt="Convocatorias de agentes de apoyo educativo"></a>
                 </div>
             </div>
         </div>
@@ -219,11 +221,35 @@ get_header(); ?>
     </section>
 
 </main>
+<div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Aviso para postulantes a Guías y Promotorías del Bachillerato Nacional Margarita Maza</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
+        <p>En breve estaremos compartiendo información sobre el estatus de las postulaciones, exclusivamente a través de los medios oficiales.</p>
+        <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida
+        por vías distintas a las oficiales, ya que podría tratarse de un intento de
+        fraude.</p>
+        <p>Te pedimos mantenerte atenta(o) a tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
+        <a href="https://bnmm.sep.gob.mx/" target="_blank">https://bnmm.sep.gob.mx/</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/imagesloaded.pkgd.min.js"></script>
+
+
+
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/hammer.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/sequence.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slider.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carrusel.js"></script>
 
 <?php get_footer(); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/modal.js"></script>
