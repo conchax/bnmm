@@ -82,16 +82,28 @@ add_action('wp_enqueue_scripts', 'forzar_jquery_global_gobmx', 1);
 add_action('admin_enqueue_scripts', 'forzar_jquery_global_gobmx', 1);
 
 
-function encolar_scripts_gob_mx() {
-    // 1. Registramos el script oficial de gob.mx v3
-    wp_enqueue_script('gobmx-cdn', 'https://cdn.gob.mx', array(), null, true);
 
-    // 2. Registramos tu script personalizado indicando que DEPENDE de 'gobmx-cdn'
-    // Esto obliga a WordPress a cargar tu código SIEMPRE después del framework
-    wp_add_inline_script('gobmx-cdn', '
-        $gmx(document).ready(function(){
-            $gmx("#aviso").modal(\'show\');
+
+
+function encolar_modal_auto_gobmx() {
+    ?>
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            var verificarjQuery = setInterval(function() {
+                if (typeof jQuery !== 'undefined' && typeof jQuery.fn.modal !== 'undefined') {
+                    clearInterval(verificarjQuery);
+                    
+                    // 1. Abrimos el modal normalmente
+                    jQuery('#aviso').modal('show');
+
+                    // 2. SOLUCIÓN: Forzamos la acción de cierre al presionar el botón con data-dismiss
+                    jQuery('#aviso').on('click', '[data-dismiss="modal"]', function() {
+                        jQuery('#aviso').modal('hide');
+                    });
+                }
+            }, 100);
         });
-    ');
+    </script>
+    <?php
 }
-add_action('wp_enqueue_scripts', 'encolar_scripts_gob_mx');
+add_action('wp_footer', 'encolar_modal_auto_gobmx', 999);

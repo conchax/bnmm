@@ -226,17 +226,20 @@ get_header(); ?>
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title" id="exampleModalLabel">Aviso para postulantes a Guías y Promotorías del Bachillerato Nacional Margarita Maza</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>        
       </div>
       <div class="modal-body">
-        <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
-        <p>En breve estaremos compartiendo información sobre el estatus de las postulaciones, exclusivamente a través de los medios oficiales.</p>
-        <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida
-        por vías distintas a las oficiales, ya que podría tratarse de un intento de
-        fraude.</p>
-        <p>Te pedimos mantenerte atenta(o) a tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
-        <a href="https://bnmm.sep.gob.mx/" target="_blank">https://bnmm.sep.gob.mx/</a>
+<!--         <div id="snd-modal-icon">i</div>
+ -->        <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
+        <p>Mediante canales oficiales estaremos compartiendo información sobre el estatus de las postulaciones.</p>
+        <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida por vías distintas a las oficiales, ya que podría tratarse de un intento de fraude.</p>
+        <p>Te pedimos mantenerte al pendiente de tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
+        <br>
+        <div class="text-center"><a  href="https://bnmm.sep.gob.mx/" target="_blank">https://bnmm.sep.gob.mx/</a></div> 
         </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
@@ -252,4 +255,3 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/modal.js"></script>
