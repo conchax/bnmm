@@ -36,9 +36,15 @@ get_header(); ?>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="6" aria-label="Slide 7"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <a href="https://bidiban.sep.gob.mx/Home" target="_blank">
+                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp')); ?>" class="d-block w-100" alt="BIDIBAN">
+                    </a>
+                </div>
+                <div class="carousel-item">
                     <a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
                         <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
                     </a>
