@@ -107,3 +107,40 @@ function encolar_modal_auto_gobmx() {
     <?php
 }
 add_action('wp_footer', 'encolar_modal_auto_gobmx', 999);
+
+
+/* function encolar_modal_auto_gobmx() {
+    ?>
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            var verificarjQuery = setInterval(function() {
+                if (typeof jQuery !== 'undefined' && typeof jQuery.fn.modal !== 'undefined') {
+                    clearInterval(verificarjQuery);
+                    
+                    var $modal = jQuery('#videofull');
+                    
+                    // 1. Guardamos la URL original del iframe si existe
+                    var $iframe = $modal.find('iframe');
+                    var videoSrc = $iframe.attr('src');
+
+                    // 2. Evento para DETENER el video cuando el modal termine de ocultarse
+                    $modal.on('hidden.bs.modal', function () {
+                        $iframe.attr('src', '');
+                    });
+
+                    // 3. Evento para REINTEGRAR el video si el modal se vuelve a abrir
+                    $modal.on('show.bs.modal', function () {
+                        if (videoSrc) {
+                            $iframe.attr('src', videoSrc);
+                        }
+                    });
+
+                    // 4. Abrimos el modal automáticamente
+                    $modal.modal('show');
+                }
+            }, 100);
+        });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'encolar_modal_auto_gobmx', 999); */

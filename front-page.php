@@ -13,6 +13,16 @@ get_header(); ?>
             border-right: 0px;
         }
     }
+    #videofull .modal-content {
+    background-color: transparent;
+    border: none;
+}
+#videofull .modal-header {
+    background-color: transparent;
+}
+#videofull .modal-body{
+    padding: 0;
+}
 </style>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider-dgmm.css">
 
@@ -25,14 +35,20 @@ get_header(); ?>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
+                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
+                    </a>
+                </div>
                 <div class="carousel-item">
                     <a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
                         <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
                     </a>
                 </div>
-                <div class="carousel-item active">
+                <div class="carousel-item ">
                     <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
                         <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_2da_Ampliacion_convo_Estudiantes_Banner.webp')); ?>" class="d-block w-100" alt="inscripción">
                     </a>
@@ -229,8 +245,7 @@ get_header(); ?>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>        
       </div>
       <div class="modal-body">
-<!--         <div id="snd-modal-icon">i</div>
- -->        <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
+       <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
         <p>Mediante canales oficiales estaremos compartiendo información sobre el estatus de las postulaciones.</p>
         <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida por vías distintas a las oficiales, ya que podría tratarse de un intento de fraude.</p>
         <p>Te pedimos mantenerte al pendiente de tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
@@ -245,7 +260,27 @@ get_header(); ?>
   </div>
 </div>
 
+<!-- <div class="modal fade" id="videofull" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+ 								<path d="M15 0C6.64286 0 0 6.64286 0 15C0 23.3571 6.64286 30 15 30C23.3571 30 30 23.3571 30 15C30 6.64286 23.3571 0 15 0ZM15 27.8571C7.92857 27.8571 2.14286 22.0714 2.14286 15C2.14286 7.92857 7.92857 2.14286 15 2.14286C22.0714 2.14286 27.8571 7.92857 27.8571 15C27.8571 22.0714 22.0714 27.8571 15 27.8571Z" fill="#999"></path>
+ 								<path d="M20.7857 22.5L15 16.7143L9.21429 22.5L7.5 20.7857L13.2857 15L7.5 9.21429L9.21429 7.5L15 13.2857L20.7857 7.5L22.5 9.21429L16.7143 15L22.5 20.7857L20.7857 22.5Z" fill="#999"></path>
+ 							</svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe width="100%" height="100%" class="embed-responsive-item" src="https://www.youtube.com/embed/JRrAbXhiGQ0?si=B_l-5oE9-z7s5NAS&autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</div> -->
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/hammer.min.js"></script>
