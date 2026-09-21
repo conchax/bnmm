@@ -43,7 +43,7 @@ if (! defined('ABSPATH')) {
             <div class="collapse navbar-collapse" id="subNavBarDropdown">
                 <ul class=" des navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link subnav-link d-none" href="<?php/*  echo esc_url(home_url('/mi-bachillerato'));  */?>">Mi Bachillerato</a>
+                        <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>" target="_blank">Mi Bachillerato</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a>
@@ -74,7 +74,7 @@ if (! defined('ABSPATH')) {
                     </li>
                 </ul>
                 <ul class="navbar-nav mov">
-                    <li class="nav-item"><a class="nav-link subnav-link d-none" href="<?php /* echo esc_url(home_url('/mi-bachillerato'));  */?>">Mi Bachillerato</a></li>
+                    <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/mi-bachillerato')); ?>">Mi Bachillerato</a></li>
                     <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/preguntas-frecuentes')); ?>">Preguntas frecuentes</a></li>
                     <li class="nav-item"><a class="nav-link subnav-link" href="<?php echo esc_url(home_url('/transparencia')); ?>">Transparencia</a></li>
                     <li>
