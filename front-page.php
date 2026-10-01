@@ -13,16 +13,19 @@ get_header(); ?>
             border-right: 0px;
         }
     }
+
     #videofull .modal-content {
-    background-color: transparent;
-    border: none;
-}
-#videofull .modal-header {
-    background-color: transparent;
-}
-#videofull .modal-body{
-    padding: 0;
-}
+        background-color: transparent;
+        border: none;
+    }
+
+    #videofull .modal-header {
+        background-color: transparent;
+    }
+
+    #videofull .modal-body {
+        padding: 0;
+    }
 </style>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider-dgmm.css">
 
@@ -32,43 +35,51 @@ get_header(); ?>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="7" aria-label="Slide 8"></button> -->
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <!-- <div class="carousel-item d-none">
+                    <a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.04_Convocatoria_Concurso.pdf" target="_blank">
+                        <img src="<?php /*  echo esc_url(site_url('/wp-content/uploads/2026/09/Banner_CCL_2026.webp')); */ ?>" class="d-block w-100" alt="BIDIBAN">
+                    </a>
+                </div>
+                <div class="carousel-item d-none">
                     <a href="https://bidiban.sep.gob.mx/Home" target="_blank">
-                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp')); ?>" class="d-block w-100" alt="BIDIBAN">
+                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp')); */ ?>" class="d-block w-100" alt="BIDIBAN">
                     </a>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item d-none">
                     <a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
-                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
+                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp')); */ ?>" class="d-block w-100" alt="Segundo informe de gobierno">
                     </a>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item d-none">
                     <a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
-                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); ?>" class="d-block w-100" alt="Segundo informe de gobierno">
+                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); */ ?>" class="d-block w-100" alt="Segundo informe de gobierno">
                     </a>
-                </div>
-                <div class="carousel-item ">
+                </div> -->
+                <div class="carousel-item active">
                     <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
-                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_2da_Ampliacion_convo_Estudiantes_Banner.webp')); ?>" class="d-block w-100" alt="inscripción">
+                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_Aspirantes_Banner.webp')); ?>" class="d-block w-100" alt="inscripción">
                     </a>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item d-none">
                     <a href="https://www.facebook.com/people/Bachillerato-Nacional-Margarita-Maza/61593075034317/" target="_blank">
-                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_2.webp')); ?>" class="d-block w-100" alt="Conecta">
+                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_2.webp'));  */ ?>" class="d-block w-100" alt="Conecta">
                     </a>
                 </div>
+                <div class="carousel-item d-none">
+                    <a href="<?php /* echo esc_url(site_url());  */ ?>/servicios-integrados/"><img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_3.webp')); */ ?>" class="d-block w-100" alt="servicios integrados"></a>
+                </div> -->
                 <div class="carousel-item">
-                    <a href="<?php echo esc_url(site_url()); ?>/servicios-integrados/"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_3.webp')); ?>" class="d-block w-100" alt="servicios integrados"></a>
-                </div>
-                <div class="carousel-item">
-                    <a href="<?php echo esc_url(site_url()); ?>/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_3ra_Ampliacion_convos_Banner.webp')); ?>" class="d-block w-100" alt="Convocatorias de agentes de apoyo educativo"></a>
+                    <a href="<?php echo esc_url(site_url()); ?>/convocatoria-de-guias-y-promotorias-en-plantel/">
+                        <img src="<?php echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_Guias_Banner.webp')); ?>" class="d-block w-100" alt="Convocatorias de agentes de apoyo educativo">
+                    </a>
                 </div>
             </div>
         </div>
@@ -244,26 +255,26 @@ get_header(); ?>
 
 </main>
 <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel">Aviso para postulantes a Guías y Promotorías del Bachillerato Nacional Margarita Maza</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>        
-      </div>
-      <div class="modal-body">
-       <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
-        <p>Mediante canales oficiales estaremos compartiendo información sobre el estatus de las postulaciones.</p>
-        <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida por vías distintas a las oficiales, ya que podría tratarse de un intento de fraude.</p>
-        <p>Te pedimos mantenerte al pendiente de tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
-        <br>
-        <div class="text-center"><a  href="https://bnmm.sep.gob.mx/" target="_blank">https://bnmm.sep.gob.mx/</a></div> 
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary w-100" data-dismiss="modal">Cerrar</button>
-      </div>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Aviso para postulantes a Guías y Promotorías del Bachillerato Nacional Margarita Maza</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>El proceso de selección para formar parte del Bachillerato Nacional Margarita Maza (BNMM) continúa.</p>
+                <p>Mediante canales oficiales estaremos compartiendo información sobre el estatus de las postulaciones.</p>
+                <p><b>Importante</b>: haz caso omiso de cualquier notificación o comunicación recibida por vías distintas a las oficiales, ya que podría tratarse de un intento de fraude.</p>
+                <p>Te pedimos mantenerte al pendiente de tu correo electrónico y consultar el portal oficial del Bachillerato Nacional Margarita Maza:
+                    <br>
+                <div class="text-center"><a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" target="_blank">https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/</a></div>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-100" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- <div class="modal fade" id="videofull" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -295,4 +306,3 @@ get_header(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/carrusel.js"></script>
 
 <?php get_footer(); ?>
-
