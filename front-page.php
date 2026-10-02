@@ -26,6 +26,20 @@ get_header(); ?>
     #videofull .modal-body {
         padding: 0;
     }
+    .contenedor-responsivo {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Opcional: Define un ancho máximo si no quieres que ocupe toda la pantalla */
+    margin: 0 auto;
+    }
+
+    .contenedor-responsivo iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+    /* Mantiene la proporción 16:9 típica de videos. Puedes usar 4:3 o 1:1 según tu contenido */
+    aspect-ratio: 16 / 9; 
+    }
 </style>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider-dgmm.css">
 
@@ -253,6 +267,18 @@ get_header(); ?>
         </div>
     </section>
 
+    <section class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2>Conoce los planteles del Bachillerato Nacional Margarita Maza</h2>
+            </div>
+            <div class="col-12">
+                <div class="contenedor-responsivo">
+                    <iframe src="https://bnmm.sep.gob.mx/mi-bachillerato/index.php/catalogo-planteles" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
