@@ -254,31 +254,20 @@ get_header(); ?>
     </section>
 
     <section>
-        <div class="container d-none">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h2>Ubica tu plantel y da el primer paso</h2>
-                    <p class="text-center"><b>Nota</b>: No contamos con planteles en la CDMX.</p>
+                    <h2>Ubica tu plantel y da el primer paso</h2>   
                 </div>
                 <div class="col-12">
-                    <?php /* echo do_shortcode('[planteles_bachillerato limit="50"]'); */ ?>
+                    <?php echo do_shortcode('[planteles_bachillerato]'); ?>
                 </div>
+                <div class="col-12"><p class="text-center"><b>Nota</b>: No contamos con planteles en la CDMX.</p></div>
             </div>
         </div>
     </section>
 
-    <section class="container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h2>Conoce los planteles del Bachillerato Nacional Margarita Maza</h2>
-            </div>
-            <div class="col-12">
-                <div class="contenedor-responsivo">
-                    <iframe src="https://bnmm.sep.gob.mx/mi-bachillerato/index.php/catalogo-planteles" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </main>
 <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
