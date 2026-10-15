@@ -371,8 +371,7 @@ get_header(); ?>
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <h2>Ubica tu plantel y da el primer paso</h2>                    
-                    <p class="fs-4">Busca tu plantel más cercano a tu domicilio. </p> 
-                    <p class="fs-4">¿Cómo usarlo? <a type="button" href="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp" data-bs-toggle="modal" data-bs-target="#videofull"  data-url="https://www.youtube.com/embed/9AKY7gwmxzI?si=h4MEf70KIdnf-9Lf">video tutorial</a> Mira el para aprender a filtrar la búsqueda por estado, municipio, código postal o nombre del plantel.</p>
+                    <p class="fs-4">¿Cómo usar el mapa interactivo? <br> Mira el <a type="button" href="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp" data-bs-toggle="modal" data-bs-target="#videofull"  data-url="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp">video tutorial</a> para aprender a filtrar la búsqueda por nombre del plantel, estado, municipio o código postal.</p>
                 </div>
                 <div class="col-12">
                     <?php echo do_shortcode('[planteles_bachillerato]'); ?>
