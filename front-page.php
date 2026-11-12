@@ -43,7 +43,7 @@ get_header(); ?>
 
     .galeria {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/bg-g.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_banners_nuevos.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,9 +105,9 @@ get_header(); ?>
         <div id="carousel-banner-home" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <!-- <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
-                <!-- <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!--<button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="6" aria-label="Slide 7"></button>
@@ -137,6 +137,16 @@ get_header(); ?>
                 <div class="carousel-item active">
                     <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
                         <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/09/03C.07_Aspirantes_Banner.webp" class="d-block w-100" alt="inscripción">
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/Anexo-2.-Comunicado-de-Inicio-2026-2_Estudiantes_S311_Margarita-Maza.pdf" target="_blank">
+                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Convocatorias_Becas_Banner.webp" class="d-block w-100" alt="becas benito juarez">
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" >
+                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/banner_licenciaturas.webp" class="d-block w-100" alt="licenciaturas">
                     </a>
                 </div>
                 <!-- <div class="carousel-item d-none">
@@ -391,7 +401,7 @@ get_header(); ?>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">                
-                <div class="text-center"><a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" target="_blank"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/img-popup.webp" class="img-fluid" alt="popup"></a></div>            
+                <div class="text-center"><a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" target="_blank"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/pop_up.webp" width="330" class="img-fluid" alt="popup"></a></div>            
             </div>
             
         </div>

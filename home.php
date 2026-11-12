@@ -28,7 +28,7 @@ if (! defined('ABSPATH')) {
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-5">Aquí encontrarás todos los comunicados oficiales, novedades y anuncios importantes sobre el Bachillerato Nacional Margarita Maza. </p>
+                    <p class="mb-5">Aquí encontrarás comunicados oficiales, noticias y anuncios relevantes sobre el Bachillerato Nacional Margarita Maza.</p>
                     <p><b>Mantente al tanto</b></p>
                 </div>
             </div>
