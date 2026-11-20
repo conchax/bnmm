@@ -106,8 +106,8 @@ get_header(); ?>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <!--<button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <!--<button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="6" aria-label="Slide 7"></button>
@@ -133,17 +133,19 @@ get_header(); ?>
                     <a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
                         <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); */ ?>" class="d-block w-100" alt="Segundo informe de gobierno">
                     </a>
-                </div> -->
-                <div class="carousel-item active">
-                    <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
-                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/09/03C.07_Aspirantes_Banner.webp" class="d-block w-100" alt="inscripción">
-                    </a>
-                </div>
-                <div class="carousel-item ">
+                </div> 
+ <div class="carousel-item ">
                     <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/Anexo-2.-Comunicado-de-Inicio-2026-2_Estudiantes_S311_Margarita-Maza.pdf" target="_blank">
                         <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Convocatorias_Becas_Banner.webp" class="d-block w-100" alt="becas benito juarez">
                     </a>
                 </div>
+-->
+                <div class="carousel-item active">
+                    <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
+                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Cierre-de-convo_banner-scaled.webp" class="d-block w-100" alt="inscripción">
+                    </a>
+                </div>
+               
                 <div class="carousel-item ">
                     <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" >
                         <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/banner_licenciaturas.webp" class="d-block w-100" alt="licenciaturas">
