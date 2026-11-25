@@ -85,7 +85,7 @@ add_action('admin_enqueue_scripts', 'forzar_jquery_global_gobmx', 1);
 
 
 
-function encolar_modal_auto_gobmx() {
+/* function encolar_modal_auto_gobmx() {
     ?>
     <script type="text/javascript">
         window.addEventListener('load', function() {
@@ -106,7 +106,7 @@ function encolar_modal_auto_gobmx() {
     </script>
     <?php
 }
-add_action('wp_footer', 'encolar_modal_auto_gobmx', 999);
+add_action('wp_footer', 'encolar_modal_auto_gobmx', 999); */
 
 
 /* function encolar_modal_auto_gobmx() {

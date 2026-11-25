@@ -26,79 +26,106 @@ get_header(); ?>
     #videofull .modal-body {
         padding: 0;
     }
+
     .contenedor-responsivo {
-    position: relative;
-    width: 100%;
-    max-width: 1200px; /* Opcional: Define un ancho máximo si no quieres que ocupe toda la pantalla */
-    margin: 0 auto;
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        /* Opcional: Define un ancho máximo si no quieres que ocupe toda la pantalla */
+        margin: 0 auto;
     }
 
     .contenedor-responsivo iframe {
-    width: 100%;
-    height: 800px;
-    border: none;
-    /* Mantiene la proporción 16:9 típica de videos. Puedes usar 4:3 o 1:1 según tu contenido */
-    aspect-ratio: 16 / 9; 
+        width: 100%;
+        height: 800px;
+        border: none;
+        /* Mantiene la proporción 16:9 típica de videos. Puedes usar 4:3 o 1:1 según tu contenido */
+        aspect-ratio: 16 / 9;
     }
 
     .galeria {
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_banners_nuevos.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 315px;
-  padding: 60px 0px;
-  
-  /* Comportamiento por defecto en móviles */
-  background-attachment: scroll; 
-}
+        position: relative;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_banners_nuevos.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 315px;
+        padding: 60px 0px;
 
-/* Activar el parallax solo en computadoras (pantallas mayores a 768px) */
-@media (min-width: 769px) {
-  .galeria {
-    background-attachment: fixed;
-  }
-}
+        /* Comportamiento por defecto en móviles */
+        background-attachment: scroll;
+    }
+
+    /* Activar el parallax solo en computadoras (pantallas mayores a 768px) */
+    @media (min-width: 769px) {
+        .galeria {
+            background-attachment: fixed;
+        }
+    }
+
     .galeria h2 {
         color: #E6D194;
     }
+
     .galeria p {
         color: #fff;
     }
+
     .galeria .btn-primary {
         background-color: transparent;
         border-color: #E6D194;
         color: #fff;
     }
+
     .galeria .btn-primary:hover {
         background-color: #E6D194;
         color: #000;
     }
+
     .modal-body {
         padding: 0px 40px 20px;
     }
-    .modal-header{
+
+    .modal-header {
         padding: 0px;
     }
-    .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23611232' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;
-}
 
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23611232' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
-}
-.carousel-control-prev {
-    left: -70px;
-}
-.carousel-control-next {
-    right: -70px;
-}
+    .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23611232' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e") !important;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23611232' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
+    }
+
+    .carousel-control-prev {
+        left: -70px;
+    }
+
+    .carousel-control-next {
+        right: -70px;
+    }
+
+    .cinta {
+        background-color: #235c4e;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        margin: 26px 0 20px 0;
+    }
 </style>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider-dgmm.css">
+
+<div class="cinta">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">¡Gracias a ti logramos completar los registros! <b>Cerramos esta convocatoria</b>.</div>
+        </div>
+    </div>
+</div>
 
 <main class="page">
     <div class="container">
@@ -106,8 +133,8 @@ get_header(); ?>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <!--<button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!--<button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="5" aria-label="Slide 6"></button>
                 <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="6" aria-label="Slide 7"></button>
@@ -118,66 +145,31 @@ get_header(); ?>
                     <a href="https://prepaenlinea.sep.gob.mx/wp-content/uploads/2026/09/09C.04_Convocatoria_Concurso.pdf" target="_blank">
                         <img src="<?php /*  echo esc_url(site_url('/wp-content/uploads/2026/09/Banner_CCL_2026.webp')); */ ?>" class="d-block w-100" alt="BIDIBAN">
                     </a>
-                </div>
-                <div class="carousel-item d-none">
-                    <a href="https://bidiban.sep.gob.mx/Home" target="_blank">
-                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/09/Banners_Campana_BIDIBAN_Septiembre-02.webp')); */ ?>" class="d-block w-100" alt="BIDIBAN">
-                    </a>
-                </div>
-                <div class="carousel-item d-none">
-                    <a href="https://dgb.sep.gob.mx/storage/recursos/PDF/yJVqptS2Fu-09C.05_Convocatoria_del_Proyecto_Voces_que_Inspiran_Transformacion.pdf" target="_blank">
-                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/09/09C.05_Convocatoria-Voces-que-Inspiran_Banner.webp')); */ ?>" class="d-block w-100" alt="Segundo informe de gobierno">
-                    </a>
-                </div>
-                <div class="carousel-item d-none">
-                    <a href="https://www.segundoinformedegobierno.gob.mx/" target="_blank">
-                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/08/Banner-Escritorio_-Segundo-Informe-scaled.webp')); */ ?>" class="d-block w-100" alt="Segundo informe de gobierno">
-                    </a>
-                </div> 
- <div class="carousel-item ">
-                    <a href="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/Anexo-2.-Comunicado-de-Inicio-2026-2_Estudiantes_S311_Margarita-Maza.pdf" target="_blank">
-                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Convocatorias_Becas_Banner.webp" class="d-block w-100" alt="becas benito juarez">
-                    </a>
-                </div>
--->
+                </div>               
+                -->
                 <div class="carousel-item active">
-                    <a href="<?php echo esc_url(site_url()); ?>/inscripcion/">
-                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Cierre-de-convo_banner-scaled.webp" class="d-block w-100" alt="inscripción">
-                    </a>
+                    <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Cierre-de-convo_banner_agradecimiento.webp" class="d-block w-100" alt=" agradeciemiento">
                 </div>
-               
                 <div class="carousel-item ">
-                    <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" >
-                        <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/banner_licenciaturas.webp" class="d-block w-100" alt="licenciaturas">
-                    </a>
+                    <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Cierre-de-convo_banner_agrade_Estud.webp" class="d-block w-100" alt="Estudiantes agradeciemiento">
                 </div>
-                <!-- <div class="carousel-item d-none">
-                    <a href="https://www.facebook.com/people/Bachillerato-Nacional-Margarita-Maza/61593075034317/" target="_blank">
-                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_2.webp'));  */ ?>" class="d-block w-100" alt="Conecta">
-                    </a>
+                <div class="carousel-item ">
+                    <img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/09C.05_Cierre-de-convo_banner_agrade_Guias.webp" class="d-block w-100" alt="Guias agradeciemiento">
                 </div>
-                <div class="carousel-item d-none">
-                    <a href="<?php /* echo esc_url(site_url());  */ ?>/servicios-integrados/"><img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/07/08C.05_Banners_3.webp')); */ ?>" class="d-block w-100" alt="servicios integrados"></a>
-                </div> -->
-                <!-- <div class="carousel-item">
-                    <a href="<?php /* echo esc_url(site_url()); */ ?>/convocatoria-de-guias-y-promotorias-en-plantel/">
-                        <img src="<?php /* echo esc_url(site_url('/wp-content/uploads/2026/09/03C.07_Guias_Banner.webp')); */ ?>" class="d-block w-100" alt="Convocatorias de agentes de apoyo educativo">
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>
 
-    <section class="carrusel d-none">
+    <section class="carrusel">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div id="sequence" class="seq">
                         <div class="seq-screen">
-                            <ul class="seq-canvas">                                
+                            <ul class="seq-canvas">
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider2.webp" alt="hola" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/1.webp" alt="¿Buscas un bachillerato diferente?" />
                                     </div>
 
                                     <div class="seq-title">
@@ -193,7 +185,7 @@ get_header(); ?>
 
                                 <li class="seq-in">
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider1.webp" alt="mm" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/2.webp" alt="¿Y si terminas tu bachillerato?" />
                                     </div>
 
                                     <div class="seq-title text-center">
@@ -209,7 +201,7 @@ get_header(); ?>
 
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider3.webp" alt="slider 3" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/3.webp" alt="¿Quieres una formación integral?" />
                                     </div>
 
                                     <div class="seq-title">
@@ -225,7 +217,7 @@ get_header(); ?>
 
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider4.webp" alt="slider 3" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/4.webp" alt="¡Descubre tu talento!" />
                                     </div>
 
                                     <div class="seq-title">
@@ -241,7 +233,7 @@ get_header(); ?>
 
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider5.webp" alt="slider 3" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/5.webp" alt="¿Buscas una beca para seguir estudiando?" />
                                     </div>
 
                                     <div class="seq-title">
@@ -257,7 +249,7 @@ get_header(); ?>
 
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider6.webp" alt="slider 6" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/6.webp" alt="¡Vive la emoción del deporte!" />
                                     </div>
 
                                     <div class="seq-title">
@@ -273,7 +265,7 @@ get_header(); ?>
 
                                 <li>
                                     <div class="seq-model">
-                                        <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider7.webp" alt="slider 7" />
+                                        <img data-seq src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/7.webp" alt="Haz la diferencia" />
                                     </div>
 
                                     <div class="seq-title text-center">
@@ -298,14 +290,14 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="sems my-5">
+    <section class="sems d-none my-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-9 col-md-4">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                               <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/1.webp" class="d-block w-100" alt="..."></a> 
+                                <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/1.webp" class="d-block w-100" alt="..."></a>
                             </div>
                             <div class="carousel-item">
                                 <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/2.webp" class="d-block w-100" alt="..."></a>
@@ -322,7 +314,7 @@ get_header(); ?>
                             <div class="carousel-item">
                                 <a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/10/6.webp" class="d-block w-100" alt="..."></a>
                             </div>
-                            
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -333,7 +325,7 @@ get_header(); ?>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
@@ -347,10 +339,10 @@ get_header(); ?>
                 <div class="col-md-5 text-center">
                     <p>Revive los mejores momentos, la energía y el inicio de esta gran etapa.</p>
                     <p><a href="<?php echo esc_url(home_url('/galeria')); ?>" class="btn btn-primary w-100">Ver galería</a></p>
-                </div>            
+                </div>
             </div>
         </div>
-        
+
     </section>
 
     <section class="container mb-5">
@@ -382,18 +374,20 @@ get_header(); ?>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
-                    <h2>Ubica tu plantel y da el primer paso</h2>                    
-                    <p class="fs-4">¿Cómo usar el mapa interactivo? <br> Mira el <a type="button" href="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp" data-bs-toggle="modal" data-bs-target="#videofull"  data-url="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp">video tutorial</a> para aprender a filtrar la búsqueda por nombre del plantel, estado, municipio o código postal.</p>
+                    <h2>Ubica tu plantel y da el primer paso</h2>
+                    <p class="fs-4">¿Cómo usar el mapa interactivo? <br> Mira el <a type="button" href="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp" data-bs-toggle="modal" data-bs-target="#videofull" data-url="https://www.youtube.com/embed/_cct7uWyFWk?si=ZvSIHJJnNJq9tHJp">video tutorial</a> para aprender a filtrar la búsqueda por nombre del plantel, estado, municipio o código postal.</p>
                 </div>
                 <div class="col-12">
                     <?php echo do_shortcode('[planteles_bachillerato]'); ?>
                 </div>
-                <div class="col-12"><p class="text-center"><b>Nota</b>: No contamos con planteles en la CDMX.</p></div>
+                <div class="col-12">
+                    <p class="text-center"><b>Nota</b>: No contamos con planteles en la CDMX.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    
+
 </main>
 <div class="modal fade" id="aviso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -402,10 +396,10 @@ get_header(); ?>
                 <h1 class="modal-title" id="exampleModalLabel"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">                
-                <div class="text-center"><a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" target="_blank"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/pop_up.webp" width="330" class="img-fluid" alt="popup"></a></div>            
+            <div class="modal-body">
+                <div class="text-center"><a href="https://bnmm.sep.gob.mx/convocatoria-de-guias-y-promotorias-en-plantel/" target="_blank"><img src="https://bnmm.sep.gob.mx/wp-content/uploads/2026/11/pop_up.webp" width="330" class="img-fluid" alt="popup"></a></div>
             </div>
-            
+
         </div>
     </div>
 </div>
@@ -417,14 +411,14 @@ get_header(); ?>
                 <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
- 								<path d="M15 0C6.64286 0 0 6.64286 0 15C0 23.3571 6.64286 30 15 30C23.3571 30 30 23.3571 30 15C30 6.64286 23.3571 0 15 0ZM15 27.8571C7.92857 27.8571 2.14286 22.0714 2.14286 15C2.14286 7.92857 7.92857 2.14286 15 2.14286C22.0714 2.14286 27.8571 7.92857 27.8571 15C27.8571 22.0714 22.0714 27.8571 15 27.8571Z" fill="#999"></path>
- 								<path d="M20.7857 22.5L15 16.7143L9.21429 22.5L7.5 20.7857L13.2857 15L7.5 9.21429L9.21429 7.5L15 13.2857L20.7857 7.5L22.5 9.21429L16.7143 15L22.5 20.7857L20.7857 22.5Z" fill="#999"></path>
- 							</svg>
+                        <path d="M15 0C6.64286 0 0 6.64286 0 15C0 23.3571 6.64286 30 15 30C23.3571 30 30 23.3571 30 15C30 6.64286 23.3571 0 15 0ZM15 27.8571C7.92857 27.8571 2.14286 22.0714 2.14286 15C2.14286 7.92857 7.92857 2.14286 15 2.14286C22.0714 2.14286 27.8571 7.92857 27.8571 15C27.8571 22.0714 22.0714 27.8571 15 27.8571Z" fill="#999"></path>
+                        <path d="M20.7857 22.5L15 16.7143L9.21429 22.5L7.5 20.7857L13.2857 15L7.5 9.21429L9.21429 7.5L15 13.2857L20.7857 7.5L22.5 9.21429L16.7143 15L22.5 20.7857L20.7857 22.5Z" fill="#999"></path>
+                    </svg>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="ratio ratio-16x9">
-                    <iframe width="100%" height="100%" class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    <iframe width="100%" height="100%" class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -441,31 +435,29 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 <script>
+    document.querySelectorAll('.modal').forEach(modal => {
 
- document.querySelectorAll('.modal').forEach(modal => {
-    
-    // Evento cuando el modal se va a mostrar
-    modal.addEventListener('show.bs.modal', function(event) {
-        // El botón o elemento que activó el modal
-        const button = event.relatedTarget;
-        // Obtiene la URL desde el atributo data-url del botón
-        const url = button.getAttribute('data-url') || button.dataset.url;
-        
-        // Busca el iframe dentro de este modal y le asigna la URL
-        const iframe = this.querySelector('iframe');
-        if (iframe) {
-            iframe.setAttribute('src', url);
-        }
+        // Evento cuando el modal se va a mostrar
+        modal.addEventListener('show.bs.modal', function(event) {
+            // El botón o elemento que activó el modal
+            const button = event.relatedTarget;
+            // Obtiene la URL desde el atributo data-url del botón
+            const url = button.getAttribute('data-url') || button.dataset.url;
+
+            // Busca el iframe dentro de este modal y le asigna la URL
+            const iframe = this.querySelector('iframe');
+            if (iframe) {
+                iframe.setAttribute('src', url);
+            }
+        });
+
+        // Evento cuando el modal se ha ocultado por completo
+        modal.addEventListener('hidden.bs.modal', function() {
+            // Busca el iframe dentro de este modal y limpia el src
+            const iframe = this.querySelector('iframe');
+            if (iframe) {
+                iframe.setAttribute('src', '');
+            }
+        });
     });
-
-    // Evento cuando el modal se ha ocultado por completo
-    modal.addEventListener('hidden.bs.modal', function() {
-        // Busca el iframe dentro de este modal y limpia el src
-        const iframe = this.querySelector('iframe');
-        if (iframe) {
-            iframe.setAttribute('src', '');
-        }
-    });
- });
-
 </script>
