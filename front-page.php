@@ -176,7 +176,7 @@ get_header(); ?>
                                         <h2 data-seq>¿Buscas un bachillerato diferente?<br>
                                             <hr>
                                         </h2>
-                                        <h3 data-seq>Nuestro modelo combina el <b>acompañamiento presencial con el estudio en la plataforma educativa</b>, y horarios que se adecúan a tu ritmo de vida.</h3>
+                                        <h3 data-seq>Nuestro modelo combina el <b>acompañamiento presencial con el estudio independiente</b>, y horarios que se adecúan a tu ritmo de vida.</h3>
                                         <div class="boton">
                                             <p><a href="<?php echo esc_url(home_url('/modelo-educativo')); ?>" class="btn btn-primary w-100">Modelo educativo </a></p>
                                         </div>
